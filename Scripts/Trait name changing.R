@@ -55,4 +55,8 @@ trait_names <- trait_raw |>
 #now, the trait data names have to be changed to match the fac names
 #I don't want to change the fac names because I've already completed that analysis
 
+write_csv2(fac_names_total, "C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis\\Functional trait data\\fac_names.csv") 
+
+write_csv2(trait_names, "C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis\\Functional trait data\\trait_names.csv") 
+
 
