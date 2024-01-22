@@ -1,5 +1,4 @@
 ###CLEANING AND STANDARDISING THE FACILITATION DATA
-
 library(stringr)
 library(data.table)
 library(dplyr)
@@ -7,7 +6,7 @@ wd <- "C:\\Users\\imke6\\Documents\\Msc Projek"
 setwd(wd)
 
 ##RULES:
-#Rows with dead plants remobved if they are not the only entry in the microsite
+#Rows with dead plants removed if they are not the only entry in the microsite
 #If there is more than one variety of a species they are combined into one sp
 
 #import the information of each site
