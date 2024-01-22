@@ -1,0 +1,398 @@
+"ID";"COU";"RES";"SITE";"SITE_ID";"PLOT";"Date";"Microsite";"ID_Microsite";"diameter_1.cm.";"diameter_2.cm.";"canopy.area..cm2.";"Number.of.replicate";"Quadrat";"Species.within.quadrat";"Cover";"Number.of.individuals";"microsite_rep";"GRAZ";"ARIDITY.v3"
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";60;85;NA;1;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-1";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";60;85;NA;1;"N/A";NA;NA;NA;"65-1-Bare-1";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";140;120;NA;2;"N/A";"Acacia mellifera";10;1;"65-1-Rhigozum trichotomum-2";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";140;120;NA;2;"N/A";NA;NA;NA;"65-1-Bare-2";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";60;75;NA;3;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-3";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";60;75;NA;3;"N/A";NA;NA;NA;"65-1-Bare-3";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";55;60;NA;4;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-4";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";55;60;NA;4;"N/A";NA;NA;NA;"65-1-Bare-4";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";85;90;NA;5;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-5";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";85;90;NA;5;"N/A";NA;NA;NA;"65-1-Bare-5";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";55;60;NA;6;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-6";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";55;60;NA;6;"N/A";NA;NA;NA;"65-1-Bare-6";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";140;130;NA;7;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-7";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";140;130;NA;7;"N/A";"Stipagrostis amabilis";1;1;"65-1-Bare-7";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";120;120;NA;8;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-8";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";120;120;NA;8;"N/A";NA;NA;NA;"65-1-Bare-8";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";110;120;NA;9;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-9";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";110;120;NA;9;"N/A";"Rhigozum trichotomum";5;1;"65-1-Bare-9";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";270;280;NA;10;"N/A";"Acacia mellifera";15;2;"65-1-Rhigozum trichotomum-10";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";270;280;NA;10;"N/A";NA;NA;NA;"65-1-Bare-10";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";140;80;NA;11;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-11";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";140;80;NA;11;"N/A";NA;NA;NA;"65-1-Bare-11";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;140;NA;12;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-12";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;140;NA;12;"N/A";NA;NA;NA;"65-1-Bare-12";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;130;NA;13;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-13";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;130;NA;13;"N/A";NA;NA;NA;"65-1-Bare-13";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";190;210;NA;14;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-14";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";190;210;NA;14;"N/A";NA;NA;NA;"65-1-Bare-14";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";50;50;NA;15;"N/A";"Stipagrostis amabilis";6;2;"65-1-Rhigozum trichotomum-15";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";50;50;NA;15;"N/A";NA;NA;NA;"65-1-Bare-15";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;190;NA;16;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-16";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;190;NA;16;"N/A";"Acacia mellifera";5;2;"65-1-Bare-16";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;200;NA;17;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-17";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;200;NA;17;"N/A";NA;NA;NA;"65-1-Bare-17";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;205;NA;18;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-18";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;205;NA;18;"N/A";NA;NA;NA;"65-1-Bare-18";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;200;NA;19;"N/A";"Stipagrostis amabilis";1;1;"65-1-Rhigozum trichotomum-19";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;200;NA;19;"N/A";NA;NA;NA;"65-1-Bare-19";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;140;NA;20;"N/A";"Stipagrostis amabilis";1;1;"65-1-Rhigozum trichotomum-20";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;140;NA;20;"N/A";NA;NA;NA;"65-1-Bare-20";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";150;150;NA;21;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-21";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";150;150;NA;21;"N/A";NA;NA;NA;"65-1-Bare-21";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";240;150;NA;22;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-22";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";240;150;NA;22;"N/A";NA;NA;NA;"65-1-Bare-22";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";150;100;NA;23;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-23";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";150;100;NA;23;"N/A";NA;NA;NA;"65-1-Bare-23";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";210;160;NA;24;"N/A";NA;NA;NA;"65-1-Rhigozum trichotomum-24";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";210;160;NA;24;"N/A";"Acacia erioloba";1;1;"65-1-Bare-24";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Rhigozum trichotomum";140;140;NA;25;"N/A";"Stipagrostis amabilis";10;4;"65-1-Rhigozum trichotomum-25";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";140;140;NA;25;"N/A";NA;NA;NA;"65-1-Bare-25";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";600;600;NA;26;"N/A";NA;NA;NA;"65-1-Acacia mellifera-26";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";600;600;NA;26;"N/A";NA;NA;NA;"65-1-Bare-26";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";800;700;NA;27;"N/A";NA;NA;NA;"65-1-Acacia mellifera-27";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";800;700;NA;27;"N/A";"Acacia mellifera";1;1;"65-1-Bare-27";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";600;600;NA;28;"N/A";NA;NA;NA;"65-1-Acacia mellifera-28";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";600;600;NA;28;"N/A";"Centropodia glauca";4;2;"65-1-Bare-28";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";800;900;NA;29;"N/A";NA;NA;NA;"65-1-Acacia mellifera-29";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";800;900;NA;29;"N/A";"Stipagrostis amabilis";15;6;"65-1-Bare-29";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";800;900;NA;29;"N/A";"Acacia erioloba";1;2;"65-1-Bare-29";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";500;600;NA;30;"N/A";NA;NA;NA;"65-1-Acacia mellifera-30";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;600;NA;30;"N/A";"Stipagrostis amabilis";4;2;"65-1-Bare-30";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";300;200;NA;31;"N/A";NA;NA;NA;"65-1-Acacia mellifera-31";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";300;200;NA;31;"N/A";NA;NA;NA;"65-1-Bare-31";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";400;600;NA;32;"N/A";NA;NA;NA;"65-1-Acacia mellifera-32";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";400;600;NA;32;"N/A";"Centropodia glauca";2;1;"65-1-Bare-32";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";800;600;NA;33;"N/A";"Rhigozum trichotomum";25;1;"65-1-Acacia mellifera-33";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";800;600;NA;33;"N/A";NA;NA;NA;"65-1-Bare-33";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";400;500;NA;34;"N/A";NA;NA;NA;"65-1-Acacia mellifera-34";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";400;500;NA;34;"N/A";"Centropodia glauca";5;2;"65-1-Bare-34";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";400;500;NA;34;"N/A";"Acacia mellifera small";1;1;"65-1-Bare-34";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";50;50;NA;35;"N/A";NA;NA;NA;"65-1-Acacia mellifera-35";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";50;50;NA;35;"N/A";NA;NA;NA;"65-1-Bare-35";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";500;400;NA;36;"N/A";NA;NA;NA;"65-1-Acacia mellifera-36";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;400;NA;36;"N/A";"Acacia erioloba";20;1;"65-1-Bare-36";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;400;NA;36;"N/A";"Centropodia glauca";2;1;"65-1-Bare-36";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";500;600;NA;37;"N/A";NA;NA;NA;"65-1-Acacia mellifera-37";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;600;NA;37;"N/A";NA;NA;NA;"65-1-Bare-37";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";400;200;NA;38;"N/A";NA;NA;NA;"65-1-Acacia mellifera-38";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";400;200;NA;38;"N/A";"Stipagrostis amabilis";30;4;"65-1-Bare-38";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";300;300;NA;39;"N/A";NA;NA;NA;"65-1-Acacia mellifera-39";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";300;300;NA;39;"N/A";"Stipagrostis amabilis";19;4;"65-1-Bare-39";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";600;500;NA;40;"N/A";NA;NA;NA;"65-1-Acacia mellifera-40";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";600;500;NA;40;"N/A";NA;NA;NA;"65-1-Bare-40";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";600;200;NA;41;"N/A";NA;NA;NA;"65-1-Acacia mellifera-41";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";600;200;NA;41;"N/A";NA;NA;NA;"65-1-Bare-41";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";300;200;NA;42;"N/A";NA;NA;NA;"65-1-Acacia mellifera-42";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";300;200;NA;42;"N/A";"Centropodia glauca";3;1;"65-1-Bare-42";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";300;800;NA;43;"N/A";NA;NA;NA;"65-1-Acacia mellifera-43";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";300;800;NA;43;"N/A";"Centropodia glauca";1;1;"65-1-Bare-43";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";500;600;NA;44;"N/A";NA;NA;NA;"65-1-Acacia mellifera-44";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;600;NA;44;"N/A";"Stipagrostis amabilis";7;1;"65-1-Bare-44";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;600;NA;44;"N/A";"Acacia erioloba";1;1;"65-1-Bare-44";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";100;200;NA;45;"N/A";NA;NA;NA;"65-1-Acacia mellifera-45";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";100;200;NA;45;"N/A";NA;NA;NA;"65-1-Bare-45";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";1100;1100;NA;46;"N/A";NA;NA;NA;"65-1-Acacia mellifera-46";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";1100;1100;NA;46;"N/A";"Centropodia glauca";3;2;"65-1-Bare-46";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";1100;1100;NA;46;"N/A";"Stipagrostis amabilis";10;8;"65-1-Bare-46";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";1100;1100;NA;46;"N/A";"Acacia erioloba";1;1;"65-1-Bare-46";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";400;100;NA;47;"N/A";NA;NA;NA;"65-1-Acacia mellifera-47";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";400;100;NA;47;"N/A";NA;NA;NA;"65-1-Bare-47";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";500;200;NA;48;"N/A";NA;NA;NA;"65-1-Acacia mellifera-48";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";500;200;NA;48;"N/A";"Stipagrostis amabilis";6;2;"65-1-Bare-48";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";300;200;NA;49;"N/A";NA;NA;NA;"65-1-Acacia mellifera-49";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";300;200;NA;49;"N/A";NA;NA;NA;"65-1-Bare-49";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Acacia mellifera";200;200;NA;50;"N/A";NA;NA;NA;"65-1-Acacia mellifera-50";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";200;200;NA;50;"N/A";"Acacia erioloba";4;3;"65-1-Bare-50";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;51;"N/A";"Stipagrostis amabilis";20;1;"65-1-Stipagrostis amabilis-51";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;51;"N/A";NA;NA;NA;"65-1-Bare-51";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";40;40;NA;52;"N/A";"Acacia mellifera";30;1;"65-1-Stipagrostis amabilis-52";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";40;40;NA;52;"N/A";"Stipagrostis amabilis";30;2;"65-1-Stipagrostis amabilis-52";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";40;40;NA;52;"N/A";NA;NA;NA;"65-1-Bare-52";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";40;40;NA;53;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-53";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";40;40;NA;53;"N/A";NA;NA;NA;"65-1-Bare-53";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;54;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-54";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;54;"N/A";NA;NA;NA;"65-1-Bare-54";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;55;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-55";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;55;"N/A";"Acacia mellifera";20;1;"65-1-Bare-55";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;56;"N/A";"Stipagrostis amabilis";30;2;"65-1-Stipagrostis amabilis-56";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;56;"N/A";NA;NA;NA;"65-1-Bare-56";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;57;"N/A";"Stipagrostis amabilis";30;2;"65-1-Stipagrostis amabilis-57";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;57;"N/A";"Acacia mellifera";15;1;"65-1-Bare-57";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";50;50;NA;58;"N/A";"Stipagrostis amabilis";40;2;"65-1-Stipagrostis amabilis-58";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";50;50;NA;58;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-58";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";50;50;NA;58;"N/A";NA;NA;NA;"65-1-Bare-58";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;59;"N/A";"Stipagrostis amabilis";30;1;"65-1-Stipagrostis amabilis-59";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;59;"N/A";"Acacia mellifera";15;1;"65-1-Stipagrostis amabilis-59";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;59;"N/A";NA;NA;NA;"65-1-Bare-59";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;60;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-60";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;60;"N/A";NA;NA;NA;"65-1-Bare-60";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";40;40;NA;61;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-61";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";40;40;NA;61;"N/A";NA;NA;NA;"65-1-Bare-61";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;62;"N/A";"Stipagrostis amabilis";30;1;"65-1-Stipagrostis amabilis-62";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;62;"N/A";"Acacia mellifera";30;2;"65-1-Stipagrostis amabilis-62";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;62;"N/A";NA;NA;NA;"65-1-Bare-62";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;63;"N/A";"Stipagrostis amabilis";20;1;"65-1-Stipagrostis amabilis-63";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;63;"N/A";"Stipagrostis amabilis";10;1;"65-1-Bare-63";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;64;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-64";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;64;"N/A";NA;NA;NA;"65-1-Bare-64";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;65;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-65";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;65;"N/A";NA;NA;NA;"65-1-Bare-65";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;66;"N/A";"Stipagrostis amabilis";15;0;"65-1-Stipagrostis amabilis-66";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;66;"N/A";NA;NA;NA;"65-1-Bare-66";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;67;"N/A";"Acacia mellifera";5;1;"65-1-Stipagrostis amabilis-67";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;67;"N/A";NA;NA;NA;"65-1-Bare-67";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;68;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-68";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;68;"N/A";NA;NA;NA;"65-1-Bare-68";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;69;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-69";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;69;"N/A";NA;NA;NA;"65-1-Bare-69";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;70;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-70";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;70;"N/A";NA;NA;NA;"65-1-Bare-70";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;71;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-71";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;71;"N/A";NA;NA;NA;"65-1-Bare-71";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;72;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-72";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;72;"N/A";NA;NA;NA;"65-1-Bare-72";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;73;"N/A";"Stipagrostis amabilis";0;0;"65-1-Stipagrostis amabilis-73";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;73;"N/A";"Stipagrostis amabilis";20;2;"65-1-Bare-73";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";45;45;NA;74;"N/A";"Acacia mellifera";10;1;"65-1-Stipagrostis amabilis-74";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";45;45;NA;74;"N/A";"Acacia mellifera";10;1;"65-1-Bare-74";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";2;"Stipagrostis amabilis";50;50;NA;75;"N/A";NA;NA;NA;"65-1-Stipagrostis amabilis-75";3;0,9129
+214;"Namibia";"Wang, Lixing";"Viljoenskroon";65;1;"Dec 29 2016";1;"Bare";50;50;NA;75;"N/A";NA;NA;NA;"65-1-Bare-75";3;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;1;"N/A";"Rhigozum trichotomum";5;1;"65-2-Acacia erioloba-1";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;1;"N/A";"Centropodia glauca";1;4;"65-2-Acacia erioloba-1";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;400;NA;1;"N/A";"Acacia mellifera";2;1;"65-2-Bare-1";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;400;NA;1;"N/A";"Centropodia glauca";0,01;1;"65-2-Bare-1";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";300;200;NA;2;"N/A";"Rhigozum trichotomum";10;2;"65-2-Acacia erioloba-2";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";300;200;NA;2;"N/A";"Centropodia glauca";2;1;"65-2-Acacia erioloba-2";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;200;NA;2;"N/A";"Rhigozum trichotomum";10;2;"65-2-Bare-2";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;200;NA;2;"N/A";"Centropodia glauca";4;2;"65-2-Bare-2";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;450;NA;3;"N/A";NA;NA;NA;"65-2-Acacia erioloba-3";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;450;NA;3;"N/A";"Centropodia glauca";2;1;"65-2-Bare-3";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";250;300;NA;4;"N/A";"Rhigozum trichotomum";5;1;"65-2-Acacia erioloba-4";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";250;300;NA;4;"N/A";NA;NA;NA;"65-2-Bare-4";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";150;250;NA;5;"N/A";NA;NA;NA;"65-2-Acacia erioloba-5";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";150;250;NA;5;"N/A";"Stipagrostis amabilis";2;1;"65-2-Bare-5";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";150;250;NA;5;"N/A";"Ocumers";4;1;"65-2-Bare-5";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";300;400;NA;6;"N/A";NA;NA;NA;"65-2-Acacia erioloba-6";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;400;NA;6;"N/A";NA;NA;NA;"65-2-Bare-6";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";300;350;NA;7;"N/A";NA;NA;NA;"65-2-Acacia erioloba-7";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;350;NA;7;"N/A";NA;NA;NA;"65-2-Bare-7";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";350;300;NA;8;"N/A";"Ocumers";2;1;"65-2-Acacia erioloba-8";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";350;300;NA;8;"N/A";NA;NA;NA;"65-2-Bare-8";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;400;NA;9;"N/A";"Stipagrostis amabilis";10;2;"65-2-Acacia erioloba-9";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;400;NA;9;"N/A";"Acacia mellifera";3;1;"65-2-Acacia erioloba-9";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;400;NA;9;"N/A";"Stipagrostis amabilis";15;5;"65-2-Bare-9";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";250;200;NA;10;"N/A";NA;NA;NA;"65-2-Acacia erioloba-10";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";250;200;NA;10;"N/A";"Acacia mellifera";5;1;"65-2-Bare-10";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";250;200;NA;10;"N/A";"Centropodia glauca";2;1;"65-2-Bare-10";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";600;600;NA;11;"N/A";"Rhigozum trichotomum";0,5;1;"65-2-Acacia erioloba-11";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";600;600;NA;11;"N/A";"Ocumers";1;1;"65-2-Acacia erioloba-11";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";600;600;NA;11;"N/A";NA;NA;NA;"65-2-Bare-11";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;500;NA;12;"N/A";"Acacia mellifera";40;1;"65-2-Acacia erioloba-12";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;500;NA;12;"N/A";"Stipagrostis amabilis";0,2;1;"65-2-Acacia erioloba-12";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;500;NA;12;"N/A";"Rhigozum trichotomum";0,1;12;"65-2-Acacia erioloba-12";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;500;NA;12;"N/A";"Stipagrostis amabilis";40;22;"65-2-Bare-12";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;500;NA;12;"N/A";"Acacia mellifera";0,5;1;"65-2-Bare-12";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";200;200;NA;13;"N/A";"Centropodia glauca";15;1;"65-2-Acacia erioloba-13";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";200;200;NA;13;"N/A";"Acacia mellifera";2;1;"65-2-Acacia erioloba-13";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";200;200;NA;13;"N/A";"Aristida meridionalis";5;1;"65-2-Bare-13";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;14;"N/A";"Acacia haematoxylon";15;1;"65-2-Acacia erioloba-14";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;14;"N/A";"Grewia flava";4;1;"65-2-Acacia erioloba-14";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;400;NA;14;"N/A";"Centropodia glauca";3;4;"65-2-Bare-14";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;350;NA;15;"N/A";NA;NA;NA;"65-2-Acacia erioloba-15";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;350;NA;15;"N/A";"Aristida meridionalis";1;1;"65-2-Bare-15";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;16;"N/A";"Grewia flava";10;1;"65-2-Acacia erioloba-16";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;16;"N/A";"Asparagus";2;2;"65-2-Acacia erioloba-16";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";2;"Acacia erioloba";500;400;NA;16;"N/A";"Rhigozum trichotomum";10;1;"65-2-Acacia erioloba-16";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;400;NA;16;"N/A";NA;NA;NA;"65-2-Bare-16";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";2;"Acacia erioloba";200;150;NA;17;"N/A";"Acacia erioloba";5;1;"65-2-Acacia erioloba-17";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";1;"Bare";200;150;NA;17;"N/A";"Centropodia glauca";10;1;"65-2-Bare-17";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";2;"Acacia erioloba";700;600;NA;18;"N/A";NA;NA;NA;"65-2-Acacia erioloba-18";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";1;"Bare";700;600;NA;18;"N/A";"Rhigozum trichotomum";20;5;"65-2-Bare-18";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";1;"Bare";700;600;NA;18;"N/A";"Centropodia glauca";5;6;"65-2-Bare-18";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";2;"Acacia erioloba";300;250;NA;19;"N/A";NA;NA;NA;"65-2-Acacia erioloba-19";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 29 2016";1;"Bare";300;250;NA;19;"N/A";NA;NA;NA;"65-2-Bare-19";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;400;NA;20;"N/A";"Rhigozum trichotomum";22;1;"65-2-Acacia erioloba-20";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;400;NA;20;"N/A";"Rhigozum trichotomum";5;3;"65-2-Bare-20";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;300;NA;21;"N/A";"Rhigozum trichotomum";20;5;"65-2-Acacia erioloba-21";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;300;NA;21;"N/A";"Rhigozum trichotomum";5;1;"65-2-Bare-21";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;300;NA;21;"N/A";"Stipagrostis amabilis";2;2;"65-2-Bare-21";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;22;"N/A";"Stipagrostis amabilis";15;5;"65-2-Acacia erioloba-22";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";500;400;NA;22;"N/A";"Centropodia glauca";0,5;1;"65-2-Acacia erioloba-22";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";500;400;NA;22;"N/A";"Centropodia glauca";3;7;"65-2-Bare-22";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";400;300;NA;23;"N/A";NA;NA;NA;"65-2-Acacia erioloba-23";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";400;300;NA;23;"N/A";"Rhigozum trichotomum";5;1;"65-2-Bare-23";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";300;200;NA;24;"N/A";NA;NA;NA;"65-2-Acacia erioloba-24";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;200;NA;24;"N/A";"Rhigozum trichotomum";10;1;"65-2-Bare-24";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";300;200;NA;24;"N/A";"Stipagrostis amabilis";5;4;"65-2-Bare-24";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Acacia erioloba";30;50;NA;25;"N/A";NA;NA;NA;"65-2-Acacia erioloba-25";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";30;50;NA;25;"N/A";NA;NA;NA;"65-2-Bare-25";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";45;60;NA;26;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-26";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";45;60;NA;26;"N/A";NA;NA;NA;"65-2-Bare-26";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";40;20;NA;27;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-27";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";40;20;NA;27;"N/A";NA;NA;NA;"65-2-Bare-27";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";30;25;NA;28;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-28";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";30;25;NA;28;"N/A";NA;NA;NA;"65-2-Bare-28";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";26;19;NA;29;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-29";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";26;19;NA;29;"N/A";NA;NA;NA;"65-2-Bare-29";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";60;80;NA;30;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-30";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";60;80;NA;30;"N/A";NA;NA;NA;"65-2-Bare-30";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";60;80;NA;31;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-31";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";60;80;NA;31;"N/A";NA;NA;NA;"65-2-Bare-31";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";30;45;NA;32;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-32";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";30;45;NA;32;"N/A";NA;NA;NA;"65-2-Bare-32";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";40;20;NA;33;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-33";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";40;20;NA;33;"N/A";NA;NA;NA;"65-2-Bare-33";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";40;50;NA;34;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-34";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";40;50;NA;34;"N/A";NA;NA;NA;"65-2-Bare-34";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";60;60;NA;35;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-35";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";60;60;NA;35;"N/A";NA;NA;NA;"65-2-Bare-35";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";30;30;NA;36;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-36";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";30;30;NA;36;"N/A";NA;NA;NA;"65-2-Bare-36";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";25;20;NA;37;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-37";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";25;20;NA;37;"N/A";NA;NA;NA;"65-2-Bare-37";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";26;30;NA;38;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-38";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";26;30;NA;38;"N/A";NA;NA;NA;"65-2-Bare-38";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";70;60;NA;39;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-39";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";70;60;NA;39;"N/A";NA;NA;NA;"65-2-Bare-39";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";50;70;NA;40;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-40";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";50;70;NA;40;"N/A";NA;NA;NA;"65-2-Bare-40";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";29;38;NA;41;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-41";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";29;38;NA;41;"N/A";NA;NA;NA;"65-2-Bare-41";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";45;22;NA;42;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-42";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";45;22;NA;42;"N/A";NA;NA;NA;"65-2-Bare-42";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";45;25;NA;43;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-43";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";45;25;NA;43;"N/A";NA;NA;NA;"65-2-Bare-43";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";25;25;NA;44;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-44";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";25;25;NA;44;"N/A";NA;NA;NA;"65-2-Bare-44";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";29;38;NA;45;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-45";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";15;17;NA;45;"N/A";NA;NA;NA;"65-2-Bare-45";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";15;17;NA;46;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-46";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";29;38;NA;46;"N/A";NA;NA;NA;"65-2-Bare-46";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";65;65;NA;47;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-47";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";65;65;NA;47;"N/A";NA;NA;NA;"65-2-Bare-47";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";50;49;NA;48;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-48";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";50;49;NA;48;"N/A";NA;NA;NA;"65-2-Bare-48";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";50;45;NA;49;"N/A";NA;NA;NA;"65-2-Stipagrostis amabilis-49";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";50;45;NA;49;"N/A";NA;NA;NA;"65-2-Bare-49";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";2;"Stipagrostis amabilis";45;45;NA;50;"N/A";"Acacia mellifera";45;1;"65-2-Stipagrostis amabilis-50";2;0,9129
+215;"Namibia";"Wang, Lixing";"Viljoenskroon";65;2;"Dec 30 2016";1;"Bare";45;45;NA;50;"N/A";NA;NA;NA;"65-2-Bare-50";2;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;1;"N/A";"Stipagrostis amabilis";10;1;"65-3-Stipagrostis amabilis-1";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;1;"N/A";"Stipagrostis obtusa";5;1;"65-3-Stipagrostis amabilis-1";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;1;"N/A";NA;NA;NA;"65-3-Bare-1";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;2;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-2";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;2;"N/A";"Stipagrostis obtusa";5;1;"65-3-Bare-2";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;3;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-3";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;3;"N/A";NA;NA;NA;"65-3-Bare-3";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;4;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-4";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;4;"N/A";NA;NA;NA;"65-3-Bare-4";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";35;35;NA;5;"N/A";"Stipagrostis amabilis";20;1;"65-3-Stipagrostis amabilis-5";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";35;35;NA;5;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-5";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";35;35;NA;5;"N/A";NA;NA;NA;"65-3-Bare-5";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;6;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-6";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;6;"N/A";NA;NA;NA;"65-3-Bare-6";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;7;"N/A";"Stipagrostis amabilis";10;1;"65-3-Stipagrostis amabilis-7";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;7;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-7";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;7;"N/A";NA;NA;NA;"65-3-Bare-7";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;8;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-8";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;8;"N/A";"Aptosimum elongatum";5;1;"65-3-Bare-8";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;9;"N/A";"Stipagrostis amabilis";5;1;"65-3-Stipagrostis amabilis-9";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;9;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-9";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;9;"N/A";NA;NA;NA;"65-3-Bare-9";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;10;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-10";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;10;"N/A";"Stipagrostis obtusa";20;1;"65-3-Bare-10";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;11;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-11";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;11;"N/A";NA;NA;NA;"65-3-Bare-11";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;12;"N/A";"Stipagrostis amabilis";5;1;"65-3-Stipagrostis amabilis-12";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;12;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-12";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;12;"N/A";"Stipagrostis obtusa";5;1;"65-3-Bare-12";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;13;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-13";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;13;"N/A";NA;NA;NA;"65-3-Bare-13";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;14;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-14";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;14;"N/A";"Aristida meridionalis";20;1;"65-3-Bare-14";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;15;"N/A";"Stipagrostis amabilis";5;1;"65-3-Stipagrostis amabilis-15";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;15;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-15";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;15;"N/A";"Aptosimum elongatum";3;1;"65-3-Bare-15";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;16;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-16";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;16;"N/A";NA;NA;NA;"65-3-Bare-16";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;17;"N/A";"Stipagrostis amabilis";10;1;"65-3-Stipagrostis amabilis-17";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;17;"N/A";"Stipagrostis obtusa";0;2;"65-3-Stipagrostis amabilis-17";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;17;"N/A";"Stipagrostis amabilis";5;1;"65-3-Bare-17";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;18;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-18";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;18;"N/A";NA;NA;NA;"65-3-Bare-18";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;19;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-19";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;19;"N/A";"Aristida meridionalis";30;1;"65-3-Bare-19";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;20;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-20";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;20;"N/A";NA;NA;NA;"65-3-Bare-20";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;21;"N/A";"Stipagrostis amabilis";0;1;"65-3-Stipagrostis amabilis-21";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;21;"N/A";NA;NA;NA;"65-3-Bare-21";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;22;"N/A";"Stipagrostis amabilis";90;1;"65-3-Stipagrostis amabilis-22";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";50;50;NA;22;"N/A";"Senna italica";0;1;"65-3-Stipagrostis amabilis-22";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;22;"N/A";NA;NA;NA;"65-3-Bare-22";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;23;"N/A";"Stipagrostis amabilis";15;1;"65-3-Stipagrostis amabilis-23";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;23;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-23";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;23;"N/A";NA;NA;NA;"65-3-Bare-23";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;24;"N/A";"Stipagrostis amabilis";5;1;"65-3-Stipagrostis amabilis-24";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Stipagrostis amabilis";40;40;NA;24;"N/A";"Stipagrostis obtusa";0;1;"65-3-Stipagrostis amabilis-24";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";40;40;NA;24;"N/A";"Senna italica";40;1;"65-3-Bare-24";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";50;49;NA;25;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-25";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;49;NA;25;"N/A";NA;NA;NA;"65-3-Bare-25";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;220;NA;26;"";NA;NA;NA;"65-3-Acacia haematoxylin-26";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";210;220;NA;26;"";NA;NA;NA;"65-3-Bare-26";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;300;NA;27;"N/A";"Stipagrostis amabilis";3;1;"65-3-Acacia haematoxylin-27";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";210;300;NA;27;"N/A";NA;NA;NA;"65-3-Bare-27";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;210;NA;28;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-28";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";210;210;NA;28;"N/A";"Stipagrostis amabilis";2;1;"65-3-Bare-28";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;29;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-29";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;29;"N/A";NA;NA;NA;"65-3-Bare-29";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";100;110;NA;30;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-30";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";100;110;NA;30;"N/A";NA;NA;NA;"65-3-Bare-30";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";300;280;NA;31;"N/A";"Aptosimum elongatum";40;5;"65-3-Acacia haematoxylin-31";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";300;280;NA;31;"N/A";"Stipagrostis obtusa";35;18;"65-3-Acacia haematoxylin-31";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";300;280;NA;31;"N/A";"Senna italica";0;1;"65-3-Bare-31";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;100;NA;32;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-32";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;100;NA;32;"N/A";NA;NA;NA;"65-3-Bare-32";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";280;300;NA;33;"N/A";"Senna italica";2;1;"65-3-Acacia haematoxylin-33";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";280;300;NA;33;"N/A";"Aristida meridionalis";2;1;"65-3-Bare-33";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;34;"N/A";"Senna italica";2;1;"65-3-Acacia haematoxylin-34";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;34;"N/A";NA;NA;NA;"65-3-Bare-34";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";130;120;NA;35;"N/A";"Lycium sp.";1;1;"65-3-Acacia haematoxylin-35";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";130;120;NA;35;"N/A";NA;NA;NA;"65-3-Bare-35";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;110;NA;36;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-36";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;110;NA;36;"N/A";NA;NA;NA;"65-3-Bare-36";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;37;"N/A";"Stipagrostis obtusa";15;4;"65-3-Acacia haematoxylin-37";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;37;"N/A";"Grewia flava";25;1;"65-3-Acacia haematoxylin-37";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;37;"N/A";"Stipagrostis amabilis";4;2;"65-3-Bare-37";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;37;"N/A";"Stipagrostis obtusa";7;2;"65-3-Bare-37";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";420;350;NA;38;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-38";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";420;350;NA;38;"N/A";"Aristida meridionalis";1;1;"65-3-Bare-38";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";300;280;NA;39;"N/A";"Stipagrostis obtusa";3;3;"65-3-Acacia haematoxylin-39";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";300;280;NA;39;"N/A";"Grewia flava";2;2;"65-3-Acacia haematoxylin-39";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";300;280;NA;39;"N/A";"Centropodia glauca";4;2;"65-3-Bare-39";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";300;280;NA;39;"N/A";"Stipagrostis obtusa";8;1;"65-3-Bare-39";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;200;NA;40;"N/A";"Stipagrostis amabilis";50;7;"65-3-Acacia haematoxylin-40";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";210;200;NA;40;"N/A";"Senna italica";4;1;"65-3-Bare-40";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";280;210;NA;41;"N/A";"Stipagrostis obtusa";18;1;"65-3-Acacia haematoxylin-41";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";280;210;NA;41;"N/A";NA;NA;NA;"65-3-Bare-41";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";70;50;NA;42;"N/A";"Stipagrostis obtusa";20;1;"65-3-Acacia haematoxylin-42";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";70;50;NA;42;"N/A";NA;NA;NA;"65-3-Bare-42";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;80;NA;43;"N/A";"Stipagrostis obtusa";10;2;"65-3-Acacia haematoxylin-43";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;80;NA;43;"N/A";"Centropodia glauca";5;1;"65-3-Bare-43";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;44;"N/A";"Aristida meridionalis";10;1;"65-3-Acacia haematoxylin-44";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;44;"N/A";NA;NA;NA;"65-3-Bare-44";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";160;210;NA;45;"N/A";"Stipagrostis amabilis";10;3;"65-3-Acacia haematoxylin-45";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";160;210;NA;45;"N/A";NA;NA;NA;"65-3-Bare-45";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";280;210;NA;46;"N/A";"Stipagrostis amabilis";50;7;"65-3-Acacia haematoxylin-46";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";280;210;NA;46;"N/A";NA;NA;NA;"65-3-Bare-46";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;100;NA;47;"N/A";"Senna italica";10;1;"65-3-Acacia haematoxylin-47";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;100;NA;47;"N/A";NA;NA;NA;"65-3-Bare-47";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";50;50;NA;48;"N/A";NA;NA;NA;"65-3-Acacia haematoxylin-48";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";50;50;NA;48;"N/A";NA;NA;NA;"65-3-Bare-48";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;100;NA;49;"N/A";"Centropodia glauca";60;5;"65-3-Acacia haematoxylin-49";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;100;NA;49;"N/A";NA;NA;NA;"65-3-Bare-49";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";140;140;NA;50;"N/A";"Aristida meridionalis";10;1;"65-3-Acacia haematoxylin-50";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";140;140;NA;50;"N/A";NA;NA;NA;"65-3-Bare-50";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;210;NA;51;"N/A";"Senna italica";15;4;"65-3-Acacia haematoxylin-51";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";2;"Acacia haematoxylon";210;210;NA;51;"N/A";"Aristida meridionalis";10;1;"65-3-Acacia haematoxylin-51";1;0,9129
+216;"Namibia";"Wang, Lixing";"Viljoenskroon";65;3;"Dec 31 2016";1;"Bare";210;210;NA;51;"N/A";NA;NA;NA;"65-3-Bare-51";1;0,9129

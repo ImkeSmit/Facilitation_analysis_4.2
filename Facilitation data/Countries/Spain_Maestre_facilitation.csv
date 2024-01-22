@@ -1,0 +1,2026 @@
+ID,COU,RES,SITE,SITE_ID,PLOT,Date,Microsite,ID_Microsite,diameter_1(cm),diameter_2(cm),height(cm),canopy area (cm2),Number of replicate,Quadrat,Species within quadrat,Cover (%),Number of individuals
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,46,44,11.5,6358.5984,1,1,Plantago albicans,10,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,46,44,11.5,6358.5984,1,1,Helianthemum hirtum,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,46,44,11.5,6358.5984,1,1,Stipa barbata,20,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,46,44,11.5,6358.5984,1,1,Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,1,Plantago albicans,10,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,1,Helianthemum hirtum,4,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,1,Linum suffruticosum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,1,Stipa barbata,10,12
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,52,44,17.5,7187.9808,2,1,Linum suffruticosum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,52,44,17.5,7187.9808,2,1,Plantago albicans,2.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,52,44,17.5,7187.9808,2,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,52,44,17.5,7187.9808,2,1,Stipa barbata,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Teucrium gnaphalodes,13,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Plantago albicans,7.5,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Linum suffruticosum,2.5,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Helianthemum asperum,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Matthiola fruticulosa,2.5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Stipa barbata,7.5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,1,Coronilla minima,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,14,6283.2,3,1,Linum suffruticosum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,14,6283.2,3,1,Teucrium gnaphalodes,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,14,6283.2,3,1,Stipa barbata,6,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,14,6283.2,3,1,Plantago albicans,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,1,Plantago albicans,20,19
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,1,Stipa barbata,2.5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,1,Linum suffruticosum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,1,Helianthemum rotundifolium,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,34,10,5340.72,4,1,Linum suffruticosum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,34,10,5340.72,4,1,Stipa barbata,2,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,34,10,5340.72,4,1,Plantago albicans,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,4,1,Plantago albicans,2,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,4,1,Helianthemum asperum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,36,10,5654.88,5,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,36,10,5654.88,5,1,Linum suffruticosum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,36,10,5654.88,5,1,Stipa barbata,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,1,Matthiola fruticulosa,2.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,1,Plantago albicans,11,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,1,Linum suffruticosum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,1,Stipa barbata,3,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,36,6.5,5654.88,6,1,Matthiola fruticulosa,3,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,36,6.5,5654.88,6,1,Astragalus incanus,6,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,1,Plantago albicans,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,1,Helianthemum squamatum,3,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,1,Stipa barbata,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,1,Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,43,15,6754.44,7,1,Stipa barbata,18,8
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Helianthemum squamatum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Stipa barbata,13,17
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Plantago albicans,2.2,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Linum suffruticosum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Helianthemum hirtum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,1,Helianthemum asperum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,28,13,2638.944,8,1,Matthiola fruticulosa,4,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,28,13,2638.944,8,1,Stipa barbata,8,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,28,13,2638.944,8,1,Plantago albicans,6,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,28,13,2638.944,8,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,1,Linum suffruticosum,1,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,1,Plantago albicans,6,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,1,Stipa barbata,10,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,1,Matthiola fruticulosa,2,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,44,44,12,6082.1376,9,1,Plantago albicans,2.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,9,1,Plantago albicans,2.5,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,9,1,Teucrium gnaphalodes,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,9,1,Linum suffruticosum,1,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,25,8,2827.44,10,1,Stipa barbata,10,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,25,8,2827.44,10,1,Teucrium gnaphalodes,2.5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,25,8,2827.44,10,1,Astragalus incanus,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,25,8,2827.44,10,1,Plantago albicans,2.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Linum suffruticosum,2.5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Teucrium gnaphalodes,2.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Matthiola fruticulosa,2.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Stipa barbata,7.5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,1,Plantago albicans,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,23,20,13,1445.136,11,1,Stipa barbata,7,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,23,20,13,1445.136,11,1,Plantago albicans,7,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,1,Stipa barbata,20,12
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,1,Matthiola fruticulosa,3,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,1,Linum suffruticosum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,1,Plantago albicans,3,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,59,20,14,3707.088,12,1,Linum suffruticosum,2.5,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,59,20,14,3707.088,12,1,Plantago albicans,7.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,59,20,14,3707.088,12,1,Stipa barbata,7.5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,12,1,Plantago albicans,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,19,31,12,1850.4024,13,1,Stipa barbata,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,1,Stipa barbata,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,1,Plantago albicans,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,1,Linum suffruticosum,3,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,1,Matthiola fruticulosa,3,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,33.5,35.5,11,3736.1478,14,1,Stipa barbata,5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,33.5,35.5,11,3736.1478,14,1,Plantago albicans,4,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,1,Plantago albicans,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,1,Stipa tenacissima,5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,54,66,14,11196.6624,15,100(1),Plantago albicans,5,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,54,66,14,11196.6624,15,100(1),Stipa barbata,2,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,54,66,14,11196.6624,15,100(1),Stipa tenacissima,0.1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,54,66,14,11196.6624,15,100(1),Astragalus incanus,2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Plantago albicans,15,23
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Teucrium gnaphalodes,2,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Linum suffruticosum,0.5,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Matthiola fruticulosa,0.25,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,50,15,7854,16,100(1),Plantago albicans,3,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,50,15,7854,16,100(1),Stipa barbata,5,11
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,50,15,7854,16,100(1),Linum suffruticosum,2,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Plantago albicans,0.25,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Erodyum,1.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,25,25,15,1963.5,17,1,Plantago albicans,10,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,25,25,15,1963.5,17,1,Teucrium gnaphalodes,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,25,25,15,1963.5,17,1,Linum suffruticosum,0.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,25,25,15,1963.5,17,1,Stipa tenacissima,12,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,1,Plantago albicans,2.5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,33,12,3732.2208,18,1,Teucrium gnaphalodes,7,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,33,12,3732.2208,18,1,Plantago albicans,2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,33,12,3732.2208,18,1,Stipa barbata,20,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,36,33,12,3732.2208,18,1,Linum suffruticosum,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,1,Stipa tenacissima,3,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,1,Plantago albicans,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,1,Teucrium gnaphalodes,0.25,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,1,Matthiola fruticulosa,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,1,Helianthemum asperum,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,22,20,14,1382.304,19,1,Plantago albicans,1.5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,22,20,14,1382.304,19,1,Teucrium gnaphalodes,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,22,20,14,1382.304,19,1,Stipa tenacissima,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,22,20,14,1382.304,19,1,Astragalus incanus,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,19,1,Plantago albicans,1,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,19,1,Matthiola fruticulosa,0.25,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,19,1,Stipa tenacissima,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,29,12,2733.192,20,1,Plantago albicans,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,30,29,12,2733.192,20,1,Stipa tenacissima,0.5,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,20,1,Stipa tenacissima,7,11
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,20,1,Matthiola fruticulosa,2,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,20,1,Linum suffruticosum,0.1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,13,6283.2,21,1,Linum suffruticosum,0.2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,13,6283.2,21,1,Stipa parviflora,0.1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,13,6283.2,21,1,Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,50,40,13,6283.2,21,1,Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,21,1,Plantago albicans,4,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,21,1,Stipa barbata,6,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,21,1,Linum suffruticosum,1,6
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,21,1,Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,24,28,13,2111.1552,22,1,Plantago albicans,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,22,1,Teucrium gnaphalodes,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,22,1,Plantago albicans,4,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,22,1,Matthiola fruticulosa,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,40,45,14,5654.88,23,1,Plantago albicans,5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,40,45,14,5654.88,23,1,Teucrium gnaphalodes,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,40,45,14,5654.88,23,1,Stipa barbata,3,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,40,45,14,5654.88,23,1,Linum suffruticosum,0.1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,23,1,Plantago albicans,9,24
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,23,1,Astragalus incanus,4,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,23,1,Linum suffruticosum,0.1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,33,20,10,2073.456,24,1,Matthiola fruticulosa,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,33,20,10,2073.456,24,1,Stipa tenacissima,1,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,33,20,10,2073.456,24,1,Plantago albicans,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,24,1,Phlomis lychnitis,3,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,24,1,Plantago albicans,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,24,1,Stipa tenacissima,1,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,38,28,12,3342.6624,25,1,Phlomis lychnitis,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,38,28,12,3342.6624,25,1,Plantago albicans,1,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,38,28,12,3342.6624,25,1,Astragalus incanus,0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Thymus zygis,38,28,12,3342.6624,25,1,Stipa tenacissima,0.2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,25,1,Plantago albicans,3,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,25,1,Matthiola fruticulosa,0.5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,25,1,Stipa tenacissima,0.25,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,25,1,"Helianthemum ""small""",0.5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,130,31416,1,100(1),Phlomis lychnitis,20,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,130,31416,1,100(1),Teucrium capitatum,30,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,130,31416,1,100(1),Helianthemum asperum,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,130,31416,1,100(1),Plantago albicans,2,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,100(1),Stipa tenacissima,15,8
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,100(1),Helianthemum asperum,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,100(1),Teucrium gnaphalodes,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,1,100(1),Plantago albicans,10,11
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,110,130,34557.6,2,100(1),Helianthemum,20,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,110,130,34557.6,2,100(1),Teucrium capitatum,20,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,100(1),Stipa tenacissima,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,100(1),Plantago albicans,10,20
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,100(1),Matthiola fruticulosa,5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,2,100(1),Teucrium gnaphalodes,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,80,70,54,17592.96,3,100(1),Teucrium capitatum,30,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,80,70,54,17592.96,3,100(1),Phlomis lychnitis,10,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,100(1),Plantago albicans,5,30
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,100(1),Teucrium capitatum,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,3,100(1),Matthiola fruticulosa,2,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,110,31416,4,100(1),Teucrium capitatum,30,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,110,31416,4,100(1),Plantago albicans,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,4,100(1),Plantago albicans,20,50
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,4,100(1),Matthiola fruticulosa,2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,4,100(1),Teucrium capitatum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,190,31416,5,100(1),Astragalus incanus,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,190,31416,5,100(1),Helianthemum asperum,2,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,190,31416,5,100(1),Teucrium capitatum,10,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,100(1),Teucrium capitatum,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,100(1),Plantago albicans,15,25
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,5,100(1),Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,170,31416,6,100(1),Plantago albicans,5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,170,31416,6,100(1),Teucrium capitatum,30,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,6,100(1),Plantago albicans,15,25
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,87,71,60,19405.6632,7,100(1),Plantago albicans,2,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,87,71,60,19405.6632,7,100(1),Teucrium capitatum,30,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,7,100(1),Plantago albicans,5,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,200,31416,8,100(1),Phlomis lychnitis,20,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,200,31416,8,100(1),Dactilis,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,100(1),Plantago albicans,5,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,8,100(1),Teucrium capitatum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,180,31416,9,100(1),Teucrium capitatum,50,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,180,31416,9,100(1),Plantago albicans,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,180,31416,9,100(1),Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,9,100(1),Plantago albicans,5,8
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,9,100(1),Teucrium capitatum,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,160,31416,10,100(1),Teucrium capitatum,40,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,160,31416,10,100(1),Plantago albicans,20,20
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,100(1),Plantago albicans,25,40
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,10,100(1),Teucrium capitatum,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,185,31416,11,100(1),Plantago albicans,15,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,185,31416,11,100(1),Teucrium capitatum,30,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,100(1),Teucrium capitatum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,11,100(1),Plantago albicans,7,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,180,90,110,50893.92,12,100(2),Teucrium capitatum,50,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,180,90,110,50893.92,12,100(2),Plantago albicans,10,12
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,12,100(2),Teucrium capitatum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,12,100(2),Plantago albicans,20,25
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,12,100(2),Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,220,31416,13,100(1),Phlomis lychnitis,20,4
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,220,31416,13,100(1),Teucrium capitatum,15,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,220,31416,13,100(1),Plantago albicans,10,20
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,220,31416,13,100(1),Hedysarum boveanum,10,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,100(1),Teucrium capitatum,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,100(1),Astragalus incanus,10,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,100(1),Stipa tenacissima,10,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,100(1),Matthiola fruticulosa,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,13,100(1),Plantago albicans,5,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,175,31416,14,100(1),Teucrium capitatum,60,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,175,31416,14,100(1),Helianthemum asperum,10,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,175,31416,14,100(1),Phlomis lychnitis,15,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,175,31416,14,100(1),Thymus zygis,10,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,100(1),Thymus zygis,40,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,100(1),Stipa tenacissima,10,16
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,100(1),Plantago albicans,4,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,14,100(1),Helianthemum hirtum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,150,31416,15,100(1),Teucrium capitatum,20,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,150,31416,15,100(1),Plantago albicans,10,7
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Matthiola fruticulosa,5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Teucrium capitatum,10,5
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Plantago albicans,15,15
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,15,100(1),Stipa tenacissima,5,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,100,80,31416,16,100(1),Teucrium capitatum,25,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Helianthemum hirtum,1,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Thymus zygis,10,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Plantago albicans,10,11
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,16,100(1),Teucrium gnaphalodes,2,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,50,110,15708,17,100(1),Stipa tenacissima,20,8
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,50,110,15708,17,100(1),Teucrium capitatum,15,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,50,110,15708,17,100(1),Plantago albicans,30,40
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,50,110,15708,17,100(1),Matthiola fruticulosa,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,50,110,15708,17,100(1),Helianthemum hirtum,5,3
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,100(1),Plantago albicans,25,50
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,100(1),Thymus zygis,5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,100(1),Stipa tenacissima,5,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,100(1),Matthiola fruticulosa,4,15
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,17,100(1),Teucrium capitatum,5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,90,145,28274.4,18,100(1),Stipa tenacissima,5,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,90,145,28274.4,18,100(1),Hedysarum boveanum,10,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,90,145,28274.4,18,100(1),Plantago albicans,10,10
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,2,Retama,100,90,145,28274.4,18,100(1),Teucrium capitatum,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,100(1),Astragalus incanus,5,1
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,100(1),Helianthemum hirtum,1,2
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,100(1),Plantago albicans,25,50
+272,Spain,"Maestre, Fernando",Ciempozuelos,84,1,2016/06/06,1,bare,,,,,18,100(1),Stipa tenacissima,15,11
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,1,1,Stipa tenacissima,5,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,1,1,Matthiola fruticulosa,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,1,1,"Helianthemum ""small""",1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,1,Thymus zygis,20,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,1,Matthiola fruticulosa,2,11
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,1,Stipa tenacissima,6,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,48,13,7539.84,2,1,Stipa tenacissima,4,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,48,13,7539.84,2,1,Helianthemum asperum,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,48,13,7539.84,2,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,48,13,7539.84,2,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Stipa tenacissima,5,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Plantago albicans,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Thymus zygis,10,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,15,7854,3,1,Stipa barbata,5,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,15,7854,3,1,Stipa parviflora,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,15,7854,3,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,15,7854,3,1,Helianthemum asperum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,15,7854,3,1,Helianthemum hirtum,3,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Thymus zygis,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Stipa barbata,3,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Stipa parviflora,4,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,40,20,6283.2,4,1,Stipa barbata,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,40,20,6283.2,4,1,Stipa parviflora,4,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,40,20,6283.2,4,1,Helianthemum asperum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,40,20,6283.2,4,1,Helianthemum hirtum,3,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,40,20,6283.2,4,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Matthiola fruticulosa,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Plantago albicans,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Astragalus incanus,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Stipa barbata,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,5,1,Stipa parviflora,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,5,1,Stipa barbata,1,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,1,Thymus zygis,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,1,Stipa barbata,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,6,1,Stipa barbata,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,6,1,Stipa parviflora,4,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,6,1,Phlomis lychnitis,12,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,6,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Stipa barbata,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Matthiola fruticulosa,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Stipa parviflora,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,7,1,Phlomis lychnitis,3,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,7,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Astragalus incanus,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,11,7854,8,1,Stipa barbata,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,11,7854,8,1,Teucrium gnaphalodes,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Thymus zygis,7,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Plantago albicans,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Matthiola fruticulosa,1,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Coronilla minima,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,9,1,Stipa barbata,6,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,9,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,9,1,Astragalus incanus,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,1,Thymus zygis,6,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,1,Matthiola fruticulosa,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,1,Astragalus incanus,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,1,Teucrium gnaphalodes,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,11,7854,10,1,Stipa barbata,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,11,7854,10,1,Astragalus incanus,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,11,7854,10,1,Matthiola fruticulosa,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Stipa barbata,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Astragalus incanus,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Helianthemum asperum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,11,1,Stipa barbata,3,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,11,1,Astragalus incanus,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,11,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,13,7854,11,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Thymus zygis,4,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Helianthemum hirtum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Stipa barbata,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,12,1,Stipa barbata,4,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,12,1,Matthiola fruticulosa,2,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,12,1,Plantago albicans,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,14,7854,12,1,Teucrium gnaphalodes,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Stipa barbata,4,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Thymus zygis,9,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Matthiola fruticulosa,3,10
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,13,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,13,1,Stipa tenacissima,5,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,13,1,Teucrium gnaphalodes,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Stipa tenacissima,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Matthiola fruticulosa,1,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Plantago albicans,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Helianthemum hirtum,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Thymus zygis,6,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,14,1,Stipa barbata,5,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,14,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,14,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,17,7854,14,1,Helianthemum hirtum,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,14,1,Plantago albicans,3,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,14,1,Stipa barbata,6,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,14,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,14,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,14,1,Helianthemum rotundifolium,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,15,1,Stipa tenacissima,3,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,15,1,Helianthemum rotundifolium,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,15,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Thymus zygis,50,50,10,7854,15,1,Helianthemum asperum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,15,1,Plantago albicans,2,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,15,1,Helianthemum asperum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,15,1,Helianthemum rotundifolium,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,15,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,15,1,Stipa tenacissima,5,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Thymus zygis,30,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Helianthemum hirtum,10,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Stipa barbata,30,27
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Plantago albicans,15,23
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Stipa parviflora,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,94,60,81,17718.624,1,100(1),Hedysarum boveanum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,100(1),Thymus zygis,25,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,100(1),Plantago albicans,10,14
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,100(1),Stipa barbata,10,16
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,100(1),Helianthemum hirtum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,1,100(1),Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Helianthemum hirtum,30,15
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Hedysarum boveanum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Helianthemum rotundifolium,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Thymus zygis,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Stipa barbata,25,16
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Teucrium capitatum,15,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,52,72,5390.9856,2,1,Matthiola fruticulosa,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Erodium,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Helianthemum hirtum,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Stipa barbata,12,11
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,2,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Teucrium gnaphalodes,6,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Stipa barbata,9,12
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Phlomis lychnitis,9,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Erodium,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Helianthemum hirtum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,64,24,50,4825.4976,3,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Teucrium capitatum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Stipa barbata,20,11
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Thymus zygis,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Plantago albicans,2,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Matthiola fruticulosa,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,3,1,Helianthemum hirtum,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,78,40,45,9801.792,4,1,Plantago albicans,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,78,40,45,9801.792,4,1,Teucrium gnaphalodes,12,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,78,40,45,9801.792,4,1,Thymus zygis,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,78,40,45,9801.792,4,1,Matthiola fruticulosa,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Plantago albicans,3,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Stipa barbata,6,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,4,1,Helianthemum hirtum,5,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Teucrium capitatum,30,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Erodium,,
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Phlomis lychnitis,10,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Plantago albicans,12,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Hedysarum boveanum,5,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,110,100,113,34557.6,5,100(1),Thymus zygis,10,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,100(1),Thymus zygis,25,10
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,100(1),Teucrium capitatum,5,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,100(1),Plantago albicans,5,10
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,100(1),Stipa barbata,20,12
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,5,100(1),Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,76,25,39,5969.04,6,1,Phlomis lychnitis,40,8
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,76,25,39,5969.04,6,1,Plantago albicans,10,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,76,25,39,5969.04,6,1,Teucrium gnaphalodes,6,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Astragalus incanus,16,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Stipa barbata,8,6
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Hedysarum boveanum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Teucrium gnaphalodes,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Matthiola fruticulosa,1,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Helianthemum hirtum,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Phlomis lychnitis,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,6,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,36,42,3732.2208,7,1,Thymus zygis,30,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,36,42,3732.2208,7,1,Helianthemum hirtum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,33,36,42,3732.2208,7,1,Plantago albicans,4,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Thymus zygis,5,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Stipa barbata,2,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,7,1,Helianthemum hirtum,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Phlomis lychnitis,15,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Stipa barbata,10,9
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Astragalus incanus,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Plantago albicans,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Stipa parviflora,40,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Hedysarum boveanum,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,30,50,5654.88,8,1,Matthiola fruticulosa,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Stipa barbata,25,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Plantago albicans,5,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,8,1,Matthiola fruticulosa,1.5,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,80,80,53,20106.24,9,100(1),Stipa barbata,14,17
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,80,80,53,20106.24,9,100(1),Stipa parviflora,7,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,80,80,53,20106.24,9,100(1),Thymus zygis,30,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,80,80,53,20106.24,9,100(1),Plantago albicans,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,100(1),Stipa barbata,12,10
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,100(1),Thymus zygis,10,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,100(1),Matthiola fruticulosa,10,13
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,100(1),Astragalus incanus,1,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,9,100(1),Plantago albicans,12,8
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,44,83,8293.824,10,1,Thymus zygis,20,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,44,83,8293.824,10,1,Stipa barbata,15,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,60,44,83,8293.824,10,1,Plantago albicans,12,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Thymus zygis,14,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Teucrium gnaphalodes,6,5
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,Plantago albicans,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,10,1,"Helianthemum ""small""",2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,42,41,27,5409.8352,11,1,Plantago albicans,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,42,41,27,5409.8352,11,1,Thymus zygis,30,7
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,42,41,27,5409.8352,11,1,Stipa barbata,9,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,42,41,27,5409.8352,11,1,Stipa parviflora,3,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Thymus zygis,18,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Erodium,2,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,11,1,Matthiola fruticulosa,3,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,43,32,39,4322.8416,12,1,Stipa parviflora,10,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,43,32,39,4322.8416,12,1,Thymus zygis,6,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,43,32,39,4322.8416,12,1,Stipa barbata,8,9
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,43,32,39,4322.8416,12,1,Plantago albicans,6,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Helianthemum hirtum,5,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Thymus zygis,9,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Hedysarum boveanum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,12,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Plantago albicans,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Hedysarum boveanum,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Phlomis lychnitis,8,4
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Teucrium gnaphalodes,2,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,2,Genista scorpia,30,33,52,3110.184,13,1,Stipa barbata,16,9
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Matthiola fruticulosa,1,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Hedysarum boveanum,6,3
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Teucrium gnaphalodes,4,1
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Plantago albicans,4,2
+273,Spain,"Maestre, Fernando",Ciempozuelos,84,2,2016/06/07,1,bare,,,,,13,1,Stipa barbata,8,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,33,25,5183.64,1,1,Phlomis lychnitis,40,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,33,25,5183.64,1,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,33,25,5183.64,1,1,Stipa barbata,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Thymus zygis,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,40,35,15,4398.24,2,1,Phlomis lychnitis,10,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,40,35,15,4398.24,2,1,Stipa barbata,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,40,35,15,4398.24,2,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Stipa barbata,4,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Coronilla minima,6,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Koeleria vallesiana,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,19,7854,3,1,Stipa parviflora,15,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,19,7854,3,1,Hedysarum boveanum,6,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,19,7854,3,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Stipa barbata,3,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Coronilla minima,4,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Hedysarum boveanum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Plantago albicans,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,23,7854,4,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,23,7854,4,1,Hedysarum boveanum,3,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,23,7854,4,1,Phlomis lychnitis,6,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,23,7854,4,1,Stipa barbata,10,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Stipa barbata,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Plantago albicans,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Phlomis lychnitis,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Herniaria fruticosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,18,7854,5,1,Stipa barbata,7,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,18,7854,5,1,Hedysarum boveanum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,18,7854,5,1,Helianthemum hirtum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Helianthemum hirtum,5,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Stipa barbata,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,6,1,Stipa tenacissima,5,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,6,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Plantago albicans,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Stipa barbata,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,17,7854,7,1,Phlomis lychnitis,35,11
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,17,7854,7,1,Stipa barbata,15,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Phlomis lychnitis,15,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Koeleria vallesiana,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,47,20,7382.76,8,1,Stipa barbata,15,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,47,20,7382.76,8,1,Phlomis lychnitis,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,47,20,7382.76,8,1,Hedysarum boveanum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,47,20,7382.76,8,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Stipa barbata,4,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,"Helianthemum ""small""",1,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,45,22,7068.6,9,1,Stipa parviflora,25,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,45,22,7068.6,9,1,Coronilla minima,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,45,22,7068.6,9,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,"Helianthemum ""small""",1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Stipa barbata,3,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,37,15,5811.96,10,1,Stipa barbata,20,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,37,15,5811.96,10,1,Plantago albicans,10,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,37,15,5811.96,10,1,Helianthemum hirtum,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,37,15,5811.96,10,1,"Helianthemum ""small""",1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Stipa barbata,4,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Helianthemum asperum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,"Helianthemum ""small""",1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,40,18,6283.2,11,1,Stipa barbata,40,15
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,40,18,6283.2,11,1,"Helianthemum ""small""",8,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Thymus zygis,25,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Helianthemum marifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,"Helianthemum ""small""",5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Stipa barbata,7,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,12,1,Stipa barbata,5,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,12,1,Phlomis lychnitis,3,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,12,1,Coronilla minima,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,16,7854,12,1,Helianthemum hirtum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Astragalus incanus,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Hedysarum boveanum,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Stipa barbata,10,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,17,7854,13,1,Stipa barbata,20,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,17,7854,13,1,Helianthemum hirtum,4,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,50,17,7854,13,1,Plantago albicans,4,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Stipa barbata,15,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,"Helianthemum ""small""",1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,46,16,7225.68,14,1,Stipa barbata,30,16
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,46,16,7225.68,14,1,Plantago albicans,3,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,46,16,7225.68,14,1,"Helianthemum ""small""",8,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Helianthemum asperum,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,"Helianthemum ""small""",1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Stipa barbata,6,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Hedysarum boveanum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,31,14,4869.48,15,1,Stipa barbata,6,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,31,14,4869.48,15,1,Stipa parviflora,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,31,14,4869.48,15,1,Plantago albicans,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,31,14,4869.48,15,1,Astragalus incanus,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Thymus zygis,50,31,14,4869.48,15,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Stipa barbata,6,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Hedysarum boveanum,4,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Herniaria fruticosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Teucrium gnaphalodes,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,60,7854,1,1,Stipa barbata,12,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,60,7854,1,1,Plantago albicans,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,60,7854,1,1,"Helianthemum ""small""",4,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,60,7854,1,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,60,7854,1,1,Coronilla minima,5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Phlomis lychnitis,5,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Plantago albicans,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Helianthemum hirtum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Stipa barbata,15,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,65,57,20420.4,2,100(1),Plantago albicans,15,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,65,57,20420.4,2,100(1),Teucrium capitatum,20,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,65,57,20420.4,2,100(1),Stipa barbata,5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Phlomis lychnitis,15,19
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Thymus zygis,15,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Plantago albicans,10,17
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),"Helianthemum ""small""",2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Stipa barbata,8,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,100(1),Helianthemum asperum,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,37,50,55,5811.96,3,1,Teucrium capitatum,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,37,50,55,5811.96,3,1,Phlomis lychnitis,12,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,37,50,55,5811.96,3,1,Thymus zygis,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,37,50,55,5811.96,3,1,Stipa barbata,3,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Phlomis lychnitis,16,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Plantago albicans,4,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Stipa barbata,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Coronilla minima,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,76,7854,4,1,Stipa barbata,7,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,76,7854,4,1,Thymus zygis,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Helianthemum squamatum,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,50,53,6283.2,5,1,Plantago albicans,10,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,50,53,6283.2,5,1,Coronilla minima,5,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,50,53,6283.2,5,1,Helianthemum rotundifolium,4,9
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,50,53,6283.2,5,1,Teucrium capitatum,12,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,50,53,6283.2,5,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Stipa barbata,18,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Coronilla minima,5,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Hedysarum boveanum,7,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Teucrium capitatum,4,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Helianthemum hirtum,3,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,80,75,25132.8,6,100(1),Thymus zygis,10,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,80,75,25132.8,6,100(1),Plantago albicans,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,80,75,25132.8,6,100(1),Stipa barbata,5,16
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,80,75,25132.8,6,100(1),Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,100(1),Plantago albicans,10,35
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,100(1),Stipa barbata,7,15
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,100(1),Thymus zygis,4,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,100(1),Phlomis lychnitis,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,90,100,60,28274.4,7,100(1),Thymus zygis,25,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,90,100,60,28274.4,7,100(1),Helianthemum squamatum,10,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,90,100,60,28274.4,7,100(1),Stipa barbata,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,100(1),Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,90,65,28274.4,8,100(1),Plantago albicans,3,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,90,65,28274.4,8,100(1),Thymus zygis,10,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,90,65,28274.4,8,100(1),Stipa barbata,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,90,65,28274.4,8,100(1),Hedysarum boveanum,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Genista scorpia,15,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Thymus zygis,20,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Teucrium capitatum,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Stipa barbata,15,35
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Plantago albicans,1,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,100(1),Hedysarum boveanum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,37,7854,9,1,Thymus zygis,7,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,37,7854,9,1,Teucrium capitatum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,37,7854,9,1,Hedysarum boveanum,7,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,37,7854,9,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Stipa barbata,17,15
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Teucrium capitatum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Hedysarum boveanum,9,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,48,40,52,6031.872,10,1,Helianthemum asperum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,48,40,52,6031.872,10,1,Teucrium capitatum,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,48,40,52,6031.872,10,1,Hedysarum boveanum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,48,40,52,6031.872,10,1,Linum suffruticosum,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Stipa barbata,25,13
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Helianthemum asperum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Teucrium capitatum,4,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,45,50,45,7068.6,11,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,45,50,45,7068.6,11,1,Stipa barbata,4,9
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,45,50,45,7068.6,11,1,Hedysarum boveanum,7,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,45,50,45,7068.6,11,1,Plantago albicans,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Phlomis lychnitis,6,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Thymus zygis,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Stipa barbata,7,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,95,60,29845.2,12,100(1),Stipa barbata,3,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,95,60,29845.2,12,100(1),Plantago albicans,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,95,60,29845.2,12,100(1),Thymus zygis,10,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,95,60,29845.2,12,100(1),Teucrium capitatum,12,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,100,95,60,29845.2,12,100(1),Hedysarum boveanum,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,100(1),Hedysarum boveanum,10,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,100(1),Stipa barbata,10,30
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,100(1),"Helianthemum ""small""",5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,100(1),Teucrium capitatum,5,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,40,45,5026.56,13,1,Phlomis lychnitis,8,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,40,45,5026.56,13,1,Plantago albicans,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,40,45,5026.56,13,1,Teucrium capitatum,7,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,40,40,45,5026.56,13,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,"Helianthemum ""small""",6,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Stipa barbata,10,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Teucrium capitatum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,35,7854,14,1,Plantago albicans,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,35,7854,14,1,Helianthemum hirtum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Gypsophila,50,50,35,7854,14,1,Stipa barbata,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Stipa barbata,9,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Koeleria vallesiana,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Plantago albicans,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Teucrium capitatum,4,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,"Helianthemum ""small""",1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,Stipa barbata,7,20
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,Plantago albicans,2,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,Phlomis lychnitis,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,Thymus zygis,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,110,40,42,13823.04,1,2,Helianthemum hirtum,0.5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,2,Phlomis lychnitis,3,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,2,Thymus zygis,8,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,2,Stipa barbata,4,15
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,2,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,1,2,Hedysarum boveanum,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,45,5497.8,2,1,Thymus zygis,6,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,45,5497.8,2,1,Stipa barbata,6,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,45,5497.8,2,1,Plantago albicans,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,45,5497.8,2,1,"Helianthemum ""small""",6,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Helianthemum hirtum,10,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Teucrium capitatum,9,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Thymus zygis,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,2,1,Stipa barbata,4,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,18,5497.8,3,1,"Helianthemum ""small""",5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,18,5497.8,3,1,Stipa barbata,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,35,18,5497.8,3,1,Teucrium capitatum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Thymus zygis,10,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Stipa barbata,7,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Teucrium capitatum,2,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,"Helianthemum ""small""",2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,3,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,45,7854,4,1,Thymus zygis,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,45,7854,4,1,Linum suffruticosum,20,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,45,7854,4,1,Stipa barbata,8,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,45,7854,4,1,Plantago albicans,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,45,7854,4,1,Teucrium capitatum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Thymus zygis,10,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Stipa barbata,16,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,"Helianthemum ""small""",9,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,4,1,Plantago albicans,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,40,32,6283.2,5,1,Plantago albicans,4,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,40,32,6283.2,5,1,Thymus zygis,8,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,40,32,6283.2,5,1,Stipa barbata,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Thymus zygis,20,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Stipa barbata,10,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Plantago albicans,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,5,1,"Helianthemum ""small""",9,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Helianthemum hirtum,8,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Stipa barbata,5,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Thymus zygis,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Plantago albicans,2,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,46,35,7225.68,6,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Teucrium capitatum,4,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Stipa barbata,10,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Thymus zygis,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Helianthemum hirtum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,6,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,40,7854,7,1,Stipa barbata,8,12
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,40,7854,7,1,Helianthemum rotundifolium,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,40,7854,7,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,50,40,7854,7,1,"Helianthemum ""small""",1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Thymus zygis,8,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Plantago albicans,2,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,7,1,Stipa barbata,2,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,30,30,20,2827.44,8,1,"Helianthemum ""small""",6,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,30,30,20,2827.44,8,1,Hedysarum boveanum,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,30,30,20,2827.44,8,1,Thymus zygis,5,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,30,30,20,2827.44,8,1,Stipa barbata,3,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,30,30,20,2827.44,8,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Thymus zygis,5,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Stipa barbata,5,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Astragalus incanus,8,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,8,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,44,50,40,6911.52,9,1,Stipa barbata,4,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,44,50,40,6911.52,9,1,Matthiola fruticulosa,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,44,50,40,6911.52,9,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Teucrium capitatum,6,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,"Helianthemum ""small""",8,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Stipa barbata,4,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Hedysarum boveanum,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,9,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,45,25,7068.6,10,1,"Helianthemum ""small""",4,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,45,25,7068.6,10,1,Teucrium capitatum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,45,25,7068.6,10,1,Stipa barbata,4,6
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Helianthemum rotundifolium,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Stipa barbata,10,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Teucrium capitatum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Plantago albicans,1,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,Matthiola fruticulosa,1,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,10,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Thymus zygis,5,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Helianthemum hirtum,7,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Stipa barbata,4,9
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,50,30,15,4712.4,11,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Hedysarum boveanum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Matthiola fruticulosa,2,5
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Stipa barbata,6,4
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,11,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Thymus zygis,8,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Hedysarum boveanum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,"Helianthemum ""small""",5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Teucrium capitatum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Stipa barbata,3,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Helianthemum rotundifolium,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,25,34,40,2670.36,12,1,Plantago albicans,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Stipa barbata,9,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Plantago albicans,4,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,12,1,Teucrium capitatum,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,Stipa barbata,5,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,Thymus zygis,5,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,"Helianthemum ""small""",2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,45,40,20,5654.88,13,1,Hedysarum boveanum,3,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Teucrium capitatum,3,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Helianthemum hirtum,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Stipa barbata,5,10
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,"Helianthemum ""small""",6,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,13,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,40,25,35,3141.6,14,1,Helianthemum hirtum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,40,25,35,3141.6,14,1,Matthiola fruticulosa,2,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,40,25,35,3141.6,14,1,Stipa barbata,5,7
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,40,25,35,3141.6,14,1,Teucrium capitatum,4,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Teucrium capitatum,10,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Stipa barbata,8,8
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,14,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,14,1,Helianthemum rotundifolium,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,15,1,Phlomis lychnitis,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,15,1,Plantago albicans,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,15,1,Teucrium capitatum,13,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,15,1,Helianthemum asperum,1,2
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,2,Genista scorpia,35,40,40,4398.24,15,1,Gypsophila,20,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Stipa barbata,2,3
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Matthiola fruticulosa,1,1
+274,Spain,"Maestre, Fernando",Ciempozuelos,84,3,2016/06/09,1,bare,,,,,15,1,Helianthemum hirtum,1,1
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,

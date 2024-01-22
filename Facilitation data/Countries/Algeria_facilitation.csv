@@ -1,0 +1,357 @@
+ID,COU,RES,SITE,SITE_ID,PLOT,Date,Microsite,ID_Microsite,diameter_1(cm),diameter_2(cm),canopy area (cm2),Number of replicate,Quadrat,Species within quadrat,Cover (%),Number of individuals
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,70,65,3578.467359,1,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,1,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,1,,Iris sisyrhinchum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,1,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,120,90,8659.007438,2,,Atractylis serratuloides,1,4
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,120,90,8659.007438,2,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,2,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,2,,Plantago albicans,3,30
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,2,,Allium cupani,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,97,75,5808.79991,3,,Atractylis serratuloides,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,97,75,5808.79991,3,,Allium cupani,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,97,75,5808.79991,3,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,3,,Echium trygorhizum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,150,110,13273.21775,4,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,4,,Ajuga eva,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,4,,Plantago albicans,1,10
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,4,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,4,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,75,110,6720.057359,5,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,5,,Atractylis serratuloides,1,5
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,5,,Plantago albicans,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,5,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,5,,Iris sysirhynchum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,120,110,10386.88194,6,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,120,110,10386.88194,6,,Iris sysirhynchum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima ,120,110,10386.88194,6,,Paronychya argentea,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,6,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,6,,Stipa barbata,2,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,117,135,12468.97071,7,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,117,135,12468.97071,7,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,7,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,100,115,9076.249859,8,,Atractylis serratuloides,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,8,,Plantago albicans,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,8,,Ajuga eva,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,8,,Stipa barbata,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,140,145,15948.47798,9,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,140,145,15948.47798,9,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,9,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,100,100,7853.975,10,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,10,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,135,100,10843.39423,11,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,135,100,10843.39423,11,,Scorzonera undulata,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,11,,Atractylis serratuloides,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,11,,Stipa barbata,1,3
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,11,,Plantago albicans,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,11,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,75,60,3578.467359,12,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,75,60,3578.467359,12,,Stipa parviflora,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,12,,Iris sisyrhincum,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,12,,Plantago albicans,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,12,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,90,65,4717.293734,13,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,13,,Iris sisyrhincum,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,75,83,4901.665798,14,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,75,83,4901.665798,14,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,75,83,4901.665798,14,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,14,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,82,67,4359.152474,15,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,82,67,4359.152474,15,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,15,,Allium cupani,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,61,60,2874.751199,16,,Allium cupani,1,3
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,16,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,92,87,6291.230324,17,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,17,,Plantago albicans,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,135,100,3578.467359,18,,Atractylis serratuloides,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,135,100,3578.467359,18,,Scorzonera undulata,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,18,,Atractylis serratuloides,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,18,,Allium cupani,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,18,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,18,,Plantago albicans,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,90,60,4417.860938,19,,Iris sisyrhincum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,19,,Iris sisyrhincum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,100,110,8659.007438,20,,Paronychya argentea,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,100,110,8659.007438,20,,Atractylis serratuloides,1,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,20,,Plantago albicans,20,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,20,,Stipa barbata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,80,90,5674.496938,21,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,21,,Echium trygorrhizum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,150,130,15393.791,22,,Plantago albicans,11,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,22,,Plantago albicans,10,2
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,140,90,10386.88194,23,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,23,,Plantago albicans,11,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,90,103,7313.817869,24,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,24,,Empty,,
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,80,73,4596.342519,25,,Echium trygorrhizum,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,2,Stipa tenacissima,80,73,4596.342519,25,,Scorzonera undulata,1,1
+1,Algeria,"Fateh, Amghar",El Ouassria,1,1,2017/04/12,1,Bare,,,,25,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,130,15393.791,1,,Plantago albicans,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,1,,Artemisa campestris,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,1,,Plantago albicans,3,25
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,1,,BSC Bryophytes,3,
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,220,125,23370.48436,2,,BSC Bryophytes,7,
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,220,125,23370.48436,2,,Artemisa campestris,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,220,125,23370.48436,2,,Allium cupani,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,2,,Allium cupani,2,12
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,140,130,14313.86944,3,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,3,,Atractylis serratuloides,4,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,3,,Plantago albicans,2,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,3,,Scorzonera undulata,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,3,,Allium cupani,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,3,,Stipa parviflora,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,170,120,16512.98244,4,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,170,120,16512.98244,4,,Atractylis serratuloides,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,170,120,16512.98244,4,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,4,,Plantago albicans,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,4,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,4,,Allium cupani,2,16
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,4,,Stipa parviflora,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,135,110,11785.87123,5,,Atractylis serratuloides,2,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,,,,5,,Plantago albicans,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,,,,5,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,5,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,5,,Plantago albicans,2,24
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,5,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,100,95,7466.184984,6,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,6,,Plantago albicans,2,14
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,100,100,7853.975,7,,Allium cupani,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,100,100,7853.975,7,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,7,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,7,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,120,85,8251.582484,8,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,8,,Atractylis serratuloides,4,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,8,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,130,130,13273.21775,9,,Empty,,
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,9,,Atractylis serratuloides,3,5
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,9,,Allium cupani,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,9,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,9,,Iris sisyrincum,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,128,130,13069.7998,10,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,10,,Atractylis serratuloides,3,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,10,,Plantago albicans,18,38
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,10,,Allium cupani,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,10,,Iris sisyrincum,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,132,141,14633.72257,11,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,11,,Artemisia campestris,3,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,11,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,240,170,33006.32994,12,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,12,,Matthiola longipetala,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,12,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,120,135,12767.61811,13,,Artemisia campestris,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,120,135,12767.61811,13,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,13,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,13,,Plantago albicans,2,10
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,13,,Iris sisyrincum,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,13,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,130,120,12271.83594,14,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,14,,Plantago albicans,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,14,,Iris sisyrincum,1,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,14,,Allium cupani,2,8
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,160,170,21382.44694,15,,Atractylis serratuloides,2,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Atractylis serratuloides,2,4
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Iris sisyrincum,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Plantago albicans,3,14
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Allium cupani,1,7
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Scorzonera undulata,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,15,,Stipa parviflora,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,120,120,11309.724,16,,Matthiola longipetala,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,16,,Plantago albicans,3,15
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,16,,Iris sisyrincum,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,16,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,16,,Stipa parviflora,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,90,160,12271.83594,17,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,90,160,12271.83594,17,,Allium cupani,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,17,,Plantago albicans,2,12
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,17,,Atractylis serratuloides,4,7
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,17,,Iris sisyrincum,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,17,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,110,110,9503.30975,18,,Plantago albicans,1,5
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,18,,Atractylis serratuloides,2,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,18,,Plantago albicans,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,18,,Ajuga iva,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,18,,Stipa parviflora,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,105,95,7853.975,19,,Atractylis serratuloides,3,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,105,95,7853.975,19,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,105,95,7853.975,19,,Iris sisyrincum,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,105,95,7853.975,19,,Echium trygorrhizum,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,19,,Iris sisyrincum,2,5
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,19,,Allium cupani,1,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,19,,Stipa parviflora,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,130,15393.791,20,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,130,15393.791,20,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,20,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,20,,Iris sisyrincum,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,20,,Stipa parviflora,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,115,13788.63486,21,,Plantago albicans,4,11
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,115,13788.63486,21,,Atractylis serratuloides,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,21,,Plantago albicans,4,12
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,21,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,21,,Stipa parviflora,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,160,160,20106.176,22,,Atractylis serratuloides,3,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,160,160,20106.176,22,,Plantago albicans,4,6
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,22,,Plantago albicans,5,25
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,22,,Stipa parviflora,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,22,,Allium cupani,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,160,160,20106.176,23,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,160,160,20106.176,23,,Plantago albicans,2,5
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,23,,Atractylis serratuloides,3,7
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,23,,Stipa parviflora,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,23,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,145,100,11785.87123,24,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,145,100,11785.87123,24,,Salvia verbenaca,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,24,,Paronychia argentea,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,24,,Helanthemum aperta,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,24,,Plantago albicans,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,24,,Allium cupani,1,14
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Atractylis serratuloides,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Matthiola longipetala,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Allium cupani,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Paronychia argentea,3,7
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Salvia verbenaca,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,2,Stipa tenacissima,150,150,17671.44375,25,,Iris sisyrincum,1,1
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,25,,Plantago albicans,4,25
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,25,,Iris sisyrincum,1,3
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,25,,Allium cupani,1,2
+2,Algeria,"Fateh, Amghar",El Ouassria,1,2,2017/04/13,1,Bare,,,,25,,Paronychia argentea,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,90,7853.975,1,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,90,7853.975,1,,Iris sisyrincum,3,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,1,,Iris sisyrincum,2,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,1,,Allium cupani,2,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,140,13273.21775,2,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,2,,Iris sisyrincum,8,7
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,2,,Atractylis serratuloides,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,2,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,90,70,5026.544,3,,Atractylis serratuloides,4,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,3,,Plantago albicans,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,3,,Iris sisyrincum,3,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,3,,Allium cupani,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,90,120,8659.007438,4,,Empty,,
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,4,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,4,,Iris sisyrincum,3,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,4,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,130,100,10386.88194,5,,Iris sisyrincum,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,5,,Atractylis serratuloides,4,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,5,,Iris sisyrincum,11,7
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,5,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,70,50,2827.431,6,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,6,,Plantago albicans,18,21
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,6,,Allium cupani,2,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,6,,Iris sisyrincum,3,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,90,8659.007438,6,,Empty,,
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,7,,Atractylis serratuloides,2,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,7,,Iris sisyrincum,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,7,,Ajuga iva,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,7,,Plantago albicans,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,130,10386.88194,8,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,130,10386.88194,8,,Salvia verbenaca,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Iris sisyrincum,3,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Atractylis serratuloides,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Ajuga iva,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Stipa parviflora,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,8,,Paronychia argentea,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,90,95,6720.057359,9,,Plantago albicans,2,18
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,9,,Atractylis serratuloides,6,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,9,,Iris sisyrincum,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,9,,Ajuga iva,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,9,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,145,135,15393.791,10,,Allium cupani,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,10,,Atractylis serratuloides,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,10,,Iris sisyrincum,45,25
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,10,,Allium cupani,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,100,9503.30975,11,,Iris sisyrincum,3,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,11,,Iris sisyrincum,8,9
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,11,,Plantago albicans,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,11,,Stipa barbata,20,16
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,110,10386.88194,12,,Empty,,
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,12,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,12,,Plantago albicans,12,35
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,12,,Iris sisyrincum,7,5
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,12,,Allium cupani,7,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,113,110,9764.258069,13,,Atractylis serratuloides,3,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,113,110,9764.258069,13,,Plantago albicans,2,12
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,113,110,9764.258069,13,,Paronychia argentea,2,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,13,,Atractylis serratuloides,3,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,13,,Plantago albicans,15,47
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,13,,Allium cupani,2,5
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Iris sisyrincum,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,180,135,19482.76673,14,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,180,135,19482.76673,14,,Iris sisyrincum,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,180,135,19482.76673,14,,Atractylis serratuloides,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,180,135,19482.76673,14,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Plantago albicans,22,98
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Atractylis serratuloides,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Iris sisyrincum,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Allium cupani,1,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Stipa parviflora,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Salvia verbenaca,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Ajuga iva,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,14,,Scorzonera undulata,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,100,9503.30975,15,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,15,,Atractylis serratuloides,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,15,,Stipa parviflora,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,15,,Allium cupani,2,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,90,7853.975,16,,Allium cupani,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,16,,Atractylis serratuloides,2,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,16,,Plantago albicans,12,39
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,16,,Allium cupani,2,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,140,13273.21775,17,,Atractylis serratuloides,4,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,140,13273.21775,17,,Plantago albicans,3,9
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,140,13273.21775,17,,Iris sisyrincum,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,140,13273.21775,17,,Allium cupani,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,17,,Plantago albicans,12,47
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,17,,Allium cupani,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,17,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,17,,Noea mucronata,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,90,7088.212438,18,,Atractylis serratuloides,2,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,90,7088.212438,18,,Plantago albicans,1,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,90,7088.212438,18,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,100,90,7088.212438,18,,Noea mucronata,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,18,,Plantago albicans,45,110
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,18,,Iris sisyrincum,2,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,18,,Allium cupani,1,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,18,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,130,120,12271.83594,19,,Iris sisyrincum,13,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,130,120,12271.83594,19,,Allium cupani,8,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Atractylis serratuloides,2,12
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Plantago albicans,2,62
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Iris sisyrincum,1,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Allium cupani,1,5
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,19,,Scorzonera undulata,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,100,8659.007438,20,,Atractylis serratuloides,4,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,100,8659.007438,20,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,110,100,8659.007438,20,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,20,,Atractylis serratuloides,3,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,20,,Allium cupani,1,6
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,20,,Iris sisyrincum,2,5
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,20,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,80,100,6361.71975,21,,Empty,,
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,21,,Allium cupani,1,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,21,,Iris sisyrincum,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,115,110,9940.187109,22,,Atractylis serratuloides,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,115,110,9940.187109,22,,Iris sisyrincum,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,115,110,9940.187109,22,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,22,,Iris sisyrincum,2,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,22,,Allium cupani,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,22,,Plantago albicans,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,22,,Telephium imperati,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,100,9503.30975,23,,Atractylis serratuloides,5,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,100,9503.30975,23,,Paronychia argentea,3,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,120,100,9503.30975,23,,Scorzonera undulata,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,23,,Iris sisyrincum,12,9
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,23,,Allium cupani,6,5
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,23,,Scorzonera undulata,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,175,170,23370.48436,24,,Atractylis serratuloides,4,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,175,170,23370.48436,24,,Plantago albicans,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,175,170,23370.48436,24,,Ajuga iva,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,24,,Atractylis serratuloides,1,2
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,24,,Allium cupani,1,4
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,24,,Iris sisyrincum,4,15
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,24,,Plantago albicans,3,9
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,175,145,20106.176,25,,Allium cupani,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,2,Stipa tenacissima,175,145,20106.176,25,,Iris sisyrincum,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,25,,Scorzonera undulata,1,3
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,25,,Plantago albicans,1,1
+3,Algeria,"Fateh, Amghar",El Ouassria,1,3,2017/04/14,1,Bare,,,,25,,Allium cupani,1,1

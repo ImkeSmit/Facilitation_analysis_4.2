@@ -1,0 +1,607 @@
+"ID";"Number.of.replicate";"Microsite";"Species.within.quadrat";"COU";"RES";"SITE";"SITE_ID";"PLOT";"Date";"ID_Microsite";"diameter_1.cm.";"diameter_2.cm.";"canopy.area..cm2.";"Quadrat";"microsite_rep";"Cover";"GRAZ";"ARIDITY.v3"
+83;1;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-1";2;3;0,4952
+83;1;1;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-1";3;3;0,4952
+83;1;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-1";20;3;0,4952
+83;1;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-1";15;3;0,4952
+83;1;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-1";5;3;0,4952
+83;1;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-1";5;3;0,4952
+83;1;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-1";5;3;0,4952
+83;1;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-1";5;3;0,4952
+83;2;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-2";5;3;0,4952
+83;2;1;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-2";2;3;0,4952
+83;2;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-2";2;3;0,4952
+83;2;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-2";5;3;0,4952
+83;2;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-2";4;3;0,4952
+83;2;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-2";15;3;0,4952
+83;2;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";112;115;10116;NA;"25-1-Acaena integerrima-2";5;3;0,4952
+83;3;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-3";5;3;0,4952
+83;3;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-3";10;3;0,4952
+83;3;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;30;942;NA;"25-1-Acaena integerrima-3";10;3;0,4952
+83;3;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;30;942;NA;"25-1-Acaena integerrima-3";5;3;0,4952
+83;4;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-4";5;3;0,4952
+83;4;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-4";5;3;0,4952
+83;4;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-4";1;3;0,4952
+83;4;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;40;1257;NA;"25-1-Acaena integerrima-4";5;3;0,4952
+83;4;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;40;1257;NA;"25-1-Acaena integerrima-4";10;3;0,4952
+83;4;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;40;1257;NA;"25-1-Acaena integerrima-4";5;3;0,4952
+83;5;1;"Acaena spp. ";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-5";5;3;0,4952
+83;5;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-5";1;3;0,4952
+83;5;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";20;25;393;NA;"25-1-Acaena integerrima-5";20;3;0,4952
+83;5;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";20;25;393;NA;"25-1-Acaena integerrima-5";5;3;0,4952
+83;6;1;"Acaena spp. ";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-6";1;3;0,4952
+83;6;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-6";1;3;0,4952
+83;6;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;35;1100;NA;"25-1-Acaena integerrima-6";20;3;0,4952
+83;6;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;35;1100;NA;"25-1-Acaena integerrima-6";5;3;0,4952
+83;6;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;35;1100;NA;"25-1-Acaena integerrima-6";1;3;0,4952
+83;7;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-7";1;3;0,4952
+83;7;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-7";10;3;0,4952
+83;7;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-7";1;3;0,4952
+83;7;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"acaena integerrima";40;35;1100;NA;"25-1-acaena integerrima-7";20;3;0,4952
+83;7;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"acaena integerrima";40;35;1100;NA;"25-1-acaena integerrima-7";20;3;0,4952
+83;7;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"acaena integerrima";40;35;1100;NA;"25-1-acaena integerrima-7";5;3;0,4952
+83;8;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-8";1;3;0,4952
+83;8;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-8";5;3;0,4952
+83;8;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-8";1;3;0,4952
+83;8;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";25;20;393;NA;"25-1-Acaena integerrima-8";20;3;0,4952
+83;8;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";25;20;393;NA;"25-1-Acaena integerrima-8";20;3;0,4952
+83;9;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-9";1;3;0,4952
+83;9;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";30;30;707;NA;"25-1-Acaena integerrima-9";15;3;0,4952
+83;9;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";30;30;707;NA;"25-1-Acaena integerrima-9";5;3;0,4952
+83;9;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";30;30;707;NA;"25-1-Acaena integerrima-9";5;3;0,4952
+83;10;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-10";5;3;0,4952
+83;10;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-10";10;3;0,4952
+83;10;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-10";5;3;0,4952
+83;10;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-10";1;3;0,4952
+83;10;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;50;1963;NA;"25-1-Acaena integerrima-10";10;3;0,4952
+83;10;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;50;1963;NA;"25-1-Acaena integerrima-10";5;3;0,4952
+83;10;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;50;1963;NA;"25-1-Acaena integerrima-10";1;3;0,4952
+83;10;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;50;1963;NA;"25-1-Acaena integerrima-10";1;3;0,4952
+83;11;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-11";10;3;0,4952
+83;11;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-11";5;3;0,4952
+83;11;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";120;130;12252;NA;"25-1-Acaena integerrima-11";15;3;0,4952
+83;12;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-12";1;3;0,4952
+83;12;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-12";5;3;0,4952
+83;12;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-12";1;3;0,4952
+83;12;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-12";10;3;0,4952
+83;12;2;"Lathyrus magellanicus";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-12";1;3;0,4952
+83;12;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-12";5;3;0,4952
+83;13;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-13";1;3;0,4952
+83;13;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-13";5;3;0,4952
+83;13;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-13";1;3;0,4952
+83;13;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;40;1571;NA;"25-1-Acaena integerrima-13";1;3;0,4952
+83;13;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;40;1571;NA;"25-1-Acaena integerrima-13";10;3;0,4952
+83;13;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;40;1571;NA;"25-1-Acaena integerrima-13";1;3;0,4952
+83;14;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-14";5;3;0,4952
+83;14;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-14";1;3;0,4952
+83;14;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-14";1;3;0,4952
+83;14;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"acaena integerrima";40;25;785;NA;"25-1-acaena integerrima-14";15;3;0,4952
+83;14;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"acaena integerrima";40;25;785;NA;"25-1-acaena integerrima-14";5;3;0,4952
+83;15;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-15";1;3;0,4952
+83;15;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-15";5;3;0,4952
+83;15;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-15";1;3;0,4952
+83;15;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-15";15;3;0,4952
+83;15;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;45;1414;NA;"25-1-Acaena integerrima-15";1;3;0,4952
+83;16;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-16";5;3;0,4952
+83;16;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-16";5;3;0,4952
+83;16;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;45;1767;NA;"25-1-Acaena integerrima-16";10;3;0,4952
+83;16;2;"Hordeum murinum";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;45;1767;NA;"25-1-Acaena integerrima-16";5;3;0,4952
+83;16;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;45;1767;NA;"25-1-Acaena integerrima-16";1;3;0,4952
+83;17;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-17";1;3;0,4952
+83;17;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-17";5;3;0,4952
+83;17;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;40;1257;NA;"25-1-Acaena integerrima-17";15;3;0,4952
+83;17;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;40;1257;NA;"25-1-Acaena integerrima-17";1;3;0,4952
+83;18;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-18";5;3;0,4952
+83;18;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-18";5;3;0,4952
+83;18;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-18";5;3;0,4952
+83;18;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;40;1571;NA;"25-1-Acaena integerrima-18";5;3;0,4952
+83;18;2;"Senecio sericeo-nitens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;40;1571;NA;"25-1-Acaena integerrima-18";5;3;0,4952
+83;19;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-19";5;3;0,4952
+83;19;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-19";5;3;0,4952
+83;19;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;60;2356;NA;"25-1-Acaena integerrima-19";5;3;0,4952
+83;19;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;60;2356;NA;"25-1-Acaena integerrima-19";15;3;0,4952
+83;19;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";50;60;2356;NA;"25-1-Acaena integerrima-19";5;3;0,4952
+83;20;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-20";1;3;0,4952
+83;20;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-20";5;3;0,4952
+83;20;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-20";1;3;0,4952
+83;20;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-20";1;3;0,4952
+83;20;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;60;2827;NA;"25-1-Acaena integerrima-20";5;3;0,4952
+83;20;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;60;2827;NA;"25-1-Acaena integerrima-20";10;3;0,4952
+83;20;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;60;2827;NA;"25-1-Acaena integerrima-20";10;3;0,4952
+83;20;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;60;2827;NA;"25-1-Acaena integerrima-20";5;3;0,4952
+83;21;1;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-21";1;3;0,4952
+83;21;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-21";5;3;0,4952
+83;21;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;50;1571;NA;"25-1-Acaena integerrima-21";10;3;0,4952
+83;21;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";40;50;1571;NA;"25-1-Acaena integerrima-21";5;3;0,4952
+83;22;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-22";4;3;0,4952
+83;22;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/22";"Bare";NA;NA;NA;1;"25-1-Bare-22";5;3;0,4952
+83;22;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-22";3;3;0,4952
+83;22;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";130;140;14294;NA;"25-1-Acaena integerrima-22";10;3;0,4952
+83;22;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";130;140;14294;NA;"25-1-Acaena integerrima-22";5;3;0,4952
+83;23;1;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-23";1;3;0,4952
+83;23;1;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-23";1;3;0,4952
+83;23;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-23";5;3;0,4952
+83;23;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-23";1;3;0,4952
+83;23;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";80;40;2513;NA;"25-1-Acaena integerrima-23";1;3;0,4952
+83;23;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";80;40;2513;NA;"25-1-Acaena integerrima-23";5;3;0,4952
+83;23;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";80;40;2513;NA;"25-1-Acaena integerrima-23";1;3;0,4952
+83;24;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-24";3,5;3;0,4952
+83;24;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";120;125;11781;NA;"25-1-Acaena integerrima-24";10;3;0,4952
+83;24;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";120;125;11781;NA;"25-1-Acaena integerrima-24";5;3;0,4952
+83;25;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-25";5;3;0,4952
+83;25;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-25";5;3;0,4952
+83;25;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;65;3063;NA;"25-1-Acaena integerrima-25";10;3;0,4952
+83;25;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;65;3063;NA;"25-1-Acaena integerrima-25";5;3;0,4952
+83;25;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Acaena integerrima";60;65;3063;NA;"25-1-Acaena integerrima-25";1;3;0,4952
+83;26;1;"Acaena spp. ";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-26";2;3;0,4952
+83;26;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-26";5;3;0,4952
+83;26;2;"Galium fuegianum";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";60;60;2827;NA;"25-1-Festuca pallescens-26";4;3;0,4952
+83;26;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";60;60;2827;NA;"25-1-Festuca pallescens-26";10;3;0,4952
+83;27;1;"Acaena spp. ";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-27";5;3;0,4952
+83;27;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;20;471;NA;"25-1-Festuca pallescens-27";5;3;0,4952
+83;28;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-28";1;3;0,4952
+83;28;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-1-Festuca pallescens-28";4;3;0,4952
+83;28;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-1-Festuca pallescens-28";10;3;0,4952
+83;28;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-1-Festuca pallescens-28";4;3;0,4952
+83;29;1;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-29";1;3;0,4952
+83;29;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-29";10;3;0,4952
+83;29;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-29";5;3;0,4952
+83;29;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;30;707;NA;"25-1-Festuca pallescens-29";15;3;0,4952
+83;29;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;30;707;NA;"25-1-Festuca pallescens-29";20;3;0,4952
+83;29;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;30;707;NA;"25-1-Festuca pallescens-29";1;3;0,4952
+83;30;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-30";15;3;0,4952
+83;30;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-30";5;3;0,4952
+83;30;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;25;589;NA;"25-1-Festuca pallescens-30";5;3;0,4952
+83;30;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;25;589;NA;"25-1-Festuca pallescens-30";10;3;0,4952
+83;30;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;25;589;NA;"25-1-Festuca pallescens-30";5;3;0,4952
+83;31;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-31";5;3;0,4952
+83;31;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;40;942;NA;"25-1-Festuca pallescens-31";10;3;0,4952
+83;32;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-32";1;3;0,4952
+83;32;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-32";10;3;0,4952
+83;32;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-32";1;3;0,4952
+83;32;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;35;825;NA;"25-1-Festuca pallescens-32";5;3;0,4952
+83;32;2;"Lathyrus magellanicus";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;35;825;NA;"25-1-Festuca pallescens-32";1;3;0,4952
+83;33;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-33";5;3;0,4952
+83;33;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-33";5;3;0,4952
+83;33;2;"Hordeum murinum";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-33";5;3;0,4952
+83;34;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-34";15;3;0,4952
+83;34;2;"Hordeum murinum";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-34";1;3;0,4952
+83;35;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-35";1;3;0,4952
+83;35;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-35";1;3;0,4952
+83;35;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-35";5;3;0,4952
+83;35;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;35;1100;NA;"25-1-Festuca pallescens-35";5;3;0,4952
+83;35;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;35;1100;NA;"25-1-Festuca pallescens-35";5;3;0,4952
+83;35;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;35;1100;NA;"25-1-Festuca pallescens-35";15;3;0,4952
+83;36;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-36";5;3;0,4952
+83;36;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-36";5;3;0,4952
+83;36;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";80;30;1885;NA;"25-1-Festuca pallescens-36";15;3;0,4952
+83;36;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";80;30;1885;NA;"25-1-Festuca pallescens-36";15;3;0,4952
+83;36;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";80;30;1885;NA;"25-1-Festuca pallescens-36";1;3;0,4952
+83;36;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";80;30;1885;NA;"25-1-Festuca pallescens-36";1;3;0,4952
+83;37;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-37";5;3;0,4952
+83;37;1;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-37";5;3;0,4952
+83;37;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-37";5;3;0,4952
+83;37;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;30;1649;NA;"25-1-Festuca pallescens-37";10;3;0,4952
+83;37;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;30;1649;NA;"25-1-Festuca pallescens-37";10;3;0,4952
+83;38;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-38";5;3;0,4952
+83;38;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-38";1;3;0,4952
+83;38;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;40;942;NA;"25-1-Festuca pallescens-38";1;3;0,4952
+83;38;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;40;942;NA;"25-1-Festuca pallescens-38";1;3;0,4952
+83;39;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-39";1;3;0,4952
+83;39;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-39";5;3;0,4952
+83;39;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";65;45;2297;NA;"25-1-Festuca pallescens-39";10;3;0,4952
+83;40;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-40";5;3;0,4952
+83;40;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-40";1;3;0,4952
+83;40;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-1-Festuca pallescens-40";5;3;0,4952
+83;40;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-1-Festuca pallescens-40";15;3;0,4952
+83;41;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-41";10;3;0,4952
+83;41;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;35;1924;NA;"25-1-Festuca pallescens-41";5;3;0,4952
+83;42;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-42";1;3;0,4952
+83;42;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-42";1;3;0,4952
+83;42;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-1-Festuca pallescens-42";1;3;0,4952
+83;42;2;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-1-Festuca pallescens-42";5;3;0,4952
+83;42;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-1-Festuca pallescens-42";5;3;0,4952
+83;42;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-1-Festuca pallescens-42";1;3;0,4952
+83;43;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-43";5;3;0,4952
+83;43;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-43";5;3;0,4952
+83;43;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-43";10;3;0,4952
+83;43;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;35;1100;NA;"25-1-Festuca pallescens-43";5;3;0,4952
+83;43;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;35;1100;NA;"25-1-Festuca pallescens-43";15;3;0,4952
+83;44;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-44";5;3;0,4952
+83;44;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-44";1;3;0,4952
+83;44;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-1-Festuca pallescens-44";1;3;0,4952
+83;44;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-1-Festuca pallescens-44";5;3;0,4952
+83;44;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-1-Festuca pallescens-44";5;3;0,4952
+83;45;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";50;50;1963;NA;"25-1-Bare-45";5;3;0,4952
+83;45;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";50;50;1963;NA;"25-1-Bare-45";5;3;0,4952
+83;45;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";50;50;1963;NA;"25-1-Bare-45";1;3;0,4952
+83;45;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-1-Festuca pallescens-45";10;3;0,4952
+83;46;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-46";7,5;3;0,4952
+83;46;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-46";7,5;3;0,4952
+83;46;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;1;"25-1-Bare-46";0,5;3;0,4952
+83;46;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";60;80;3770;NA;"25-1-Festuca pallescens-46";10;3;0,4952
+83;46;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";60;80;3770;NA;"25-1-Festuca pallescens-46";10;3;0,4952
+83;46;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";60;80;3770;NA;"25-1-Festuca pallescens-46";1;3;0,4952
+83;47;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-47";10;3;0,4952
+83;47;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;35;1924;NA;"25-1-Festuca pallescens-47";15;3;0,4952
+83;47;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;35;1924;NA;"25-1-Festuca pallescens-47";5;3;0,4952
+83;47;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;35;1924;NA;"25-1-Festuca pallescens-47";10;3;0,4952
+83;47;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";70;35;1924;NA;"25-1-Festuca pallescens-47";5;3;0,4952
+83;48;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-48";5;3;0,4952
+83;48;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-48";1;3;0,4952
+83;48;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-48";1;3;0,4952
+83;48;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-1-Festuca pallescens-48";10;3;0,4952
+83;48;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-1-Festuca pallescens-48";5;3;0,4952
+83;49;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-49";1;3;0,4952
+83;49;1;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-49";1;3;0,4952
+83;49;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-49";5;3;0,4952
+83;49;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-49";10;3;0,4952
+83;49;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;35;825;NA;"25-1-Festuca pallescens-49";5;3;0,4952
+83;49;2;"Luzula alopecurus";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;35;825;NA;"25-1-Festuca pallescens-49";5;3;0,4952
+83;49;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";30;35;825;NA;"25-1-Festuca pallescens-49";10;3;0,4952
+83;50;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-50";1;3;0,4952
+83;50;1;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-50";1;3;0,4952
+83;50;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-50";5;3;0,4952
+83;50;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-50";5;3;0,4952
+83;50;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Bare";NA;NA;NA;NA;"25-1-Bare-50";1;3;0,4952
+83;50;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-50";5;3;0,4952
+83;50;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-50";15;3;0,4952
+83;50;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;1;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-1-Festuca pallescens-50";1;3;0,4952
+84;1;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-1";5;2;0,5028
+84;1;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-1";5;2;0,5028
+84;1;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-1";5;2;0,5028
+84;1;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-1";1;2;0,5028
+84;1;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-1";5;2;0,5028
+84;1;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-1";5;2;0,5028
+84;2;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-2";5;2;0,5028
+84;2;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-2-Festuca pallescens-2";5;2;0,5028
+84;2;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-2-Festuca pallescens-2";1;2;0,5028
+84;3;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-3";5;2;0,5028
+84;3;2;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-3";5;2;0,5028
+84;3;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-3";5;2;0,5028
+84;3;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-3";1;2;0,5028
+84;4;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-4";5;2;0,5028
+84;4;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-4";1;2;0,5028
+84;4;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-4";5;2;0,5028
+84;4;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-4";5;2;0,5028
+84;5;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-5";5;2;0,5028
+84;5;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-5";5;2;0,5028
+84;6;1;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-6";5;2;0,5028
+84;6;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-6";5;2;0,5028
+84;6;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-6";1;2;0,5028
+84;6;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;80;4398;NA;"25-2-Festuca pallescens-6";1;2;0,5028
+84;6;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;80;4398;NA;"25-2-Festuca pallescens-6";5;2;0,5028
+84;7;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-7";5;2;0,5028
+84;7;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-7";5;2;0,5028
+84;7;2;"Galium fuegianum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-7";5;2;0,5028
+84;8;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-8";5;2;0,5028
+84;8;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-2-Festuca pallescens-8";5;2;0,5028
+84;8;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-2-Festuca pallescens-8";1;2;0,5028
+84;9;1;"Galium fuegianum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-9";1;2;0,5028
+84;9;1;"Senecio sericeo-nitens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-9";1;2;0,5028
+84;9;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;60;2827;NA;"25-2-Festuca pallescens-9";5;2;0,5028
+84;11;1;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-11";5;2;0,5028
+84;11;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-11";5;2;0,5028
+84;11;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-11";1;2;0,5028
+84;12;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-12";0;2;0,5028
+84;12;2;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-12";5;2;0,5028
+84;12;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-12";5;2;0,5028
+84;13;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-13";1;2;0,5028
+84;13;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-13";1;2;0,5028
+84;13;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;60;3299;NA;"25-2-Festuca pallescens-13";10;2;0,5028
+84;13;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;60;3299;NA;"25-2-Festuca pallescens-13";1;2;0,5028
+84;14;1;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-14";5;2;0,5028
+84;14;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-14";5;2;0,5028
+84;14;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-2-Festuca pallescens-14";5;2;0,5028
+84;14;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-2-Festuca pallescens-14";5;2;0,5028
+84;15;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-15";0;2;0,5028
+84;15;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-2-Festuca pallescens-15";10;2;0,5028
+84;16;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-16";1;2;0,5028
+84;16;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-16";1;2;0,5028
+84;16;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-2-Festuca pallescens-16";1;2;0,5028
+84;17;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-17";3;2;0,5028
+84;17;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-2-Festuca pallescens-17";1;2;0,5028
+84;17;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-2-Festuca pallescens-17";1;2;0,5028
+84;17;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-2-Festuca pallescens-17";1;2;0,5028
+84;18;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-18";2;2;0,5028
+84;18;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-18";1;2;0,5028
+84;18;2;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;50;2749;NA;"25-2-Festuca pallescens-18";0;2;0,5028
+84;19;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-19";1;2;0,5028
+84;19;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";30;40;942;NA;"25-2-Festuca pallescens-19";5;2;0,5028
+84;19;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";30;40;942;NA;"25-2-Festuca pallescens-19";10;2;0,5028
+84;20;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-20";1;2;0,5028
+84;20;2;"Holcus lanatus";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";60;50;2356;NA;"25-2-Festuca pallescens-20";5;2;0,5028
+84;21;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-21";1;2;0,5028
+84;21;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";70;40;2199;NA;"25-2-Festuca pallescens-21";5;2;0,5028
+84;22;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-22";1;2;0,5028
+84;22;2;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;60;2356;NA;"25-2-Festuca pallescens-22";0;2;0,5028
+84;23;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-23";1;2;0,5028
+84;23;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-23";5;2;0,5028
+84;23;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-2-Festuca pallescens-23";5;2;0,5028
+84;23;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-2-Festuca pallescens-23";5;2;0,5028
+84;24;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-24";5;2;0,5028
+84;24;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-2-Festuca pallescens-24";10;2;0,5028
+84;25;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-25";10;2;0,5028
+84;25;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-25";1;2;0,5028
+84;25;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-2-Festuca pallescens-25";5;2;0,5028
+84;25;2;"Leucheria candidissima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-2-Festuca pallescens-25";1;2;0,5028
+84;26;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-26";5;2;0,5028
+84;26;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-26";5;2;0,5028
+84;26;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-26";10;2;0,5028
+84;26;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-26";5;2;0,5028
+84;27;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-27";NA;2;0,5028
+84;27;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";110;100;8639;NA;"25-2-Mulinum spinosum-27";10;2;0,5028
+84;27;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";110;100;8639;NA;"25-2-Mulinum spinosum-27";5;2;0,5028
+84;28;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-28";5;2;0,5028
+84;28;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-28";5;2;0,5028
+84;28;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-28";5;2;0,5028
+84;29;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-29";5;2;0,5028
+84;29;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-29";5;2;0,5028
+84;29;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-29";5;2;0,5028
+84;29;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-29";1;2;0,5028
+84;30;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-30";5;2;0,5028
+84;30;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-30";5;2;0,5028
+84;30;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";60;40;1885;NA;"25-2-Mulinum spinosum-30";10;2;0,5028
+84;30;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";60;40;1885;NA;"25-2-Mulinum spinosum-30";5;2;0,5028
+84;31;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-31";10;2;0,5028
+84;31;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-31";1;2;0,5028
+84;31;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-31";1;2;0,5028
+84;31;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";60;80;3770;NA;"25-2-Mulinum spinosum-31";5;2;0,5028
+84;32;1;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;2;"25-2-Bare-32";0,5;2;0,5028
+84;32;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;2;"25-2-Bare-32";2,5;2;0,5028
+84;32;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;1;"25-2-Bare-32";3;2;0,5028
+84;32;2;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";120;125;11781;NA;"25-2-Mulinum spinosum-32";1;2;0,5028
+84;32;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";120;125;11781;NA;"25-2-Mulinum spinosum-32";10;2;0,5028
+84;32;2;"Galium fuegianum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";120;125;11781;NA;"25-2-Mulinum spinosum-32";1;2;0,5028
+84;33;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-33";5;2;0,5028
+84;33;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-33";10;2;0,5028
+84;33;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;50;1963;NA;"25-2-Mulinum spinosum-33";10;2;0,5028
+84;34;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-34";1;2;0,5028
+84;34;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-34";10;2;0,5028
+84;35;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-35";1;2;0,5028
+84;35;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-35";5;2;0,5028
+84;35;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-35";20;2;0,5028
+84;35;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-35";1;2;0,5028
+84;35;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-35";1;2;0,5028
+84;36;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-36";0;2;0,5028
+84;36;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";80;60;3770;NA;"25-2-Mulinum spinosum-36";15;2;0,5028
+84;37;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-37";1;2;0,5028
+84;37;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;60;3299;NA;"25-2-Mulinum spinosum-37";5;2;0,5028
+84;37;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;60;3299;NA;"25-2-Mulinum spinosum-37";5;2;0,5028
+84;38;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-38";5;2;0,5028
+84;38;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";60;60;2827;NA;"25-2-Mulinum spinosum-38";5;2;0,5028
+84;39;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-39";1;2;0,5028
+84;39;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-39";5;2;0,5028
+84;39;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;70;3848;NA;"25-2-Mulinum spinosum-39";5;2;0,5028
+84;39;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;70;3848;NA;"25-2-Mulinum spinosum-39";5;2;0,5028
+84;39;2;"Hordeum murinum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;70;3848;NA;"25-2-Mulinum spinosum-39";1;2;0,5028
+84;39;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";70;70;3848;NA;"25-2-Mulinum spinosum-39";1;2;0,5028
+84;40;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;2;"25-2-Bare-40";2,5;2;0,5028
+84;40;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;1;"25-2-Bare-40";5;2;0,5028
+84;40;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;2;"25-2-Bare-40";0,5;2;0,5028
+84;40;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";140;130;14294;NA;"25-2-Mulinum spinosum-40";10;2;0,5028
+84;41;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;2;"25-2-Bare-41";0,5;2;0,5028
+84;41;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;1;"25-2-Bare-41";0,5;2;0,5028
+84;41;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";130;100;10210;NA;"25-2-Mulinum spinosum-41";15;2;0,5028
+84;41;2;"Senecio sericeo-nitens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";130;100;10210;NA;"25-2-Mulinum spinosum-41";5;2;0,5028
+84;42;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-42";0;2;0,5028
+84;42;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-42";10;2;0,5028
+84;42;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-42";1;2;0,5028
+84;43;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-43";1;2;0,5028
+84;43;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-2-Mulinum spinosum-43";5;2;0,5028
+84;44;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-44";1;2;0,5028
+84;44;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";45;55;1944;NA;"25-2-Mulinum spinosum-44";10;2;0,5028
+84;45;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-45";0;2;0,5028
+84;45;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-45";10;2;0,5028
+84;46;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;1;"25-2-Bare-46";3;2;0,5028
+84;46;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;1;"25-2-Bare-46";2,5;2;0,5028
+84;46;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";110;105;9071;NA;"25-2-Mulinum spinosum-46";5;2;0,5028
+84;46;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";110;105;9071;NA;"25-2-Mulinum spinosum-46";1;2;0,5028
+84;47;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-47";1;2;0,5028
+84;47;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-47";1;2;0,5028
+84;47;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-47";5;2;0,5028
+84;47;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-2-Mulinum spinosum-47";15;2;0,5028
+84;48;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-48";5;2;0,5028
+84;48;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-48";1;2;0,5028
+84;48;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-48";5;2;0,5028
+84;48;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-2-Mulinum spinosum-48";15;2;0,5028
+84;49;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-49";0;2;0,5028
+84;49;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;55;1728;NA;"25-2-Mulinum spinosum-49";5;2;0,5028
+84;49;2;"Galium fuegianum";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;55;1728;NA;"25-2-Mulinum spinosum-49";1;2;0,5028
+84;50;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Bare";NA;NA;NA;NA;"25-2-Bare-50";10;2;0,5028
+84;50;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-50";10;2;0,5028
+84;50;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;2;"2017/03/21";"Mulinum spinosum";40;40;1257;NA;"25-2-Mulinum spinosum-50";10;2;0,5028
+85;1;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-1";10;1;0,515
+85;1;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;35;1374;NA;"25-3-Festuca pallescens-1";10;1;0,515
+85;2;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-2";15;1;0,515
+85;2;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-2";5;1;0,515
+85;2;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-2";1;1;0,515
+85;2;2;"Holcus lanatus";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-2";1;1;0,515
+85;2;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-2";1;1;0,515
+85;3;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-3";1;1;0,515
+85;3;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-3";1;1;0,515
+85;3;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-3";5;1;0,515
+85;3;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-3";1;1;0,515
+85;4;1;"Acaena pinnatifida";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-4";1;1;0,515
+85;4;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-3-Festuca pallescens-4";10;1;0,515
+85;5;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-5";2;1;0,515
+85;5;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-5";3;1;0,515
+85;5;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";35;40;1100;NA;"25-3-Festuca pallescens-5";1;1;0,515
+85;5;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";35;40;1100;NA;"25-3-Festuca pallescens-5";5;1;0,515
+85;5;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";35;40;1100;NA;"25-3-Festuca pallescens-5";1;1;0,515
+85;6;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-6";3;1;0,515
+85;6;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-6";3;1;0,515
+85;6;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-3-Festuca pallescens-6";10;1;0,515
+85;6;2;"Lathyrus magellanicus";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-3-Festuca pallescens-6";1;1;0,515
+85;7;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-7";2;1;0,515
+85;7;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;45;1767;NA;"25-3-Festuca pallescens-7";3;1;0,515
+85;7;2;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;45;1767;NA;"25-3-Festuca pallescens-7";1;1;0,515
+85;7;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;45;1767;NA;"25-3-Festuca pallescens-7";5;1;0,515
+85;8;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-8";3;1;0,515
+85;8;2;"Carex gayana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-3-Festuca pallescens-8";5;1;0,515
+85;8;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-3-Festuca pallescens-8";5;1;0,515
+85;9;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-9";0;1;0,515
+85;9;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-3-Festuca pallescens-9";2;1;0,515
+85;9;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-3-Festuca pallescens-9";3;1;0,515
+85;10;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-10";1;1;0,515
+85;10;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-10";5;1;0,515
+85;10;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-10";1;1;0,515
+85;10;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-10";5;1;0,515
+85;11;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-11";0;1;0,515
+85;11;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;40;1257;NA;"25-3-Festuca pallescens-11";3;1;0,515
+85;12;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-12";5;1;0,515
+85;12;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-12";2;1;0,515
+85;12;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-12";5;1;0,515
+85;13;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-13";8;1;0,515
+85;13;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-13";6;1;0,515
+85;13;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-3-Festuca pallescens-13";1;1;0,515
+85;13;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-3-Festuca pallescens-13";10;1;0,515
+85;13;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;30;1178;NA;"25-3-Festuca pallescens-13";5;1;0,515
+85;14;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-14";3;1;0,515
+85;14;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-14";5;1;0,515
+85;14;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;60;2356;NA;"25-3-Festuca pallescens-14";4;1;0,515
+85;14;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;60;2356;NA;"25-3-Festuca pallescens-14";3;1;0,515
+85;14;2;"Quinchamalium chilense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;60;2356;NA;"25-3-Festuca pallescens-14";1;1;0,515
+85;15;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-15";3;1;0,515
+85;15;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-3-Festuca pallescens-15";1;1;0,515
+85;15;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;45;1414;NA;"25-3-Festuca pallescens-15";10;1;0,515
+85;16;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-16";1;1;0,515
+85;16;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";30;45;1060;NA;"25-3-Festuca pallescens-16";3;1;0,515
+85;16;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";30;45;1060;NA;"25-3-Festuca pallescens-16";8;1;0,515
+85;17;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-17";4;1;0,515
+85;17;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-17";3;1;0,515
+85;17;2;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-17";2;1;0,515
+85;18;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-18";0;1;0,515
+85;18;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-3-Festuca pallescens-18";2;1;0,515
+85;18;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-3-Festuca pallescens-18";6;1;0,515
+85;18;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;50;1963;NA;"25-3-Festuca pallescens-18";3;1;0,515
+85;19;1;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-19";12;1;0,515
+85;19;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-19";7;1;0,515
+85;19;1;"Leucheria candidissima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-19";3;1;0,515
+85;19;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;45;2121;NA;"25-3-Festuca pallescens-19";1;1;0,515
+85;19;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;45;2121;NA;"25-3-Festuca pallescens-19";1;1;0,515
+85;19;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;45;2121;NA;"25-3-Festuca pallescens-19";1;1;0,515
+85;20;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-20";2;1;0,515
+85;20;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-20";7;1;0,515
+85;20;2;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;30;942;NA;"25-3-Festuca pallescens-20";0;1;0,515
+85;21;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-21";4;1;0,515
+85;21;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;35;1649;NA;"25-3-Festuca pallescens-21";4;1;0,515
+85;22;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-22";2;1;0,515
+85;22;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-22";3;1;0,515
+85;22;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-22";2;1;0,515
+85;22;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;40;1571;NA;"25-3-Festuca pallescens-22";2;1;0,515
+85;23;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-23";2;1;0,515
+85;23;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-23";3;1;0,515
+85;23;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;45;1767;NA;"25-3-Festuca pallescens-23";6;1;0,515
+85;23;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";50;45;1767;NA;"25-3-Festuca pallescens-23";2;1;0,515
+85;24;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-24";1;1;0,515
+85;24;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;50;1571;NA;"25-3-Festuca pallescens-24";2;1;0,515
+85;24;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";40;50;1571;NA;"25-3-Festuca pallescens-24";8;1;0,515
+85;25;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-25";0;1;0,515
+85;25;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-25";2;1;0,515
+85;25;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-25";4;1;0,515
+85;25;2;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Festuca pallescens";60;40;1885;NA;"25-3-Festuca pallescens-25";6;1;0,515
+85;26;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-26";5;1;0,515
+85;26;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-26";2,5;1;0,515
+85;26;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;90;7775;NA;"25-3-Mulinum spinosum-26";10;1;0,515
+85;26;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;90;7775;NA;"25-3-Mulinum spinosum-26";10;1;0,515
+85;26;2;"Senecio sericeo-nitens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;90;7775;NA;"25-3-Mulinum spinosum-26";1;1;0,515
+85;27;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-27";10;1;0,515
+85;27;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;35;1649;NA;"25-3-Mulinum spinosum-27";15;1;0,515
+85;28;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-28";1;1;0,515
+85;28;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-28";10;1;0,515
+85;28;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";80;50;3142;NA;"25-3-Mulinum spinosum-28";10;1;0,515
+85;29;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-29";5;1;0,515
+85;29;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-29";1;1;0,515
+85;29;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-29";5;1;0,515
+85;29;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;60;2356;NA;"25-3-Mulinum spinosum-29";10;1;0,515
+85;29;2;"Holcus lanatus";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;60;2356;NA;"25-3-Mulinum spinosum-29";1;1;0,515
+85;30;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-30";15;1;0,515
+85;30;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-3-Mulinum spinosum-30";10;1;0,515
+85;30;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;50;1571;NA;"25-3-Mulinum spinosum-30";5;1;0,515
+85;31;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-31";5;1;0,515
+85;31;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-31";4;1;0,515
+85;31;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;120;10367;NA;"25-3-Mulinum spinosum-31";10;1;0,515
+85;31;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;120;10367;NA;"25-3-Mulinum spinosum-31";5;1;0,515
+85;31;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";110;120;10367;NA;"25-3-Mulinum spinosum-31";1;1;0,515
+85;32;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-32";3;1;0,515
+85;32;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-32";3;1;0,515
+85;32;2;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;70;3299;NA;"25-3-Mulinum spinosum-32";0;1;0,515
+85;33;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-33";5,5;1;0,515
+85;33;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-33";0,5;1;0,515
+85;33;1;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-33";1,5;1;0,515
+85;33;2;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";1;1;0,515
+85;33;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";15;1;0,515
+85;33;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";7;1;0,515
+85;33;2;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";1;1;0,515
+85;33;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";2;1;0,515
+85;33;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";95;100;7461;NA;"25-3-Mulinum spinosum-33";1;1;0,515
+85;34;1;NA;"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-34";0;1;0,515
+85;34;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-34";5;1;0,515
+85;34;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-34";10;1;0,515
+85;34;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-34";1;1;0,515
+85;35;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-35";5;1;0,515
+85;35;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-35";2;1;0,515
+85;35;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";30;40;942;NA;"25-3-Mulinum spinosum-35";1;1;0,515
+85;35;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";30;40;942;NA;"25-3-Mulinum spinosum-35";5;1;0,515
+85;36;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-36";3;1;0,515
+85;36;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-36";5;1;0,515
+85;36;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-36";10;1;0,515
+85;36;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-36";5;1;0,515
+85;36;2;"Viola maculata";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;30;942;NA;"25-3-Mulinum spinosum-36";1;1;0,515
+85;37;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-37";2,5;1;0,515
+85;37;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-37";5;1;0,515
+85;37;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";90;95;6715;NA;"25-3-Mulinum spinosum-37";10;1;0,515
+85;37;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";90;95;6715;NA;"25-3-Mulinum spinosum-37";10;1;0,515
+85;38;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-38";3,5;1;0,515
+85;38;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-38";1,5;1;0,515
+85;38;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-38";3,5;1;0,515
+85;38;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";85;40;2670;NA;"25-3-Mulinum spinosum-38";12;1;0,515
+85;38;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";85;40;2670;NA;"25-3-Mulinum spinosum-38";1;1;0,515
+85;38;2;"Quinchamalium chilense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";85;40;2670;NA;"25-3-Mulinum spinosum-38";2;1;0,515
+85;39;1;"Mulinum spinosum";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-39";5;1;0,515
+85;39;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;55;1728;NA;"25-3-Mulinum spinosum-39";5;1;0,515
+85;39;2;"Quinchamalium chilense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";40;55;1728;NA;"25-3-Mulinum spinosum-39";2;1;0,515
+85;40;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-40";3,5;1;0,515
+85;40;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-40";7,5;1;0,515
+85;40;1;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-40";1;1;0,515
+85;40;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";90;100;7069;NA;"25-3-Mulinum spinosum-40";3;1;0,515
+85;40;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";90;100;7069;NA;"25-3-Mulinum spinosum-40";8;1;0,515
+85;41;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-41";7;1;0,515
+85;41;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-41";8;1;0,515
+85;41;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;50;2356;NA;"25-3-Mulinum spinosum-41";3;1;0,515
+85;41;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;50;2356;NA;"25-3-Mulinum spinosum-41";4;1;0,515
+85;41;2;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;50;2356;NA;"25-3-Mulinum spinosum-41";6;1;0,515
+85;42;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-42";3;1;0,515
+85;42;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-42";1,5;1;0,515
+85;42;2;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-42";1;1;0,515
+85;42;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-42";5;1;0,515
+85;43;1;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;2;"25-3-Bare-43";2,5;1;0,515
+85;43;1;"Nassauvia darwinii";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-43";4,5;1;0,515
+85;43;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;60;2827;NA;"25-3-Mulinum spinosum-43";11;1;0,515
+85;44;1;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-44";3;1;0,515
+85;44;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-44";1;1;0,515
+85;44;2;"Elymus repens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;45;1767;NA;"25-3-Mulinum spinosum-44";1;1;0,515
+85;44;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;45;1767;NA;"25-3-Mulinum spinosum-44";10;1;0,515
+85;45;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-45";3;1;0,515
+85;45;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;35;1649;NA;"25-3-Mulinum spinosum-45";4;1;0,515
+85;46;1;"Calceolaria biflora";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-46";2;1;0,515
+85;46;1;"Holcus lanatus";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-46";12;1;0,515
+85;46;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;40;1885;NA;"25-3-Mulinum spinosum-46";6;1;0,515
+85;46;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;40;1885;NA;"25-3-Mulinum spinosum-46";3;1;0,515
+85;47;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-47";12;1;0,515
+85;47;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";60;40;1885;NA;"25-3-Mulinum spinosum-47";10;1;0,515
+85;48;1;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-48";3;1;0,515
+85;48;1;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-48";6;1;0,515
+85;48;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-48";7;1;0,515
+85;48;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-48";5;1;0,515
+85;48;2;"Taraxacum officinale";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-48";1;1;0,515
+85;49;1;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;1;"25-3-Bare-49";1,5;1;0,515
+85;49;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";140;150;16493;NA;"25-3-Mulinum spinosum-49";12;1;0,515
+85;49;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";140;150;16493;NA;"25-3-Mulinum spinosum-49";7;1;0,515
+85;49;2;"Hypochaeris incana";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";140;150;16493;NA;"25-3-Mulinum spinosum-49";1;1;0,515
+85;50;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-50";5;1;0,515
+85;50;2;"Cerastium arvense";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-50";2;1;0,515
+85;50;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;40;1571;NA;"25-3-Mulinum spinosum-50";15;1;0,515
+85;51;1;"Acaena integerrima";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Bare";NA;NA;NA;NA;"25-3-Bare-51";8;1;0,515
+85;51;2;"Festuca pallescens";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;50;1963;NA;"25-3-Mulinum spinosum-51";12;1;0,515
+85;51;2;"Festuca pyrogea";"Chile";"Fajardo, Alex";"Bano nuevo";25;3;"2017/03/21";"Mulinum spinosum";50;50;1963;NA;"25-3-Mulinum spinosum-51";7;1;0,515
