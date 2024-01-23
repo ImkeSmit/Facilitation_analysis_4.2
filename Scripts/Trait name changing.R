@@ -3,6 +3,7 @@
 library(tidyverse)
 library(tidylog)
 library(readxl)
+library(DescTools)
 
 
 ###read in the facilitation data for each country
@@ -138,12 +139,22 @@ for (k in 1:length(countrynames)) {
 
 ##Now subset
 country_cut_copy <- country_cut
+keep <- list()
 
 for (n in 1:length(country_cut_copy)) {
   plot <- country_cut_copy[[n]]
+  plot <- plot[which(!is.na(plot$Plotname)) , ] #remove any rows with NA if they are there
   
-  if(plot[1,1] %like% fac_sitenames == FALSE) {
-    country_cut_copy[[n]] < NA
+  if(plot[1,1] %like% c(paste(fac_sitenames, "%", sep = "")) == TRUE) {
+    
+    if(n == 1) {
+    keep[[1]] <- plot
+    }else{
+        keep_temp <- plot
+        keep <- c(keep, keep_temp)
+      }
     } 
   }
 
+length(keep)
+keep[1:3]
