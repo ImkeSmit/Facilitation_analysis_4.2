@@ -1,7 +1,15 @@
 .Rproj.user
 .Rhistory
-.Rdata
-.httr-oauth
-.DS_Store
-.quarto
-.Facilitation data
+.RData
+.Ruserdata
+
+Facilitation data/*
+
+*.png
+
+*.csv
+
+*.xlsx
+
+*.txt
+
