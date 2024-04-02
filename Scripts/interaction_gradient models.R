@@ -1,8 +1,7 @@
-###Models and other descriptive statistics regarding NIntc accross grazing and aridity gradients
+###Models and other descriptive statistics regarding NIntc across grazing and aridity gradients
 
 library(glmmTMB)
 library(car)
-#library(glmmADMB)
 library(lsmeans)
 library(multcomp)
 library(multcompView)
@@ -10,7 +9,7 @@ library(MuMIn)
 library(dplyr)
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\NIntc_results_allcountries_26Sep.csv", row.names = 1)
+all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
@@ -97,7 +96,7 @@ rich_mod1 <- glmmTMB(NIntc_richness_binom ~ graz +(1|site_ID),
                      family = binomial, data = dat)
 summary(rich_mod1)
 Anova(rich_mod1)
-anova(nullmod_rich, rich_mod1) #p=0.3691
+anova(nullmod_rich, rich_mod1) 
 lsmeans(rich_mod1, specs = "graz")
 cld(lsmeans(rich_mod1, specs = "graz"), Letters = "abcdefg")
 
@@ -106,89 +105,47 @@ rich_mod2 <- glmmTMB(NIntc_richness_binom ~ aridity + (1|site_ID),
                      family = binomial, data = dat)
 summary(rich_mod2)
 Anova(rich_mod2)
-anova(nullmod_rich, rich_mod2) #p=0.8024
+anova(nullmod_rich, rich_mod2) 
 
 #aridity + arid_sq
 rich_mod3 <- glmmTMB(NIntc_richness_binom ~ aridity + arid_sq +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod3)
 Anova(rich_mod3)
-anova(nullmod_rich, rich_mod3) #p=0.7875
+anova(nullmod_rich, rich_mod3) 
 
 ##graz + aridity
 rich_mod4 <- glmmTMB(NIntc_richness_binom ~ graz + aridity +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod4)
 Anova(rich_mod4)
-anova(nullmod_rich, rich_mod4) #0.5228
+anova(nullmod_rich, rich_mod4) 
 
 ##graz + aridity + arid_sq
 rich_mod5 <- glmmTMB(NIntc_richness_binom ~ graz + aridity + arid_sq +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod5)
 Anova(rich_mod5)
-anova( nullmod_rich, rich_mod5) # p = 0.599
+anova( nullmod_rich, rich_mod5) 
 
 #graz*aridity
 rich_mod6 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + (1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod6)
 Anova(rich_mod6)
-anova(nullmod_rich,rich_mod6) # 0.7563
+anova(nullmod_rich,rich_mod6)
 
 #graz*aridity + graz*arid_sq
 rich_mod7 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + graz*arid_sq +(1|site_ID),  
         family = binomial, data = dat)
 summary(rich_mod7)
 Anova(rich_mod7)
-anova(nullmod_rich, rich_mod7) # 0.4029
+anova(nullmod_rich, rich_mod7) 
 
 ##Compare the AIC values
-AIC(nullmod_rich, rich_mod1, rich_mod2, rich_mod3, rich_mod4, rich_mod5, rich_mod6, rich_mod7)
+best_subset_nintc_richness <- AIC(nullmod_rich, rich_mod1, rich_mod2, rich_mod3, rich_mod4, rich_mod5, rich_mod6, rich_mod7)
 #null model has the lowest AIC, so the predictors have no significant effect
 
-
-###Get the model predictions
-#create a dataframe with values that the model must predict for
-#make site_ID NA (the predict function needs the variable to make predictions)
-#graz0:
-pred_data_0 <- data.frame(aridity = seq(min(dat[which(dat$graz == 0) , ]$aridity), max(dat[which(dat$graz == 0) , ]$aridity), 0.01), 
-                          graz = 0, colour = "darkgreen", site_ID = NA)
-pred_data_0$arid_sq <- pred_data_0$aridity^2
-
-#graz1:
-pred_data_1 <- data.frame(aridity = seq(min(dat[which(dat$graz == 1) , ]$aridity), max(dat[which(dat$graz == 1) , ]$aridity), 0.01), 
-                          graz = 1, colour = "chartreuse2", site_ID = NA)
-pred_data_1$arid_sq <- pred_data_1$aridity^2
-
-#graz2:
-pred_data_2 <- data.frame(aridity = seq(min(dat[which(dat$graz == 2) , ]$aridity), max(dat[which(dat$graz == 2) , ]$aridity), 0.01), 
-                          graz = 2, colour = "darkolivegreen3", site_ID = NA)
-pred_data_2$arid_sq <- pred_data_2$aridity^2
-
-#graz3:
-pred_data_3 <- data.frame(aridity = seq(min(dat[which(dat$graz == 3) , ]$aridity), max(dat[which(dat$graz == 3) , ]$aridity), 0.01), 
-                          graz = 3, colour = "darkgoldenrod4", site_ID = NA)
-pred_data_3$arid_sq <- pred_data_3$aridity^2
-
-
-#rbind all the grazlevels:
-pred_data <- rbind(pred_data_0, pred_data_1, pred_data_2, pred_data_3)
-pred_data$graz <- as.factor(pred_data$graz)
-
-plot(predict(rich_mod2, newdata = pred_data, type = "response") ~ 
-       pred_data$aridity, ylab = "predicted NINtc richness binom", xlab = "Aridity", col = pred_data$colour)
-
-#export so that you can use it in the graphs and figures script
-#predictions of mod2
-model2_prediction <- data.frame(predicted_NIntc_binom = predict(rich_mod2, newdata = pred_data, type = "response"))
-model2_prediction <- cbind(model2_prediction, pred_data)
-write.csv(model2_prediction, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\rich_mod2_prediction_tmb_11Sept.csv")
-
-#predictions of mod4
-model4_prediction <- data.frame(predicted_NIntc_binom = predict(rich_mod4, newdata = pred_data, type = "response"))
-model4_prediction <- cbind(model4_prediction, pred_data)
-write.csv(model4_prediction, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\rich_mod4_prediction_tmb_11Sept.csv")
 
 
 ##NIntc cover####
@@ -202,7 +159,7 @@ cov_mod1 <- glmmTMB(NIntc_cover_binom ~ graz +(1|site_ID),
                      family = binomial, data = covdat)
 summary(cov_mod1)
 Anova(cov_mod1)
-anova(nullmod_cov, cov_mod1) #p = 0.03662
+anova(nullmod_cov, cov_mod1) #p = 0.02629
 lsmeans(cov_mod1, specs = "graz")
 cld(lsmeans(cov_mod1, specs = "graz"), Letters = "abcdefg")
 
@@ -253,7 +210,7 @@ summary(cov_mod7)
 Anova(cov_mod7)
 anova(nullmod_cov, cov_mod7) #0.1968
 
-AIC(nullmod_cov, cov_mod1, cov_mod2, cov_mod3, cov_mod4, cov_mod5, cov_mod6, cov_mod7)
+best_subset_nintc_cover <- AIC(nullmod_cov, cov_mod1, cov_mod2, cov_mod3, cov_mod4, cov_mod5, cov_mod6, cov_mod7)
 #cov_mod1 has the lowest AIC
 
 
@@ -309,8 +266,8 @@ ad_rich_mod7 <- glmmTMB(NInta_richness_binom ~ graz*aridity + graz*arid_sq +(1|s
 summary(ad_rich_mod7)
 Anova(ad_rich_mod7)
 
-AIC(additive_null_richmod, ad_rich_mod1, ad_rich_mod2, ad_rich_mod3, ad_rich_mod4, ad_rich_mod5, ad_rich_mod6, ad_rich_mod7)
-#null model has the lowest AIC
+best_subset_ninta_richness <- AIC(additive_null_richmod, ad_rich_mod1, ad_rich_mod2, ad_rich_mod3, ad_rich_mod4, ad_rich_mod5, ad_rich_mod6, ad_rich_mod7)
+#null model has the lowest AIC, but very close to mod1!
 
 ##NInta cover####
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover_binom)) , ] #remove rows with NA
@@ -324,6 +281,7 @@ ad_cov_mod1 <- glmmTMB(NInta_cover_binom ~ graz +(1|site_ID),
                         family = binomial, data = ad_covdat)
 summary(ad_cov_mod1)
 Anova(ad_cov_mod1)
+anova(additive_null_covmod, ad_cov_mod1)
 lsmeans(ad_cov_mod1, specs = "graz")
 cld(lsmeans(ad_cov_mod1, specs = "graz"), Letters = "abcdefg")
 
@@ -365,59 +323,60 @@ ad_cov_mod7 <- glmmTMB(NInta_cover_binom ~ graz*aridity + graz*arid_sq +(1|site_
 summary(ad_cov_mod7)
 Anova(ad_cov_mod7)
 
-AIC(additive_null_covmod, ad_cov_mod1, ad_cov_mod2, ad_cov_mod3, ad_cov_mod4, ad_cov_mod5, ad_cov_mod6, ad_cov_mod7)
+best_subset_ninta_cover <- AIC(additive_null_covmod, ad_cov_mod1, ad_cov_mod2, ad_cov_mod3, ad_cov_mod4, ad_cov_mod5, ad_cov_mod6, ad_cov_mod7)
 #ad_cov_mod1 has the lowest AIC
 
 
+###DESCRIPTIVE STATISTICS####
+#How many plots and sites
+length(unique(all_result$ID))#97
+length(unique(all_result$site_ID))#29
 
-###Proportion of facilitation at each plot####
-#This is the proportion of facilitative, compettitve and neutral interactions according to NIntc richness at each plot
-propdat <- data.frame(matrix(ncol = 8, nrow = length(unique(all_result$ID))))
-colnames(propdat) <- c("ID", "country", "site_ID", "aridity", "graz", "prop_facilitation", "prop_competition", "prop_neutral")
-IDlist <- c(unique(all_result$ID))
+#how many dominant bare pairs
+nrow(all_result)
 
-l = 1
-for(p in IDlist) {
-  subs <- all_result[which(all_result$ID == p) , ]
-  n <- nrow(subs)
-  fac <- nrow(subs[which(subs$NIntc_richness > 0) , ] )
-  comp <- nrow(subs[which(subs$NIntc_richness < 0) , ] )
-  neutral <- nrow(subs[which(subs$NIntc_richness == 0) , ] )
+#How many species in total?
+countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
+                  "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
+for (k in 1:length(countrynames)) {
+  country <- get(countrynames[k])
   
-  propdat[l,1] <- subs$ID[1]
-  propdat[l,2] <- subs$country[1]
-  propdat[l,3] <- subs$site_ID[1]
-  propdat[l,4] <- subs$aridity[1]
-  propdat[l,5] <- subs$graz[1]
-  propdat[l,6] <- fac/n
-  propdat[l,7] <- comp/n
-  propdat[l,8] <- neutral/n
-  
-  l = l+1
+  if(k == 1){
+    target_taxa <- country |> 
+      select(Species.within.quadrat) |> 
+      distinct(Species.within.quadrat) |> 
+      filter(!is.na(Species.within.quadrat))
+    
+    nurse_taxa <- country |> 
+      filter(Microsite == 2) |> 
+      select(ID_Microsite) |> 
+      distinct(ID_Microsite)
+  } else {
+    temp_target_taxa <- country |> 
+      select(Species.within.quadrat) |> 
+      distinct(Species.within.quadrat)
+    
+    temp_nurse_taxa <- country |> 
+      filter(Microsite == 2) |> 
+      select(ID_Microsite) |> 
+      distinct(ID_Microsite)
+    
+    target_taxa <- target_taxa |> 
+      bind_rows(temp_target_taxa) |> 
+      distinct(Species.within.quadrat)
+    
+    nurse_taxa <- nurse_taxa |> 
+      bind_rows(temp_nurse_taxa) |> 
+      distinct(ID_Microsite)
+  }
 }
 
-plot(propdat$prop_facilitation ~ propdat$aridity)
-plot(propdat$prop_competition ~ propdat$aridity)
-hist(propdat$prop_facilitation)
-
-propdat$site_ID <- as.factor(propdat$site_ID)
-propdat$graz <- as.factor(propdat$graz)
-propmod <- glmmADMB::glmmadmb(formula = prop_facilitation ~ graz * aridity + (1|site_ID),
-                              data = propdat, family = "nbinom2")
-summary(propmod)
-
-null_propmod <- glmmADMB::glmmadmb(formula = prop_facilitation ~ 1 + (1|site_ID),
-                                   data = propdat, family = "nbinom2")
-
-anova(null_propmod , propmod)
-Anova(propmod)
+#number of target species
+nrow(target_taxa) #721
+#number of nurse species
+nrow(nurse_taxa) #90
 
 
-
-
-
-
-###DESCRIPTIVE STATISTICS####
 #What is the mean NIntc over all plots? 
 richdat <- #remove NA
   all_result[-which(is.na(all_result$NIntc_richness)) , which(colnames(all_result) == "NIntc_richness")]
@@ -451,16 +410,15 @@ SE_NInta_cov <- sd(ad_covdat)/sqrt(length((ad_covdat))) #0.01798452
 t.test(ad_covdat)
 
 
-###Species position along aridity####
-#Does aridity influence how many species grow in bare, open and both microsites
+###Species preference along aridity####
+#Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
 #We require raw country data
-wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2"
-data_files <- list.files(wd)
+data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
   assign(paste0(countrynames[i]),                                   
-         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2\\",
+         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3\\",
                           data_files[i])))
 }
 
@@ -549,8 +507,8 @@ sp_preference$graz <- as.factor(sp_preference$graz)
 sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
-#write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\plotlevels_sp_preference_26Sept.csv")
-sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\plotlevels_sp_preference_26Sept.csv", row.names = 1)
+#write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
+sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
@@ -567,6 +525,7 @@ avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference)
 
 
 ###Does the proportion of NURSE only sp change along grazing and aridity?
+##in text the proportion of nurse only species = Pdominant
 #nullmod
 null_prefmod_nurse <- glmmTMB(prop_nurse_only ~ 1 +(1|site_ID),  
                      family = binomial, data = sp_preference)
@@ -629,6 +588,7 @@ AIC(null_prefmod_nurse, pref_mod1, pref_mod2, pref_mod3, pref_mod4, pref_mod5, p
 
 
 ###Does the proportion of BARE only sp change along grazing and aridity?
+#in text proportion of bare only species = Pbare
 #nullmodel
 null_prefmod_bare <- glmmTMB(prop_nurse_only ~ 1 +(1|site_ID),  
                      family = binomial, data = sp_preference)
@@ -644,7 +604,8 @@ anova(null_prefmod_bare, bare_mod1) #7.395e-07 ***
 bare_mod2 <- glmmTMB(prop_bare_only ~ aridity + (1|site_ID),  
                      family = binomial, data = sp_preference)
 summary(bare_mod2)
-Anova(bare_mod2)
+  Anova(bare_mod2)
+anova(null_prefmod_bare, bare_mod2)
 plot(sp_preference$prop_bare_only ~ sp_preference$aridity)
 #anova(null_prefmod_bare, bare_mod2) #2.698e-08 ***
 r.squaredGLMM(bare_mod2)##use the theoretical R2 for binomial family
@@ -687,16 +648,17 @@ Anova(bare_mod7) ##model convergence problem
 AIC(null_prefmod_bare, bare_mod1, bare_mod2, bare_mod3, bare_mod4, bare_mod5, bare_mod6, bare_mod7)
 #bare_mod2 has the lowest AIC
 
+
+
 ###CHisq tests of species association with nurse or bare microsites####
 ###First we need to get the number times a species is present/absent in each microsite
-#We require raw country data
-wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2"
-data_files <- list.files(wd)
+#Import the country_v3 data
+data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
   assign(paste0(countrynames[i]),                                   
-         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2\\",
+         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3\\",
                           data_files[i])))
 }
 
@@ -852,33 +814,40 @@ for(i in 1:nrow(Chisq_results)) {
 
 
 #write to csv file
-write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\Chisq_results_27Sep.csv")
-Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\Chisq_results_27Sep.csv", row.names = 1)
+#write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
+Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 
 #How many sp significantly associated with the nurse?
-nrow(Chisq_results[which(Chisq_results$association == "nurse") , ]) #124
+Chisq_results |> 
+  filter(association == "nurse") |> 
+  distinct(species) |> 
+  summarise(nsp = n()) #85
+  
 #How many sp significantly associated with the bare microsite?
-nrow(Chisq_results[which(Chisq_results$association == "bare") , ]) #52
+Chisq_results |> 
+  filter(association == "bare") |> 
+  distinct(species) |> 
+  summarise(nsp = n()) #38
+
 #How many sp show neutral association?
-nrow(Chisq_results[which(Chisq_results$association == "neutral") , ]) #431
-#How many sp are too rare
-nrow(Chisq_results[which(Chisq_results$association == "too_rare") , ]) #1269
-nrow(Chisq_results) #1876
+Chisq_results |> 
+  filter(association == "neutral") |> 
+  distinct(species) |> 
+  summarise(nsp = n()) #241
 
+#How many sp are adequately sampled?
+Chisq_results |> 
+  filter(!association == "too_rare") |> 
+  distinct(species) |> 
+  summarise(nsp = n()) #305
 
-##Isolate too-rare species
-rare <- Chisq_results[which(Chisq_results$association == "too_rare") , ]
-rest <- Chisq_results[-which(Chisq_results$association == "too_rare") , ]
+#How many species in total
+Chisq_results |> 
+  select(species) |> 
+  distinct(species) |> 
+  summarise(nsp = n()) #720
 
-max(rare$nurse_p + rare$bare_p)
-min(rare$nurse_p + rare$bare_p)
-
-max(rest$nurse_p + rest$bare_p)
-min(rest$nurse_p + rest$bare_p)
-
-test <- filter(Chisq_results, Chisq_results$nurse_p + Chisq_results$bare_p > 9)
-
-####Is sspecies association influenced by aridity and graz?###
+####Is species association influenced by aridity and graz?###
 ##First, get the proportion of species in a plot that show a certain association
 chisq_reduced <- Chisq_results[-which(Chisq_results$association == "too_rare") , ] #remove the rare sp
 

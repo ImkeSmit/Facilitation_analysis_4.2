@@ -2,8 +2,7 @@
 library(stringr)
 library(data.table)
 library(dplyr)
-wd <- "C:\\Users\\imke6\\Documents\\Msc Projek"
-setwd(wd)
+
 
 ##RULES:
 #Rows with dead plants removed if they are not the only entry in the microsite
@@ -2761,7 +2760,211 @@ for(i in 1:length(towrite)) {
 }
 
 
+###25 January 2024 insert####
+##There are still species name discrepancies
+##DO not run the above code (line 1-2760)
+##We will just fix mistakes from here
+library(tidyverse)
+library(tidylog)
+library(readxl)
+
+###read in the v2 facilitation data for each country
+wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv2"
+data_files <- list.files(wd)
+countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
+                  "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
+for(i in 1:length(data_files)) {                              
+  assign(paste0(countrynames[i]),                                   
+         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv2\\",
+                          data_files[i])))
+}
+
+#in order for the infraspecies to be fixed correctly, we must first change the following:
+namibiablaum[which(namibiablaum$Species.within.quadrat == "Herb indet. 1") , 
+             which(colnames(namibiablaum) == "Species.within.quadrat")] <- "Herb indet.1"
+
+namibiawang[which(namibiawang$Species.within.quadrat == "Acacia mellifera small") , 
+             which(colnames(namibiawang) == "Species.within.quadrat")] <- "Acacia melliferasmall"
+#string matches cannot deal with bracktes for some reason
+chinachong[c(651,1452) ,
+            which(colnames(chinachong) == "Species.within.quadrat")] <- "Stemmacanthauniflora"
 
 
+##CLean up easy mistakes in names:
+countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
+                  "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
+
+for(p in 1:length(countrynames)) {
+  
+  cou <- get(countrynames[p])
+  
+  inter_cou <- cou |>
+    #remove infraspecies - each spname must have only two words
+    separate_wider_delim(Species.within.quadrat, delim = " ", 
+                         names = c("split1", "split2", "split3",  "split4"), too_few = "align_start") |> 
+    #if split2 is NA, make it " ", otherwise we will lose the string in split1 when we concatenate
+    #if split1 and split 2 is NA, still make split 2 = " ", because it will be lost when concatenating
+    mutate(split2 = case_when(is.na(split2) ~ " ", .default = as.character(split2))) |> 
+    mutate(Species.within.quadrat = str_c(split1, split2, sep = " ")) |> 
+    select(!c(split1,split2,split3, split4)) |> 
+    mutate(Species.within.quadrat = str_squish(Species.within.quadrat), 
+           ID_Microsite  = str_squish(ID_Microsite)) |> 
+    #Make first letter of each spname a capital, the rest are lower case
+    mutate(Species.within.quadrat = str_to_sentence(Species.within.quadrat), 
+           ID_Microsite = str_to_sentence(ID_Microsite))
+    
+  
+  assign(paste0("inter_", countrynames[p]), inter_cou)
+}
+
+
+ 
+##NOW RUN NAME TRAIL FOR SPECIES.WITHIN.QUADRAT
+#The sheet names_and_synonyms contains names and their synonyms accross the facilitation, trait and quadrat data.
+#This list was made by comparing only_in_fac to the quadrat data in the script called trait name changing.
+name_trail <- read_excel("Facilitation data\\Name changes\\names_and_synonyms.xlsx") |> 
+  mutate(correct_name = str_squish(correct_name), ##remove spaces before or after strings, and replace internal whitespace with a single space
+         synonym1 = str_squish(synonym1),
+         synonym2 = str_squish(synonym2))
+
+#create synonyms variable which is all the synonyms concatenated
+name_trail$synonyms <- paste(name_trail$synonym1, name_trail$synonym2, name_trail$synonym3, sep = "; ") 
+
+name_trail <- name_trail %>% 
+  select(correct_name, synonyms) # only keep "correct_name and "synonyms"
+
+
+#create a dataframe that stores information about samples for which species names are modified by the code below
+change_tracker <- data.frame( 
+  country = character(),
+  old_spec = character(), 
+  new_spec = character(), 
+  stringsAsFactors=FALSE) 
+
+###Now standardise each country's names to the name trail:
+
+countrynames <- c("inter_algeria", "inter_argentina", "inter_australia", "inter_chile", "inter_chinachong", "inter_chinaxin", 
+                  "inter_iranabedi", "inter_iranfarzam", "inter_israel", "inter_namibiablaum", 
+                  "inter_namibiawang", "inter_southafrica",  "inter_spainmaestre", "inter_spainrey")
+
+for(k in 1:length(countrynames)) {
+  
+  data_harmony <- get(countrynames[k])
+
+  for (i in 1:nrow(data_harmony)) {
+    old_sp <- data_harmony[i, which(colnames(data_harmony) == "Species.within.quadrat")]
+    new_sp <- NA
+    
+    if(is.na(old_sp) == FALSE) { #only run if there is an entry in Species within quadrat
+    
+      found <- FALSE
+      for (j in 1:nrow(name_trail)) { # looks whether species name is a synonym and replaces it with the true_name if it is found to be a synonym
+        found <- grepl(old_sp, name_trail[j, 2]) 
+        
+        if (found){ # only runs if the species is a synonym
+          new_sp <- name_trail[j, 1] # finds the true name of the species and saves it 
+          break
+        }
+      }
+      
+      if (found) { # replaces the species in the trait database with the saved true name if "found" is "TRUE"
+        data_harmony[i, which(colnames(data_harmony) == "Species.within.quadrat")] <- new_sp 
+        
+        # add a new row with information about change to the change trackers dataset
+        change_tracker[i, 1] <- countrynames[k]
+        change_tracker[i, 2] <- old_sp
+        change_tracker[i, 3] <- new_sp
+        }
+    
+        } else { #If species within quadrat is na
+          change_tracker[i, 1] <- countrynames[k]
+          change_tracker[i, 2] <- "NA species" #tell me if the species was NA
+          change_tracker[i, 3] <- "NA species"
+      
+        } #close the first if loop
+    
+  
+    } #close the loop through the names in data_harmony
+    
+    assign(paste0("v3_", countrynames[k]), data_harmony) #overwrite v3_ with the new altered names
+
+}  #Close the first for loop through the countries
+
+  head(change_tracker, 10)
+  
+  
+  
+##NOW RUN NAME TRAIL FOR NURSE NAMES  
+#create a dataframe that stores information about samples for which species names are modified by the code below
+  nurse_change_tracker <- data.frame( 
+    country = character(),
+    old_spec = character(), 
+    new_spec = character(), 
+    stringsAsFactors=FALSE) 
+  
+###Now standardise each country's names to the name trail:
+  
+countrynames <- c("v3_inter_algeria", "v3_inter_argentina", "v3_inter_australia", "v3_inter_chile", "v3_inter_chinachong", 
+             "v3_inter_chinaxin", "v3_inter_iranabedi", "v3_inter_iranfarzam",
+             "v3_inter_israel", "v3_inter_namibiablaum", "v3_inter_namibiawang", "v3_inter_southafrica",
+             "v3_inter_spainmaestre", "v3_inter_spainrey")
+  
+  for(k in 1:length(countrynames)) {
+    
+    data_harmony <- get(countrynames[k])
+    
+    for (i in 1:nrow(data_harmony)) {
+      old_sp <- data_harmony[i, which(colnames(data_harmony) == "ID_Microsite")]
+      new_sp <- NA
+      
+
+        found <- FALSE
+        for (j in 1:nrow(name_trail)) { # looks whether species name is a synonym and replaces it with the true_name if it is found to be a synonym
+          found <- grepl(old_sp, name_trail[j, 2]) 
+          
+          if (found){ # only runs if the species is a synonym
+            new_sp <- name_trail[j, 1] # finds the true name of the species and saves it 
+            break
+          }
+        }
+        
+        if (found) { # replaces the species in the trait database with the saved true name if "found" is "TRUE"
+          data_harmony[i, which(colnames(data_harmony) == "ID_Microsite")] <- new_sp 
+          
+          # add a new row with information about change to the change trackers dataset
+          nurse_change_tracker[i, 1] <- countrynames[k]
+          nurse_change_tracker[i, 2] <- old_sp
+          nurse_change_tracker[i, 3] <- new_sp
+        }
+      
+      
+    } #close the loop through the names in data_harmony
+    
+    assign(paste0("v4_", countrynames[k]), data_harmony) #overwrite v3_inter with the new altered names
+    
+  }  #Close the first for loop through the countries
+  
+  head(nurse_change_tracker, 10)
+
+
+
+  #Write all the v3 datasets to csv files
+#dir.create("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3") #create a folder for the data
+towrite <- c("v4_v3_inter_algeria", "v4_v3_inter_argentina", "v4_v3_inter_australia", "v4_v3_inter_chile", "v4_v3_inter_chinachong", 
+             "v4_v3_inter_chinaxin", "v4_v3_inter_iranabedi", "v4_v3_inter_iranfarzam",
+             "v4_v3_inter_israel", "v4_v3_inter_namibiablaum", "v4_v3_inter_namibiawang", "v4_v3_inter_southafrica",
+             "v4_v3_inter_spainmaestre", "v4_v3_inter_spainrey")
+
+for(i in 1:length(towrite)) {                              
+  write.csv2(get(towrite[i]),                              
+             paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3\\",
+                    towrite[i],
+                    ".csv"),
+             row.names = FALSE)
+}
+
+
+
+  
 
 

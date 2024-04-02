@@ -1,5 +1,4 @@
 ###HOW DO INTERACTION OUTCOMES CHANGE ALONG THE GRAZING-ARIDITY SPECTRUM###
-wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2"
 library(data.table)
 library(hexbin)
 library(lme4)
@@ -10,12 +9,12 @@ library(glmmADMB)
 library(dplyr)
 
 ###read in the facilitation data for each country
-data_files <- list.files(wd)
+data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
   assign(paste0(countrynames[i]),                                   
-         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\Countriesv2\\",
+         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3\\",
                           data_files[i])))
 }
 
@@ -218,7 +217,7 @@ for (n in 1:length(sum_list)) {
 ###Join the results of all the countries together in one big table
 all_result <- rbind(result_algeria, result_argentina, result_australia, result_chile, result_chinachong, result_chinaxin, result_iranabedi, result_iranfarzam,
                     result_israel, result_namibiablaum, result_namibiawang, result_southafrica, result_spainmaestre, result_spainrey)
-write.csv(all_result, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\NIntc_results_allcountries_26Sep.csv")
+write.csv(all_result, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv")
 
 #graz = Grazing intensity within the plot (0 ungrazed; 1:low grazing; 2:medium grazing; 3:high grazing)
 #plot = Inverse of graz, Original Lab code for grazing intensity within the plot (1:high grazing; 2:medium grazing; 3:low grazing; 4: ungrazed)
