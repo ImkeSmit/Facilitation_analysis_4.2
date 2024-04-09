@@ -7,6 +7,7 @@ library(multcomp)
 library(multcompView)
 library(MuMIn)
 library(dplyr)
+library(tidyverse)
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
@@ -79,7 +80,15 @@ cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA valu
 cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.3414124
 
 
+###Add lat and long to all_results so that we can control for spatial autocorrelation in models####
+siteinfo <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, Lat_decimal, Long_decimal)
+siteinfo$ID <- as.factor(siteinfo$ID)
 
+all_result_formodel <- all_result |> 
+  left_join(siteinfo, by = "ID")
+
+##REwrite below models with lat and long:
 
 
 ###Generalised linear modelling with glmmTMB####
