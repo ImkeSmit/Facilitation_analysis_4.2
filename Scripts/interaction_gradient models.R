@@ -9,7 +9,7 @@ library(MuMIn)
 library(dplyr)
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
+all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
