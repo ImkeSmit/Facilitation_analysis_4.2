@@ -6,12 +6,14 @@ library(ggplot2)
 #import siteinfo
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
   select(ID, ARIDITY.v3, AMT, RAI)
+siteinfo$ID <- as.factor(siteinfo$ID)
 
 #import nint results and meerge the siteinfo
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1) |> 
   left_join(siteinfo, by = "ID") |> 
   distinct(ID, .keep_all = T) |> 
   select(ID, ARIDITY.v3, AMT, RAI)
+all_result$ID <- as.factor(all_result$ID)
 
 #Annual mean temperature vs aridity
 ggplot(all_result, aes(x= ARIDITY.v3, y = AMT)) + 
@@ -53,5 +55,6 @@ ggplot(all_result, aes(x = ID, y = AMT)) +
 ggplot(all_result, aes(x = ID, y = RAI)) + 
   geom_point() +
   scale_x_discrete(limits = all_result[order(all_result$RAI), "ID"]) +
-  #geom_point(aes(y = AMT), col = "green") +
   theme_classic()
+
+
