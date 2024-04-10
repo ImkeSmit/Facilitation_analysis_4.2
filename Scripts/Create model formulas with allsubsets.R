@@ -215,10 +215,10 @@ all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
 
 formulas <- AllSubsets(ResponseVariableColumn = which(colnames(all_result) == "NIntc_richness_binom"), 
-                       PredictorsColumns = c(which(colnames(nintc_rich_sum) %in% c("graz", "aridity", "AMT", "RAI"))), 
+                       PredictorsColumns = c(which(colnames(all_result) %in% c("graz", "aridity", "AMT", "RAI"))), 
                        data.source = all_result, 
                        Add.PolynomialTerms = TRUE,
-                       Polynom.exclude = c(which(colnames(nintc_rich_sum) %in% c("graz"))), 
+                       Polynom.exclude = c(which(colnames(all_result) %in% c("graz"))), 
                        Polynom.order = 2, 
                        Do.PredictorInteractions = TRUE, 
                        Interaction.Level = 2, #interaction level = 3 takes wayyy too long
@@ -231,4 +231,4 @@ for(f in 1:length(formulas)) {
   one_formula <- formulas[[f]]
   formula_table[f, 1] <- one_formula
 }
-write.csv(formula_table, "Functional trait data\\Results\\model_formulas_with_aridsq.csv")
+write.csv(formula_table, "Facilitation data\\results\\nint_env_models_allsubsets.csv")
