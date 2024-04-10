@@ -1,10 +1,9 @@
 ##This script is to check if the facilitation data is spatially autocorrelated
-#we will do the moran test at the plot level. Thus we need to summarise the nintc at the plot level
+#we will do the moran test at the site level. Thus we need to summarise the nintc at the site level
 library(tidyverse)
 library(tidylog)
 library(ape)
 library(geosphere)
-
 
 #import nint results
 nint_result <- read.csv("Facilitation data//results//NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
@@ -17,11 +16,12 @@ siteinfo <- read.csv("Facilitation data//BIODESERT_sites_information.csv") |>
 nint_result_join <- nint_result |> 
   left_join(siteinfo, by = "ID") |> 
   #summarise the mean NINtc richness by plot
-  group_by(ID) |> 
-  mutate(mean_NIntc_richness = mean(NIntc_richness, na.rm = T)) |> 
+  group_by(site_ID) |> 
+  mutate(mean_NIntc_richness = mean(NIntc_richness, na.rm = T), 
+         mean_NIntc_cover = mean(NIntc_cover, na.rm = T)) |> 
   ungroup() |> 
-  distinct(ID, mean_NIntc_richness, .keep_all = T) |> 
-  select(!c(NIntc_richness, NIntc_cover, NIntc_shannon, NInta_cover, NInta_richness, NInta_shannon, replicate_no, nurse))
+  distinct(site_ID, mean_NIntc_richness, .keep_all = T) |> 
+  select(!c(ID, plot, graz, aridity, NIntc_richness, NIntc_cover, NIntc_shannon, NInta_cover, NInta_richness, NInta_shannon, replicate_no, nurse))
 
 #generate a matrix with the inverse distance between each coordinate
 #matrix of distances between points
