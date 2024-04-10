@@ -32,10 +32,10 @@ distmat <-
 #get the inverse:
 distmat_inv <- 1/distmat
 diag(distmat_inv) <- 0
-#we only need one halof of the matrix
-distmat_inv <- distmat_inv[1:97, 1:97]
+#we only need one half of the matrix
+distmat_inv <- distmat_inv[1:nrow(nint_result_join), 1:nrow(nint_result_join)]
 
 
 #do the moran test to see if NIntc richness values are spatially autocorrelated
 MI <- Moran.I(nint_result_join$mean_NIntc_richness, weight = distmat_inv)
-#p value very small, thus data re autocorrelated
+#p large, thus data are not autocorrelated
