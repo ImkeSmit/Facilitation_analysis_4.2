@@ -8,7 +8,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
   select(ID, ARIDITY.v3, AMT, RAI)
 siteinfo$ID <- as.factor(siteinfo$ID)
 
-#import nint results and meerge the siteinfo
+#import nint results and merge the siteinfo
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1) |> 
   left_join(siteinfo, by = "ID") |> 
   distinct(ID, .keep_all = T) |> 
