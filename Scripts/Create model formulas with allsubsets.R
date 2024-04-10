@@ -185,55 +185,40 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
 
 
 ####RUN AllSubsets####
-#import FD results
-FD_results <- read.csv("Functional trait data\\results\\FD_results_4Mar2024.csv", row.names = 1) 
+##Import results of NIntc calculations (from interaction-gradient analysis scripts)
+all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
+all_result$site_ID <- as.factor(all_result$site_ID)
+all_result$ID <- as.factor(all_result$ID)
+##Treat grazing as an unordered factor!
+all_result$graz <- as.factor(all_result$graz)
 
-FD_results$FRic <- as.numeric(FD_results$FRic)
-FD_results$qual.FRic <- as.numeric(FD_results$qual.FRic)
-FD_results$FEve <- as.numeric(FD_results$FEve)
-FD_results$FDiv <- as.numeric(FD_results$FDiv)
-FD_results$RaoQ <- as.numeric(FD_results$RaoQ) 
-FD_results$ID <- as.factor(FD_results$ID)
-
-#import NIntc results
-nint_result <- 
-  read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names =1)
+#import siteinfo, so that we can add RAI and AMT
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
+#select the columns we want to add
+siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
+all_result <- all_result |> 
+  left_join(siteinfo, by = "ID")
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
 #x-min/max- min (here the formula is just already simplified)
-nint_result$NIntc_richness_binom <- (nint_result$NIntc_richness + 1)/2
-nint_result$NIntc_cover_binom <- (nint_result$NIntc_cover + 1)/2
-nint_result$NIntc_shannon_binom <- (nint_result$NIntc_shannon + 1)/2
+all_result$NIntc_richness_binom <- (all_result$NIntc_richness + 1)/2
+all_result$NIntc_cover_binom <- (all_result$NIntc_cover + 1)/2
+all_result$NIntc_shannon_binom <- (all_result$NIntc_shannon + 1)/2
 
 #x-min/max- min
-nint_result$NInta_richness_binom <- (nint_result$NInta_richness - (-1)) / (2 - (-1))
-nint_result$NInta_cover_binom <- (nint_result$NInta_cover - (-1)) / (2 - (-1))
-nint_result$NInta_shannon_binom <- (nint_result$NInta_shannon - (-1)) / (2 - (-1))
+all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1))
+all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
+all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
-nint_result$site_ID <- as.factor(nint_result$site_ID)
-nint_result$graz <- as.factor(nint_result$graz)
-nint_result$ID <- as.factor(nint_result$ID)
 
-#summarise the average NIntc richness by plot
-nintc_rich_sum <- nint_result |> 
-  select(country, site_ID, ID, graz, aridity, NIntc_richness_binom) |> 
-  filter(!is.na(NIntc_richness_binom)) |> #remove NA's
-  group_by(ID) |> #calculate mean and sd of NIntc richness binom in each plot
-  mutate(mean_NIntc_rich_binom = mean(NIntc_richness_binom), 
-         sd_NIntc_rich_binom = sd(NIntc_richness_binom), 
-         n_obs = n()) |> 
-  ungroup() |> 
-  select(!NIntc_richness_binom) |> 
-  distinct() |> #remove duplicate rows, only need one eman per plot
-  left_join(FD_results, by = "ID") |>  #join to the FD_results
-  filter(!is.na(FEve))
-
-formulas <- AllSubsets(ResponseVariableColumn = which(colnames(nintc_rich_sum) == "mean_NIntc_rich_binom"), 
-                       PredictorsColumns = c(which(colnames(nintc_rich_sum) %in% c("FRic", "FEve", "FDiv", "graz", "aridity"))), 
-                       data.source = nintc_rich_sum, 
+formulas <- AllSubsets(ResponseVariableColumn = which(colnames(all_result) == "NIntc_richness_binom"), 
+                       PredictorsColumns = c(which(colnames(nintc_rich_sum) %in% c("graz", "aridity", "AMT", "RAI"))), 
+                       data.source = all_result, 
                        Add.PolynomialTerms = TRUE,
-                       Polynom.exclude = c(which(colnames(nintc_rich_sum) %in% c("FRic", "FEve", "FDiv", "graz"))), 
+                       Polynom.exclude = c(which(colnames(nintc_rich_sum) %in% c("graz"))), 
                        Polynom.order = 2, 
                        Do.PredictorInteractions = TRUE, 
                        Interaction.Level = 2, #interaction level = 3 takes wayyy too long
