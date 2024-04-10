@@ -1,4 +1,4 @@
-###Models and other descriptive statistics regarding NIntc across grazing and aridity gradients
+###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI
 
 library(glmmTMB)
 library(car)
@@ -8,13 +8,23 @@ library(multcompView)
 library(MuMIn)
 library(dplyr)
 library(tidyverse)
+library(tidylog)
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
+all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
+
+#import siteinfo, so that we can add RAI and AMT
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
+#select the columns we want to add
+siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
+all_result <- all_result |> 
+  left_join(siteinfo, by = "ID")
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
@@ -28,8 +38,7 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
-#Square aridity to look fro quadratic relationships
-all_result$arid_sq <- all_result$aridity^2
+
 
 
 ###Correlations####
@@ -83,7 +92,7 @@ cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.34141
 ###Generalised linear modelling with glmmTMB####
 #we will use a model buidling approach where we sequentially add variables
 ###NIntc_richness####
-dat <- all_result[-which(is.na(all_result_formodel$NIntc_richness_binom)) , ] #remove rows with NA
+dat <- all_result[-which(is.na(all_result$NIntc_richness_binom)) , ] #remove rows with NA
 
 #NULL model 
 nullmod_rich <- glmmTMB(NIntc_richness_binom ~ 1 +(1|site_ID),  
