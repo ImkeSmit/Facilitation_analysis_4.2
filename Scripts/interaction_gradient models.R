@@ -80,17 +80,6 @@ cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA valu
 cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.3414124
 
 
-###Add lat and long to all_results so that we can control for spatial autocorrelation in models####
-siteinfo <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, Lat_decimal, Long_decimal)
-siteinfo$ID <- as.factor(siteinfo$ID)
-
-all_result_formodel <- all_result |> 
-  left_join(siteinfo, by = "ID")
-
-##REwrite below models with lat and long:
-
-
 ###Generalised linear modelling with glmmTMB####
 #we will use a model buidling approach where we sequentially add variables
 ###NIntc_richness####
@@ -101,7 +90,7 @@ nullmod_rich <- glmmTMB(NIntc_richness_binom ~ 1 +(1|site_ID),
                         family = binomial, data = dat)
 
 ##graz
-rich_mod1 <- glmmTMB(NIntc_richness_binom ~ graz + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod1 <- glmmTMB(NIntc_richness_binom ~ graz +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod1)
 Anova(rich_mod1)
@@ -110,42 +99,42 @@ lsmeans(rich_mod1, specs = "graz")
 cld(lsmeans(rich_mod1, specs = "graz"), Letters = "abcdefg")
 
 #aridity
-rich_mod2 <- glmmTMB(NIntc_richness_binom ~ aridity + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod2 <- glmmTMB(NIntc_richness_binom ~ aridity +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod2)
 Anova(rich_mod2)
 anova(nullmod_rich, rich_mod2) 
 
 #aridity + arid_sq
-rich_mod3 <- glmmTMB(NIntc_richness_binom ~ aridity + arid_sq + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod3 <- glmmTMB(NIntc_richness_binom ~ aridity + arid_sq +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod3)
 Anova(rich_mod3)
 anova(nullmod_rich, rich_mod3) 
 
 ##graz + aridity
-rich_mod4 <- glmmTMB(NIntc_richness_binom ~ graz + aridity + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod4 <- glmmTMB(NIntc_richness_binom ~ graz + aridity +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod4)
 Anova(rich_mod4)
 anova(nullmod_rich, rich_mod4) 
 
 ##graz + aridity + arid_sq
-rich_mod5 <- glmmTMB(NIntc_richness_binom ~ graz + aridity + arid_sq + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod5 <- glmmTMB(NIntc_richness_binom ~ graz + aridity + arid_sq +(1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod5)
 Anova(rich_mod5)
 anova( nullmod_rich, rich_mod5) 
 
 #graz*aridity
-rich_mod6 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + Lat_decimal + Long_decimal + (1|site_ID),  
+rich_mod6 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + (1|site_ID),  
                      family = binomial, data = dat)
 summary(rich_mod6)
 Anova(rich_mod6)
 anova(nullmod_rich,rich_mod6)
 
 #graz*aridity + graz*arid_sq
-rich_mod7 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + graz*arid_sq + Lat_decimal + Long_decimal +(1|site_ID),  
+rich_mod7 <- glmmTMB(NIntc_richness_binom ~ graz*aridity + graz*arid_sq +(1|site_ID),  
         family = binomial, data = dat)
 summary(rich_mod7)
 Anova(rich_mod7)
