@@ -83,7 +83,7 @@ cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.34141
 ###Generalised linear modelling with glmmTMB####
 #we will use a model buidling approach where we sequentially add variables
 ###NIntc_richness####
-dat <- all_result_formodel[-which(is.na(all_result_formodel$NIntc_richness_binom)) , ] #remove rows with NA
+dat <- all_result[-which(is.na(all_result_formodel$NIntc_richness_binom)) , ] #remove rows with NA
 
 #NULL model 
 nullmod_rich <- glmmTMB(NIntc_richness_binom ~ 1 +(1|site_ID),  
