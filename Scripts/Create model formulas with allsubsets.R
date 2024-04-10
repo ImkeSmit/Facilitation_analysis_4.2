@@ -100,10 +100,11 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
         InteractionCombinations3[[counter3]] <- temp.form
       }
     }
-    #remove the aridity:aridity2 interaction
-    InteractionCombinations3 <- InteractionCombinations3[- which(InteractionCombinations3 == "aridity:aridity2")]
+    #remove all interactions of the main effect with its squared effect eg the aridity:aridity2 interaction
+    InteractionCombinations3 <- InteractionCombinations3[- which(InteractionCombinations3 %in% c("aridity:aridity2", "AMT:AMT2", "RAI:RAI2"))]
     AllPredictorsNames <- c(AllPredictorsNames, InteractionCombinations3)
     NumberExplanatoryVariables <- length(AllPredictorsNames)
+    
   }
   
   
