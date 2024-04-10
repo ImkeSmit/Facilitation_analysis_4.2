@@ -102,7 +102,9 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
     }
     #remove all interactions of the main effect with its squared effect eg the aridity:aridity2 interaction
     InteractionCombinations3 <- 
-      InteractionCombinations3[- which(InteractionCombinations3 %in% c("aridity:aridity2", "AMT:AMT2", "RAI:RAI2"))]
+      InteractionCombinations3[- which(InteractionCombinations3 %in% c("aridity:aridity2", "AMT:AMT2", "RAI:RAI2", 
+                                                                       "aridity2:AMT2", "AMT2:aridity2", "aridity2:RAI2", 
+                                                                       "RAI2:aridity2", "AMT2:RAI2", "RAI2:AMT2"))]
     AllPredictorsNames <- c(AllPredictorsNames, InteractionCombinations3)
     NumberExplanatoryVariables <- length(AllPredictorsNames)
     
