@@ -94,8 +94,6 @@ formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AM
   distinct(predictors) |> 
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
-
-###Loop through the formulas for NIntc####
 #Create a table for results
 results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
                             Df = integer(), Pr_value = numeric(), AIC = numeric(), 
@@ -105,7 +103,6 @@ results_table <- data.frame(Response = character(), Model = character(), Chisq =
 warning_msg <- ""
 
 ##Also loop through response variables
-#loop through Nintc first
 response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_binom", "NInta_cover_binom")
 datalist = c("all_result", "all_result", "all_result", "all_result")
 
@@ -182,10 +179,10 @@ for(r in 1:length(response_list)) {
 results_table
 
 #save the results
-write.csv(results_table, "Facilitation data\\results\\nint_glm_results_11Apr2024.csv")
+write.csv(results_table, "Facilitation data\\results\\nint_model_results_11Apr2024.csv")
 
 
-###Species preference along aridity####
+###SPECIES PREFERENCE ANALYSIS####
 #Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
 #We require raw country data
 data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
@@ -291,9 +288,10 @@ sp_preference$graz <- as.factor(sp_preference$graz)
 
 #join AMT and RAI to sp_preference
 #import siteinfo
-siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
-#select the columns we want to add
-siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
+         AMT2 = AMT^2)
 siteinfo$ID <- as.factor(siteinfo$ID)
 #join to all_result
 sp_preference <- sp_preference |> 
@@ -309,7 +307,7 @@ length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_bot
 avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference)
 
 
-###Linear modelling: Does the proportion of NURSE only sp change along grazing and aridity?
+###Generalised linear modelling with glmmTMB: P ~ graz + RAI + AMT####
 ##in text the proportion of nurse only species = Pdominant
 #Create a table for results
 prefmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
@@ -392,6 +390,8 @@ for(r in 1:length(response_list)) {
 }
 ##if there is no AIC value, the model did not converge
 prefmod_results_table
+#save results
+write.csv(affmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024")
 
 
 ###CHisq tests of species association with nurse or bare microsites####
