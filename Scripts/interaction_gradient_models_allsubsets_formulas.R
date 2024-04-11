@@ -284,6 +284,17 @@ sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
 
+
+#join AMT and RAI to sp_preference
+#import siteinfo
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
+#select the columns we want to add
+siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
+sp_preference <- sp_preference |> 
+  left_join(siteinfo, by = "ID")
+
 #In how many of the plots did the majority of sp prefer nurse microsites?
 length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #8
 
@@ -305,7 +316,6 @@ prefmod_results_table <- data.frame(Response = character(), Model = character(),
 warning_msg <- ""
 
 ##Also loop through response variables
-#loop through Nintc first
 response_list <- c("prop_nurse_only", "prop_bare_only", "prop_both")
 datalist = c("sp_preference", "sp_preference", "sp_preference")
 
