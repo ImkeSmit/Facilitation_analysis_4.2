@@ -1,11 +1,13 @@
 ###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI###
 library(glmmTMB)
 library(car)
-library(multcomp)
-library(multcompView)
-library(MuMIn)
+#library(multcomp)
+#library(multcompView)
+#library(MuMIn)
 library(tidyverse)
 library(tidylog)
+
+###NINT ANALYSIS####
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
@@ -35,8 +37,6 @@ all_result$NIntc_shannon_binom <- (all_result$NIntc_shannon + 1)/2
 all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1))
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
-
-
 
 
 ###Correlations####
@@ -87,7 +87,7 @@ cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA valu
 cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.3414124
 
 
-###Generalised linear modelling with glmmTMB####
+###Generalised linear modelling with glmmTMB : NINt ~ AMT + RAI + GRAZ####
 formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
   separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
   select(predictors) |> 
@@ -110,6 +110,8 @@ response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_
 datalist = c("all_result", "all_result", "all_result", "all_result")
 
 ##LOOP THROUGH MODELS STARTS HERE##
+library(glmmTMB)
+library(car)
 #Loop through response variables
 for(r in 1:length(response_list)) {
   
@@ -178,6 +180,9 @@ for(r in 1:length(response_list)) {
 }
 ##if there is no AIC value, the model did not converge
 results_table
+
+#save the results
+write.csv(results_table, "Facilitation data\\results\\nint_glm_results_11Apr2024.csv")
 
 
 ###Species preference along aridity####
