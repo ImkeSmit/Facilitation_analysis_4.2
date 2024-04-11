@@ -216,11 +216,10 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
-##for now, lets make simple formulas without squared terms
 formulas <- AllSubsets(ResponseVariableColumn = which(colnames(all_result) == "NIntc_richness_binom"), 
                        PredictorsColumns = c(which(colnames(all_result) %in% c("graz", "AMT", "RAI"))), 
                        data.source = all_result, 
-                       Add.PolynomialTerms = FALSE,
+                       Add.PolynomialTerms = TRUE,
                        Polynom.exclude = c(which(colnames(all_result) %in% c("graz"))), 
                        Polynom.order = 2, 
                        Do.PredictorInteractions = TRUE, 
