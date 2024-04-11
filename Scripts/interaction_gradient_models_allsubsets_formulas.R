@@ -279,7 +279,7 @@ sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
 #write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
-sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
@@ -296,7 +296,88 @@ avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference)
 
 ###Linear modelling: Does the proportion of NURSE only sp change along grazing and aridity?
 ##in text the proportion of nurse only species = Pdominant
+#Create a table for results
+prefmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
+                            Df = integer(), Pr_value = numeric(), AIC = numeric(), 
+                            Warnings = character(), row.names = NULL)
 
+# Initialize warning_msg outside the loop
+warning_msg <- ""
+
+##Also loop through response variables
+#loop through Nintc first
+response_list <- c("prop_nurse_only", "prop_bare_only", "prop_both")
+datalist = c("sp_preference", "sp_preference", "sp_preference")
+
+##LOOP THROUGH MODELS STARTS HERE##
+#Loop through response variables
+for(r in 1:length(response_list)) {
+  
+  response_var <- response_list[r]  
+  data = get(datalist[r])
+  
+  #Loop through response variables
+  for (f in 1:nrow(formula_table)) {
+    
+    predictors <- as.character(formula_table[f, ])
+    formula <- as.formula(paste(response_var, "~",  predictors))
+    
+    # Clear existing warning messages
+    warnings()
+    
+    # Initialize anova_result and AIC_model outside the tryCatch block
+    anova_result <- NULL
+    AIC_model <- NULL
+    
+    tryCatch( #tryCatch looks for errors and warinngs in the expression
+      expr = {
+        model <- glmmTMB(formula, family = binomial, data = data)
+        
+        # Perform Anova 
+        anova_result <- Anova(model, type = 2)
+        # Get AIC
+        AIC_model <- AIC(model)
+        
+        warning_messages <- warnings()
+        
+        ##Do nothing if the warinng is about non integer successes
+        # Check for the non-integer #successes warning
+        if ("non-integer #successes" %in% warning_messages) {
+          # Handle non-integer #successes warning (e.g., print a message)
+          message("Ignoring non-integer #successes warning")
+        }
+        
+        #Print the warning message if it is about model fit
+        # Check for other warnings, excluding the non-integer #successes warning
+        other_warnings <- setdiff(warning_messages, "non-integer #successes")
+        if (length(other_warnings) > 0) {
+          warning_msg <- paste("warning :", as.character(other_warnings), collapse = "; ")
+          message(paste("WARNING_", "r =" , response_var, "f =", f, warning_msg))
+        }
+      }, 
+      
+      #Also show me errors
+      error = function(e) {
+        message(paste("ERROR_", "r =" , response_var, "f =", f, conditionMessage(e)))
+        print(e)
+      }
+    )
+    
+    # Extract relevant information
+    result_row <- data.frame(Response = response_var,
+                             Model = paste(response_var, "~",  predictors), 
+                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
+                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
+                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
+                             Warnings = warning_msg)
+    
+    
+    prefmod_results_table <- rbind(prefmod_results_table, result_row)
+  }
+}
+##if there is no AIC value, the model did not converge
+prefmod_results_table
 
 
 
