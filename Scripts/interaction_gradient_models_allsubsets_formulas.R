@@ -739,6 +739,12 @@ assmod_results_table
 #save results
 write.csv(assmod_results_table, "Facilitation data\\results\\association_model_results_11Apr2024.csv")
 
+#get the model with the lowest AIC
+assmod_results_table |> 
+  filter(!is.na(AIC)) |> 
+  group_by(Response) |> 
+  filter(AIC == min(AIC))
+
 
 ###DESCRIPTIVE STATISTICS####
 #How many plots and sites
