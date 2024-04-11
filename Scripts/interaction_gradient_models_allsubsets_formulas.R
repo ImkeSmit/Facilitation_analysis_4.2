@@ -8,7 +8,6 @@ library(tidyverse)
 library(tidylog)
 
 ###NINT ANALYSIS####
-
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
@@ -107,8 +106,6 @@ response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_
 datalist = c("all_result", "all_result", "all_result", "all_result")
 
 ##LOOP THROUGH MODELS STARTS HERE##
-library(glmmTMB)
-library(car)
 #Loop through response variables
 for(r in 1:length(response_list)) {
   
@@ -180,6 +177,12 @@ results_table
 
 #save the results
 write.csv(results_table, "Facilitation data\\results\\nint_model_results_11Apr2024.csv")
+
+#find model with lowest AIC:
+results_table |> 
+  group_by(Response) |> 
+  filter(!is.na(AIC)) |> 
+  filter(AIC == min(AIC))
 
 
 ###SPECIES PREFERENCE ANALYSIS####
