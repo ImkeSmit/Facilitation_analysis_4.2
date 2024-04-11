@@ -314,6 +314,13 @@ prefmod_results_table <- data.frame(Response = character(), Model = character(),
                             Df = integer(), Pr_value = numeric(), AIC = numeric(), 
                             Warnings = character(), row.names = NULL)
 
+#import model formulas
+formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
+  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
+  select(predictors) |> 
+  distinct(predictors) |> 
+  add_row(predictors = "1+(1|site_ID)")  #add the null model
+
 # Initialize warning_msg outside the loop
 warning_msg <- ""
 
