@@ -101,10 +101,9 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
       }
     }
     #remove all interactions of the main effect with its squared effect eg the aridity:aridity2 interaction
-    #InteractionCombinations3 <- 
-      #InteractionCombinations3[- which(InteractionCombinations3 %in% c("aridity:aridity2", "AMT:AMT2", "RAI:RAI2", 
-      #                                                                 "aridity2:AMT2", "AMT2:aridity2", "aridity2:RAI2", 
-      #                                                                 "RAI2:aridity2", "AMT2:RAI2", "RAI2:AMT2"))]
+    InteractionCombinations3 <- 
+      InteractionCombinations3[- which(InteractionCombinations3 %in% c("AMT:AMT2", "RAI:RAI2", 
+                                                                       "AMT2:RAI2", "RAI2:AMT2"))]
     AllPredictorsNames <- c(AllPredictorsNames, InteractionCombinations3)
     NumberExplanatoryVariables <- length(AllPredictorsNames)
     
@@ -222,8 +221,8 @@ formulas <- AllSubsets(ResponseVariableColumn = which(colnames(all_result) == "N
                        PredictorsColumns = c(which(colnames(all_result) %in% c("graz", "AMT", "RAI"))), 
                        data.source = all_result, 
                        Add.PolynomialTerms = FALSE,
-                       #Polynom.exclude = c(which(colnames(all_result) %in% c("graz"))), 
-                       #Polynom.order = 2, 
+                       Polynom.exclude = c(which(colnames(all_result) %in% c("graz"))), 
+                       Polynom.order = 2, 
                        Do.PredictorInteractions = TRUE, 
                        Interaction.Level = 2, #interaction level = 3 takes wayyy too long
                        Do.Random.effect = TRUE, 
