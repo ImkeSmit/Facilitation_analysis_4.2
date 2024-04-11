@@ -328,7 +328,7 @@ formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AM
 warning_msg <- ""
 
 ##Also loop through response variables
-response_list <- c("prop_nurse_only", "prop_bare_only", "prop_both")
+response_list <- c("prop_nurse_only", "prop_bare_only")
 datalist = c("sp_preference", "sp_preference", "sp_preference")
 
 ##LOOP THROUGH MODELS STARTS HERE##
@@ -401,7 +401,14 @@ for(r in 1:length(response_list)) {
 ##if there is no AIC value, the model did not converge
 prefmod_results_table
 #save results
-write.csv(affmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024")
+write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024")
+
+#find model with lowest AIC
+prefmod_results_table |> 
+  group_by(Response) |> 
+  filter(!is.na(AIC)) |> 
+  filter(AIC == min(AIC))
+
 
 ####CHISQ TESTS OF SP ASSOCIATION WITH BARE OR NURSE MICROSITE####
 ###First we need to get the number times a species is present/absent in each microsite
