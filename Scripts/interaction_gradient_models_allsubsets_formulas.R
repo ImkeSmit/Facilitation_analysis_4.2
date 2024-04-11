@@ -393,7 +393,7 @@ prefmod_results_table
 ###CHisq tests of species association with nurse or bare microsites####
 ###First we need to get the number times a species is present/absent in each microsite
 #Import the country_v3 data
-data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
+data_files <- list.files("Facilitation analysis\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
@@ -555,7 +555,7 @@ for(i in 1:nrow(Chisq_results)) {
 
 #write to csv file
 #write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
-Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+Chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 
 #How many sp significantly associated with the nurse?
 Chisq_results |> 
@@ -590,21 +590,25 @@ Chisq_results |>
 ####Is species association influenced by aridity and graz?###
 ##First, get the proportion of species in a plot that show a certain association
 chisq_reduced <- Chisq_results[-which(Chisq_results$association == "too_rare") , ] #remove the rare sp
+chisq_reduced$ID <- as.factor(chisq_reduced$ID)
 
-prop_chisq_reduced <- chisq_reduced %>%
-  group_by(ID, association) %>%
-  summarize(Count = n()) %>%
-  ungroup() %>%
-  group_by(ID) %>%
-  mutate(Proportion = Count / sum(Count))
-prop_chisq_reduced <- as.data.frame(prop_chisq_reduced)
-prop_chisq_reduced$percentage <- prop_chisq_reduced$Proportion*100
-#Add aridity to prop_chisq
-ymerge <- Chisq_results[-which(duplicated(Chisq_results$ID) == TRUE) , which(colnames(Chisq_results) %in% c("site_ID", "ID", "graz", "aridity"))]
-prop_chisq_reduced <- merge(prop_chisq_reduced, ymerge, 
-                            by = "ID", all.x = FALSE, all.y = FALSE, no.dups = TRUE)
-#add aridity squared
-prop_chisq_reduced$arid_sq <- (prop_chisq_reduced$aridity)^2
+#import siteinfo, so that we can add RAI and AMT
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
+#select the columns we want to add
+siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo$ID <- as.factor(siteinfo$ID)
+
+#calculate proportions and add siteinfo
+prop_chisq_reduced <- chisq_reduced |> 
+  group_by(ID, association) |> 
+  summarize(Count = n()) |> 
+  ungroup() |> 
+  group_by(ID) |> 
+  mutate(Proportion = Count / sum(Count), 
+         percentage = Proportion*100) |> 
+  left_join(siteinfo, by = "ID")
+
+#make sure classifications are correct
 prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
 prop_chisq_reduced$ID <- as.factor(prop_chisq_reduced$ID)
 prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
