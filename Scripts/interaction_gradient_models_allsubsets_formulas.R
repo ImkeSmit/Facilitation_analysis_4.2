@@ -393,8 +393,7 @@ prefmod_results_table
 #save results
 write.csv(affmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024")
 
-
-###CHisq tests of species association with nurse or bare microsites####
+####CHISQ TESTS OF SP ASSOCIATION WITH BARE OR NURSE MICROSITE####
 ###First we need to get the number times a species is present/absent in each microsite
 #Import the country_v3 data
 data_files <- list.files("Facilitation analysis\\Facilitation data\\Countriesv3")
@@ -606,7 +605,7 @@ siteinfo$ID <- as.factor(siteinfo$ID)
 
 #calculate proportions and add siteinfo
 prop_chisq_reduced <- Chisq_results |> 
-  filter(!association == "too_rare") |> 
+  filter(!association == "too_rare") |> #remove sp that are too rare to do chisq test and do not take them into account for proportion calculation
   group_by(ID, association) |> 
   summarize(Count = n()) |> 
   ungroup() |> 
@@ -623,13 +622,15 @@ prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 
 #make separate dataframes for the proportion of species associated with bare and nurse microsites
 baredat <- prop_chisq_reduced |> 
-  filter(association == "bare")
+  filter(association == "bare") |> 
+  rename(prop_bare_association = Proportion)
 
 nursedat <- prop_chisq_reduced |> 
-  filter(association == "nurse")
+  filter(association == "nurse") |> 
+  rename(prop_nurse_association = Proportion)
 
 
-###Linear modelling: Does the proportion of sp associated with nurse or bare microsites change along RAI and AMT?
+###Generalised linear modelling with glmmTMB: prop_association ~ graz + AMT + RAI####
 #Create a table for results
 assmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
                                     Df = integer(), Pr_value = numeric(), AIC = numeric(), 
@@ -645,7 +646,7 @@ formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AM
 warning_msg <- ""
 
 ##Also loop through response variables
-response_list <- c("Proportion", "Proportion")
+response_list <- c("prop_bare_association", "prop_nurse_association")
 datalist = c("baredat", "nursedat")
 
 ##LOOP THROUGH MODELS STARTS HERE##
@@ -718,10 +719,8 @@ for(r in 1:length(response_list)) {
 ##if there is no AIC value, the model did not converge
 assmod_results_table
 
-
-
-
-
+#save results
+write.csv(assmod_results_table, "Facilitation data\\results\\association_model_results_11Apr2024.csv")
 
 
 ###DESCRIPTIVE STATISTICS####
