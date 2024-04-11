@@ -556,6 +556,7 @@ for(i in 1:nrow(Chisq_results)) {
 #write to csv file
 #write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
 Chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+Chisq_results$ID <- as.factor(Chisq_results$ID)
 
 #How many sp significantly associated with the nurse?
 Chisq_results |> 
@@ -587,25 +588,28 @@ Chisq_results |>
   distinct(species) |> 
   summarise(nsp = n()) #720
 
-####Is species association influenced by aridity and graz?###
-##First, get the proportion of species in a plot that show a certain association
-chisq_reduced <- Chisq_results[-which(Chisq_results$association == "too_rare") , ] #remove the rare sp
-chisq_reduced$ID <- as.factor(chisq_reduced$ID)
 
+###get the proportion of species in a plot that show a certain association
 #import siteinfo, so that we can add RAI and AMT
-siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
-#select the columns we want to add
-siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, SITE_ID, GRAZ, AMT, RAI) |> 
+  rename(site_ID = SITE_ID, 
+         graz = GRAZ) |> 
+  #calculate squared terms
+  mutate(AMT2 = AMT^2, 
+         RAI2 = RAI^2)
 siteinfo$ID <- as.factor(siteinfo$ID)
 
 #calculate proportions and add siteinfo
-prop_chisq_reduced <- chisq_reduced |> 
+prop_chisq_reduced <- Chisq_results |> 
+  filter(!association == "too_rare") |> 
   group_by(ID, association) |> 
   summarize(Count = n()) |> 
   ungroup() |> 
   group_by(ID) |> 
-  mutate(Proportion = Count / sum(Count), 
-         percentage = Proportion*100) |> 
+  mutate(Proportion = Count / sum(Count)) |> 
+  ungroup() |> 
+  mutate(percentage = Proportion*100) |> 
   left_join(siteinfo, by = "ID")
 
 #make sure classifications are correct
@@ -613,100 +617,106 @@ prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
 prop_chisq_reduced$ID <- as.factor(prop_chisq_reduced$ID)
 prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 
-###Now we can make the models
-##PROPORTION OF BARE ASSOCIATIONS##
-baredat <- prop_chisq_reduced[which(prop_chisq_reduced$association == "bare") , ]
+#make separate dataframes for the proportion of species associated with bare and nurse microsites
+baredat <- prop_chisq_reduced |> 
+  filter(association == "bare")
 
-nullmod_bare <- glmmTMB(Proportion ~ 1 +(1|site_ID),  
-                        family = binomial, data = baredat)
-
-##graz
-bare_mod1 <- glmmTMB(Proportion ~ graz +(1|site_ID),  
-                     family = binomial, data = baredat)
-summary(bare_mod1)
-Anova(bare_mod1)
-anova(nullmod_bare, bare_mod1) 
-lsmeans(bare_mod1, specs = "graz")
-cld(lsmeans(bare_mod1, specs = "graz"), Letters = "abcdefg")
-
-r.squaredGLMM(bare_mod1) #take the theoretical
-
-##aridity
-bare_mod2 <- glmmTMB(Proportion ~ aridity +(1|site_ID),  
-                     family = binomial, data = baredat)
-
-##aridity + arid_sq
-bare_mod3 <- glmmTMB(Proportion ~ aridity + arid_sq +(1|site_ID),  
-                     family = binomial, data = baredat)
-
-##graz + aridity
-bare_mod4 <- glmmTMB(Proportion ~ graz +aridity + (1|site_ID),  
-                     family = binomial, data = baredat)
-
-##graz + aridity + arid_sq
-bare_mod5 <- glmmTMB(Proportion ~ graz +aridity + arid_sq +(1|site_ID),  
-                     family = binomial, data = baredat)
-
-##graz*aridity
-bare_mod6 <- glmmTMB(Proportion ~ graz*aridity + (1|site_ID),  
-                     family = binomial, data = baredat)
-summary(bare_mod6)
-
-##Graz*aridity + graz*arid_sq
-bare_mod7 <- glmmTMB(Proportion ~ graz*aridity + graz*arid_sq + (1|site_ID),  
-                     family = binomial, data = baredat) 
+nursedat <- prop_chisq_reduced |> 
+  filter(association == "nurse")
 
 
-AIC(nullmod_bare, bare_mod1, bare_mod2, bare_mod3, bare_mod4, bare_mod5, bare_mod6, bare_mod7)
-##nullmodel has the lowest AIC
+###Linear modelling: Does the proportion of sp associated with nurse or bare microsites change along RAI and AMT?
+#Create a table for results
+assmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
+                                    Df = integer(), Pr_value = numeric(), AIC = numeric(), 
+                                    Warnings = character(), row.names = NULL)
+#import model formulas
+formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
+  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
+  select(predictors) |> 
+  distinct(predictors) |> 
+  add_row(predictors = "1+(1|site_ID)")  #add the null model
+
+# Initialize warning_msg outside the loop
+warning_msg <- ""
+
+##Also loop through response variables
+response_list <- c("Proportion", "Proportion")
+datalist = c("baredat", "nursedat")
+
+##LOOP THROUGH MODELS STARTS HERE##
+#Loop through response variables
+for(r in 1:length(response_list)) {
+  
+  response_var <- response_list[r]  
+  data = get(datalist[r])
+  
+  #Loop through response variables
+  for (f in 1:nrow(formula_table)) {
+    
+    predictors <- as.character(formula_table[f, ])
+    formula <- as.formula(paste(response_var, "~",  predictors))
+    
+    # Clear existing warning messages
+    warnings()
+    
+    # Initialize anova_result and AIC_model outside the tryCatch block
+    anova_result <- NULL
+    AIC_model <- NULL
+    
+    tryCatch( #tryCatch looks for errors and warinngs in the expression
+      expr = {
+        model <- glmmTMB(formula, family = binomial, data = data)
+        
+        # Perform Anova 
+        anova_result <- Anova(model, type = 2)
+        # Get AIC
+        AIC_model <- AIC(model)
+        
+        warning_messages <- warnings()
+        
+        ##Do nothing if the warinng is about non integer successes
+        # Check for the non-integer #successes warning
+        if ("non-integer #successes" %in% warning_messages) {
+          # Handle non-integer #successes warning (e.g., print a message)
+          message("Ignoring non-integer #successes warning")
+        }
+        
+        #Print the warning message if it is about model fit
+        # Check for other warnings, excluding the non-integer #successes warning
+        other_warnings <- setdiff(warning_messages, "non-integer #successes")
+        if (length(other_warnings) > 0) {
+          warning_msg <- paste("warning :", as.character(other_warnings), collapse = "; ")
+          message(paste("WARNING_", "r =" , response_var, "f =", f, warning_msg))
+        }
+      }, 
+      
+      #Also show me errors
+      error = function(e) {
+        message(paste("ERROR_", "r =" , response_var, "f =", f, conditionMessage(e)))
+        print(e)
+      }
+    )
+    
+    # Extract relevant information
+    result_row <- data.frame(Response = response_var,
+                             Model = paste(response_var, "~",  predictors), 
+                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
+                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
+                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
+                             Warnings = warning_msg)
+    
+    
+    assmod_results_table <- rbind(assmod_results_table, result_row)
+  }
+}
+##if there is no AIC value, the model did not converge
+assmod_results_table
 
 
 
-##PROPORTION OF NURSE ASSOCIATIONS##
-nursedat <- prop_chisq_reduced[which(prop_chisq_reduced$association == "nurse") , ]
 
-nullmod_nurse <- glmmTMB(Proportion ~ 1 +(1|site_ID),  
-                         family = binomial, data = nursedat)
-
-##graz
-nurse_mod1 <- glmmTMB(Proportion ~ graz +(1|site_ID),  
-                      family = binomial, data = nursedat)
-summary(nurse_mod1)
-Anova(nurse_mod1)
-anova(nullmod_nurse, nurse_mod1) 
-lsmeans(nurse_mod1, specs = "graz")
-cld(lsmeans(nurse_mod1, specs = "graz"), Letters = "abcdefg")
-
-r.squaredGLMM(nurse_mod1) #take the theoretical
-
-##aridity
-nurse_mod2 <- glmmTMB(Proportion ~ aridity +(1|site_ID),  
-                      family = binomial, data = nursedat)
-
-##aridity + arid_sq
-nurse_mod3 <- glmmTMB(Proportion ~ aridity + arid_sq +(1|site_ID),  
-                      family = binomial, data = nursedat)
-
-##graz + aridity
-nurse_mod4 <- glmmTMB(Proportion ~ graz +aridity + (1|site_ID),  
-                      family = binomial, data = nursedat)
-
-##graz + aridity + arid_sq
-nurse_mod5 <- glmmTMB(Proportion ~ graz +aridity + arid_sq +(1|site_ID),  
-                      family = binomial, data = nursedat)
-
-##graz*aridity
-nurse_mod6 <- glmmTMB(Proportion ~ graz*aridity + (1|site_ID),  
-                      family = binomial, data = nursedat)
-summary(nurse_mod6)
-
-##Graz*aridity + graz*arid_sq
-nurse_mod7 <- glmmTMB(Proportion ~ graz*aridity + graz*arid_sq + (1|site_ID),  
-                      family = binomial, data = nursedat) ##model convergence problem
-
-
-AIC(nullmod_nurse, nurse_mod1, nurse_mod2, nurse_mod3, nurse_mod4, nurse_mod5, nurse_mod6, nurse_mod7)
-##nullmodel has the lowest AIC
 
 
 
