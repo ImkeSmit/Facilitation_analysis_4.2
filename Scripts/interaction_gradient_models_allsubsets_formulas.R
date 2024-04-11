@@ -1,11 +1,9 @@
 ###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI###
 library(glmmTMB)
 library(car)
-library(lsmeans)
 library(multcomp)
 library(multcompView)
 library(MuMIn)
-library(dplyr)
 library(tidyverse)
 library(tidylog)
 
@@ -17,9 +15,10 @@ all_result$ID <- as.factor(all_result$ID)
 all_result$graz <- as.factor(all_result$graz)
 
 #import siteinfo, so that we can add RAI and AMT
-siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
-#select the columns we want to add
-siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
+         AMT2 = AMT^2)
 siteinfo$ID <- as.factor(siteinfo$ID)
 #join to all_result
 all_result <- all_result |> 
