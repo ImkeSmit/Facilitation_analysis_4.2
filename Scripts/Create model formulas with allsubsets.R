@@ -235,4 +235,4 @@ for(f in 1:length(formulas)) {
   one_formula <- formulas[[f]]
   formula_table[f, 1] <- one_formula
 }
-write.csv(formula_table, "Facilitation data\\results\\nint_env_models_allsubsets.csv")
+write.csv(formula_table, "Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv")
