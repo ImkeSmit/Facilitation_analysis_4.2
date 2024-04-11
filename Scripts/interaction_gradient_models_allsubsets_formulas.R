@@ -107,8 +107,8 @@ warning_msg <- ""
 
 ##Also loop through response variables
 #loop through Nintc first
-response_list <- c("NIntc_richness_binom", "NIntc_cover_binom")
-datalist = c("all_result", "all_result")
+response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_binom", "NInta_cover_binom")
+datalist = c("all_result", "all_result", "all_result", "all_result")
 
 ##LOOP THROUGH MODELS STARTS HERE##
 #Loop through response variables
@@ -180,4 +180,86 @@ for(r in 1:length(response_list)) {
 ##if there is no AIC value, the model did not converge
 results_table
 
-glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
+###DESCRIPTIVE STATISTICS####
+#How many plots and sites
+length(unique(all_result$ID))#97
+length(unique(all_result$site_ID))#29
+
+#how many dominant bare pairs
+nrow(all_result)
+
+#How many species in total?
+countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
+                  "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
+for (k in 1:length(countrynames)) {
+  country <- get(countrynames[k])
+  
+  if(k == 1){
+    target_taxa <- country |> 
+      select(Species.within.quadrat) |> 
+      distinct(Species.within.quadrat) |> 
+      filter(!is.na(Species.within.quadrat))
+    
+    nurse_taxa <- country |> 
+      filter(Microsite == 2) |> 
+      select(ID_Microsite) |> 
+      distinct(ID_Microsite)
+  } else {
+    temp_target_taxa <- country |> 
+      select(Species.within.quadrat) |> 
+      distinct(Species.within.quadrat)
+    
+    temp_nurse_taxa <- country |> 
+      filter(Microsite == 2) |> 
+      select(ID_Microsite) |> 
+      distinct(ID_Microsite)
+    
+    target_taxa <- target_taxa |> 
+      bind_rows(temp_target_taxa) |> 
+      distinct(Species.within.quadrat)
+    
+    nurse_taxa <- nurse_taxa |> 
+      bind_rows(temp_nurse_taxa) |> 
+      distinct(ID_Microsite)
+  }
+}
+
+#number of target species
+nrow(target_taxa) #721
+#number of nurse species
+nrow(nurse_taxa) #90
+
+
+#What is the mean NIntc over all plots? 
+richdat <- #remove NA
+  all_result[-which(is.na(all_result$NIntc_richness)) , which(colnames(all_result) == "NIntc_richness")]
+avg_NIntc_rich <- mean(richdat) #0.1293802
+SE_NIntc_rich <- sd(richdat)/sqrt(length((richdat))) #std error
+t.test(richdat) #one sample t test to test if sign different from 0
+
+
+covdat <- all_result[-which(is.na(all_result$NIntc_cover)) , which(colnames(all_result) == "NIntc_cover")]
+avg_NIntc_cov <- mean(covdat) #0.1480586
+SE_NIntc_cov <- sd(covdat)/sqrt(length((covdat))) #std error
+t.test(covdat)
+
+
+shandat <- all_result[-which(is.na(all_result$NIntc_shannon)) , which(colnames(all_result) == "NIntc_shannon")]
+avg_NIntc_shan <- mean(shandat) #mean of NIntc cover wit NA removed
+#0.1192385
+t.test(shandat)
+
+#What is the mean NInta over all plots?
+ad_richdat <- #remove NA
+  all_result[-which(is.na(all_result$NInta_richness)) , which(colnames(all_result) == "NInta_richness")]
+avg_NInta_rich <- mean(ad_richdat) #0.3843493
+SE_NInta_rich <- sd(ad_richdat)/sqrt(length((ad_richdat))) #std error #0.01493847
+t.test(ad_richdat) #one sample t test to test if sign different from 0
+
+
+ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , which(colnames(all_result) == "NInta_cover")]
+avg_NInta_cov <- mean(ad_covdat) #0.4940919
+SE_NInta_cov <- sd(ad_covdat)/sqrt(length((ad_covdat))) #0.01798452
+t.test(ad_covdat)
+
+
