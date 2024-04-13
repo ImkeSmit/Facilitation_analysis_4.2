@@ -184,6 +184,9 @@ results_table |>
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC))
 
+bestmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), data = all_result, family = binomial)
+summary(bestmod)
+Anova(bestmod)
 
 ###SPECIES PREFERENCE ANALYSIS####
 #Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
