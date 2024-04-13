@@ -403,7 +403,7 @@ for(r in 1:length(response_list)) {
 ##if there is no AIC value, the model did not converge
 prefmod_results_table
 #save results
-write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024")
+write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv")
 
 #find model with lowest AIC
 prefmod_results_table |> 
