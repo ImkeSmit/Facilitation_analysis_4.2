@@ -114,3 +114,20 @@ pref_bestmods <- pref_model_results |>
   filter(AIC == min(AIC))
 #Null models selected for both response variables
 #!!!80% of the models have convergenec errors. Is this a problem?
+
+
+###Species association models####
+#import species associations (from Chi2 tests)
+Chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+Chisq_results$ID <- as.factor(Chisq_results$ID)
+Chisq_results$site_ID <- as.factor(Chisq_results$site_ID)
+Chisq_results$graz <- as.factor(Chisq_results$graz)
+
+#import s#import siteinfo
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
+         AMT2 = AMT^2)
+siteinfo$ID <- as.factor(siteinfo$ID)
+
+chisq
