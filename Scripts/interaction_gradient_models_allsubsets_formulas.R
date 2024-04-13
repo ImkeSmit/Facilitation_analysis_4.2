@@ -291,7 +291,6 @@ sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
 
-
 #join AMT and RAI to sp_preference
 #import siteinfo
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
@@ -304,13 +303,13 @@ sp_preference <- sp_preference |>
   left_join(siteinfo, by = "ID")
 
 #In how many of the plots did the majority of sp prefer nurse microsites?
-length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #8
+length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #12
 
 #In how many of the sites did the majority of sp prefer open microsites?
-length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #8
+length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #12
 
 #On average, how many species ocurred in both nurse and bare microsites
-avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference)
+avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.57
 
 
 ###Generalised linear modelling with glmmTMB: P ~ graz + RAI + AMT####
