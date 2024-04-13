@@ -331,7 +331,7 @@ warning_msg <- ""
 
 ##Also loop through response variables
 response_list <- c("prop_nurse_only", "prop_bare_only")
-datalist = c("sp_preference", "sp_preference", "sp_preference")
+datalist = c("sp_preference", "sp_preference")
 
 ##LOOP THROUGH MODELS STARTS HERE##
 #Loop through response variables
