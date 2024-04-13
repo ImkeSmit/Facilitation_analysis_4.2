@@ -123,11 +123,32 @@ Chisq_results$ID <- as.factor(Chisq_results$ID)
 Chisq_results$site_ID <- as.factor(Chisq_results$site_ID)
 Chisq_results$graz <- as.factor(Chisq_results$graz)
 
-#import s#import siteinfo
+#import siteinfo
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
   select(ID, RAI, AMT) |> 
   mutate(RAI2 = RAI^2, 
          AMT2 = AMT^2)
 siteinfo$ID <- as.factor(siteinfo$ID)
 
-chisq
+#join siteinfo and calcu;ate proportion
+prop_chisq_reduced <- Chisq_results |> 
+  filter(!association == "too_rare") |> #remove sp that are too rare to do chisq test and do not take them into account for proportion calculation
+  group_by(ID, association) |> 
+  summarize(Count = n()) |> 
+  ungroup() |> 
+  group_by(ID) |> 
+  mutate(Proportion = Count / sum(Count)) |> 
+  ungroup() |> 
+  mutate(percentage = Proportion*100) |> 
+  left_join(siteinfo, by = "ID")
+
+#import the modelling results
+ass_model_results <- read.csv("Facilitation data\\results\\association_model_results_11Apr2024.csv")
+
+ass_bestmods <- ass_model_results |> 
+  filter(!is.na(AIC))|> #remove models with convergence errors
+  group_by(Response) |> 
+  filter(AIC == min(AIC))
+
+#only null models selected
+#!!82% of models did not converge
