@@ -36,7 +36,6 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
-
 ###import the modelling result:
 nint_model_results <- read.csv("Facilitation data//results//nint_model_results_11Apr2024.csv", row.names = 1)
 
@@ -86,3 +85,25 @@ summary(best_ninta_covmod)
 anova(null_ninta_covmod, best_ninta_covmod) #p = 0.00202
 Anova(best_ninta_covmod)
 r.squaredGLMM(best_ninta_covmod) #take the theoretical
+
+
+####sp preference models####
+##Import sp preference data
+sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference$ID <- as.factor(sp_preference$ID)
+sp_preference$site_ID <- as.factor(sp_preference$site_ID)
+sp_preference$graz <- as.factor(sp_preference$graz)
+
+#import siteinfo
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
+         AMT2 = AMT^2)
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
+sp_preference <- sp_preference |> 
+  left_join(siteinfo, by = "ID")
+
+##Import the modelling result
+pref_modelling_result <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)
+
