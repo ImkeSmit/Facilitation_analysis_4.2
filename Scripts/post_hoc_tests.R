@@ -1,9 +1,12 @@
 ###Post hoc tests on best subset models###
 library(tidyverse)
 library(tidylog)
+library(glmmTMB)
+library(car)
+library(MuMIn)
 
 
-###NINt models####
+###NInt models####
 #import nint results
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
@@ -32,4 +35,54 @@ all_result$NIntc_shannon_binom <- (all_result$NIntc_shannon + 1)/2
 all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1))
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
-#import the models and their AIC values
+
+
+###import the modelling result:
+nint_model_results <- read.csv("Facilitation data//results//nint_model_results_11Apr2024.csv", row.names = 1)
+
+#Find the lowest AIC model for each response variable
+bestmods <- nint_model_results |> 
+  filter(!is.na(AIC))|> #remove models with convergence errors
+  group_by(Response) |> 
+  filter(AIC == min(AIC))
+
+###Make all of the above models and get p values and R squared
+##NINtc richness
+null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
+summary(null_nintc_richmod)
+
+
+##NIntc cover
+#null model
+null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
+#best subset model
+best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), 
+                             family = binomial, data = all_result)
+summary(best_nintc_covmod)
+anova(null_nintc_covmod, best_nintc_covmod) #p = 0.01212, full model is better than null model
+Anova(best_nintc_covmod)
+r.squaredGLMM(best_nintc_covmod) #take the theoretical
+
+##Ninta richness
+#nullmodel
+null_ninta_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
+#bets model
+best_ninta_richmod <- glmmTMB(NInta_richness_binom ~ AMT+(1|site_ID), data = all_result, family = binomial)
+
+summary(best_ninta_richmod)
+anova(null_ninta_richmod, best_ninta_richmod) #p = 0.00635
+Anova(best_ninta_richmod)
+r.squaredGLMM(best_ninta_richmod) #take the theoretical
+
+
+##NInta cover
+#null model
+null_ninta_covmod <- glmmTMB(NInta_cover_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
+#best model
+best_ninta_covmod <- glmmTMB(NInta_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), 
+                            data = all_result, family = binomial)
+
+summary(best_ninta_covmod)
+anova(null_ninta_covmod, best_ninta_covmod) #p = 0.00202
+Anova(best_ninta_covmod)
+r.squaredGLMM(best_ninta_covmod) #take the theoretical
