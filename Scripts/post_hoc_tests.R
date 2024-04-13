@@ -105,5 +105,12 @@ sp_preference <- sp_preference |>
   left_join(siteinfo, by = "ID")
 
 ##Import the modelling result
-pref_modelling_result <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)
+pref_model_results <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)
 
+#Find the lowest AIC model for each response variable
+pref_bestmods <- pref_model_results |> 
+  filter(!is.na(AIC))|> #remove models with convergence errors
+  group_by(Response) |> 
+  filter(AIC == min(AIC))
+#Null models selected for both response variables
+#!!!80% of the models have convergenec errors. Is this a problem?
