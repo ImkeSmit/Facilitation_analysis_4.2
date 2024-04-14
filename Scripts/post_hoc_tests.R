@@ -177,8 +177,8 @@ pred_df <- data.frame(AMT = c(unique(all_result$AMT)))
 pred_df$AMT_mod_predictions <- c(predict(AMT_mod, pred_df))
 
 
-nintc_cov_AMT <- ggplot(all_result, aes(x = AMT, y = NIntc_cover), color = RAI) +
-  geom_jitter(shape = 21, size = 2,  stroke = 0, alpha = 0.3, width = 1, height = 0.1) +
+nintc_cov_AMT <- ggplot(all_result, aes(x = AMT, y = NIntc_cover)) +
+  geom_jitter(shape = 21, size = 2, fill = "darkslategrey", stroke = 0, alpha = 0.3, width = 1, height = 0.1) +
   ylab("NIntc cover") +
   geom_line(data = pred_df, aes(x = AMT, y = AMT_mod_predictions), color = "red", lwd = 1) +
   theme_classic() 
@@ -192,7 +192,7 @@ RAI_pred_df <- data.frame(RAI = c(unique(all_result$RAI)))
 RAI_pred_df$RAI_mod_predictions <- c(predict(RAI_mod, RAI_pred_df))
 
 
-nintc_cov_AMT <- ggplot(all_result, aes(x = RAI, y = NIntc_cover)) +
+nintc_cov_RAI <- ggplot(all_result, aes(x = RAI, y = NIntc_cover)) +
   geom_jitter(shape = 21, size = 2, fill = "darkslategrey", stroke = 0, alpha = 0.3, width = 10, height = 0.1) +
   ylab("NIntc cover") +
   geom_line(data = RAI_pred_df, aes(x = RAI, y = RAI_mod_predictions), color = "blue", lwd = 1) +
