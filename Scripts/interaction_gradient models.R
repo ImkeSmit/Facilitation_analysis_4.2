@@ -618,7 +618,7 @@ anova(null_prefmod_bare, bare_mod1) #7.395e-07 ***
 bare_mod2 <- glmmTMB(prop_bare_only ~ aridity + (1|site_ID),  
                      family = binomial, data = sp_preference)
 summary(bare_mod2)
-  Anova(bare_mod2)
+Anova(bare_mod2)
 anova(null_prefmod_bare, bare_mod2)
 plot(sp_preference$prop_bare_only ~ sp_preference$aridity)
 #anova(null_prefmod_bare, bare_mod2) #2.698e-08 ***
@@ -662,6 +662,10 @@ Anova(bare_mod7) ##model convergence problem
 AIC(null_prefmod_bare, bare_mod1, bare_mod2, bare_mod3, bare_mod4, bare_mod5, bare_mod6, bare_mod7)
 #bare_mod2 has the lowest AIC
 
+##model diagnostics for bare_mod2
+bare_mod2_simres <- simulateResiduals(fittedModel = bare_mod2)
+plot(bare_mod2_simres) #HOV looks ok but the quantiles are significantly different from the expected quantiles
+#qqplot indicates overdispersion
 
 
 ###CHisq tests of species association with nurse or bare microsites####
@@ -829,7 +833,7 @@ for(i in 1:nrow(Chisq_results)) {
 
 #write to csv file
 #write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
-Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 
 #How many sp significantly associated with the nurse?
 Chisq_results |> 
