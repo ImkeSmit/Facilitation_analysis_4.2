@@ -211,6 +211,14 @@ anova(nullmod_cov, cov_mod7) #0.1968
 best_subset_nintc_cover <- AIC(nullmod_cov, cov_mod1, cov_mod2, cov_mod3, cov_mod4, cov_mod5, cov_mod6, cov_mod7)
 #cov_mod1 has the lowest AIC
 
+###Check diagnostics for cov_mod1
+library(DHARMa)
+#create simulated residuals
+cov_mod1_simres <- simulateResiduals(fittedModel = cov_mod1)
+#create QQ plot and residual vs fitted plot
+plot(cov_mod1_simres) #HOV looks ok
+#from qq plot data seem to be overdispersed
+testDispersion(cov_mod1_simres) #dispersion test significant
 
 
 ##NInta richness####
