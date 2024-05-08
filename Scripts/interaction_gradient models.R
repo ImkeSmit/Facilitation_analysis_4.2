@@ -275,6 +275,7 @@ Anova(ad_rich_mod7)
 best_subset_ninta_richness <- AIC(additive_null_richmod, ad_rich_mod1, ad_rich_mod2, ad_rich_mod3, ad_rich_mod4, ad_rich_mod5, ad_rich_mod6, ad_rich_mod7)
 #null model has the lowest AIC, but very close to mod1!
 
+
 ##NInta cover####
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover_binom)) , ] #remove rows with NA
 
@@ -292,6 +293,16 @@ lsmeans(ad_cov_mod1, specs = "graz")
 cld(lsmeans(ad_cov_mod1, specs = "graz"), Letters = "abcdefg")
 
 r.squaredGLMM(ad_cov_mod1) #take the theoretical
+
+###model diagnostics for ad_cov_mod1
+ad_cov_mod1_simres <- simulateResiduals(fittedModel = ad_cov_mod1)
+#qq plot and residual vs fitted plot
+plot(ad_cov_mod1_simres) #HOV looks ok
+#qq plot indicates underdispersion
+testDispersion(simulateResiduals(fittedModel = ad_cov_mod1, re.form = NULL)) #significantly underdispersed
+#test for zeroinflation
+testZeroInflation(ad_cov_mod1_simres) #less zeroes than expected
+
 
 #aridity
 ad_cov_mod2 <- glmmTMB(NInta_cover_binom ~ aridity + (1|site_ID),  
@@ -331,13 +342,6 @@ Anova(ad_cov_mod7)
 
 best_subset_ninta_cover <- AIC(additive_null_covmod, ad_cov_mod1, ad_cov_mod2, ad_cov_mod3, ad_cov_mod4, ad_cov_mod5, ad_cov_mod6, ad_cov_mod7)
 #ad_cov_mod1 has the lowest AIC
-
-###model diagnostics for ad_cov_mod1
-ad_cov_mod1_simres <- simulateResiduals(fittedModel = ad_cov_mod1)
-#qq plot and residual vs fitted plot
-plot(ad_cov_mod1_simres) #HOV looks ok
-#qq plot indicates underdispersion
-testOutliers(ad_cov_mod1_simres)
 
 
 
@@ -522,7 +526,7 @@ sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
 #write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
-sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
@@ -624,6 +628,14 @@ plot(sp_preference$prop_bare_only ~ sp_preference$aridity)
 #anova(null_prefmod_bare, bare_mod2) #2.698e-08 ***
 r.squaredGLMM(bare_mod2)##use the theoretical R2 for binomial family
 
+##model diagnostics for bare_mod2
+bare_mod2_simres <- simulateResiduals(fittedModel = bare_mod2)
+plot(bare_mod2_simres) #HOV looks ok but the quantiles are significantly different from the expected quantiles
+#qqplot indicates unerdispersion
+testZeroInflation(bare_mod2_simres) #less zeroes than expected
+testDispersion(simulateResiduals(fittedModel = bare_mod2, re.form = NULL))
+#dispersion test significant
+
 #aridity + arid_sq
 bare_mod3 <- glmmTMB(prop_bare_only ~ aridity + arid_sq +(1|site_ID),  
                      family = binomial, data = sp_preference)
@@ -662,10 +674,6 @@ Anova(bare_mod7) ##model convergence problem
 AIC(null_prefmod_bare, bare_mod1, bare_mod2, bare_mod3, bare_mod4, bare_mod5, bare_mod6, bare_mod7)
 #bare_mod2 has the lowest AIC
 
-##model diagnostics for bare_mod2
-bare_mod2_simres <- simulateResiduals(fittedModel = bare_mod2)
-plot(bare_mod2_simres) #HOV looks ok but the quantiles are significantly different from the expected quantiles
-#qqplot indicates overdispersion
 
 
 ###CHisq tests of species association with nurse or bare microsites####
