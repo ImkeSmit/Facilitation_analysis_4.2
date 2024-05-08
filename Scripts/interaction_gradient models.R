@@ -1,6 +1,7 @@
 ###Models and other descriptive statistics regarding NIntc across grazing and aridity gradients
 
 library(glmmTMB)
+library(DHARMa)
 library(car)
 library(lsmeans)
 library(multcomp)
@@ -161,10 +162,18 @@ anova(nullmod_cov, cov_mod1) #p = 0.02629
 lsmeans(cov_mod1, specs = "graz")
 cld(lsmeans(cov_mod1, specs = "graz"), Letters = "abcdefg")
 
-
-
 r.squaredGLMM(cov_mod1) #take the theoretical
 
+###Check diagnostics for cov_mod1
+#create simulated residuals
+cov_mod1_simres <- simulateResiduals(fittedModel = cov_mod1)
+#create QQ plot and residual vs fitted plot
+plot(cov_mod1_simres) #HOV looks ok, but residuals are probably not uniformly distributed within boxes
+#from qq plot data seem to be underdispersed
+# do dispersion test with residuals conditional on the random effects
+testDispersion(simulateResiduals(fittedModel = cov_mod1, re.form = NULL)) #dispersion test significant
+#test for zero inflation
+testZeroInflation(cov_mod1_simres) #ratio of observed vs simulated xeros < 1, so there are les zeroes than expected
 
 #aridity
 cov_mod2 <- glmmTMB(NIntc_cover_binom ~ aridity + (1|site_ID),  
@@ -210,15 +219,6 @@ anova(nullmod_cov, cov_mod7) #0.1968
 
 best_subset_nintc_cover <- AIC(nullmod_cov, cov_mod1, cov_mod2, cov_mod3, cov_mod4, cov_mod5, cov_mod6, cov_mod7)
 #cov_mod1 has the lowest AIC
-
-###Check diagnostics for cov_mod1
-library(DHARMa)
-#create simulated residuals
-cov_mod1_simres <- simulateResiduals(fittedModel = cov_mod1)
-#create QQ plot and residual vs fitted plot
-plot(cov_mod1_simres) #HOV looks ok
-#from qq plot data seem to be overdispersed
-testDispersion(cov_mod1_simres) #dispersion test significant
 
 
 ##NInta richness####
