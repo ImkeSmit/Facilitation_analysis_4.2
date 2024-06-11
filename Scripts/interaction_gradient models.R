@@ -525,7 +525,6 @@ sp_preference$graz <- as.factor(sp_preference$graz)
 sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
-#write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
 sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
