@@ -197,7 +197,7 @@ ggsave("combo_barplot.png", combo_barplot, width = 1500, height = 2100, units = 
 ###Fig3: Species position along aridity####
 ###AT THE PLOTLEVEL
 #import the plotlevel species preference data that was made in the interaction_gradient models script
-plot_sp_pref <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+plot_sp_pref <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 #make it long format
 long_plot_sp_pref <- gather(plot_sp_pref, key = preference, #name of the new column that will be made up of the last 3 columns
                              value = proportion_of_sp, #name of the new column that will hold the proportions
@@ -259,6 +259,16 @@ plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)
   guides(fill = guide_legend(nrow = 3)) +
   theme(legend.position = "right", legend.title = element_blank(), axis.text.x = element_text(angle = 90))
 plotlevel_prefbar
+
+
+###Scatterplot of Pbare ~ aridity####
+long_plot_sp_pref |> 
+  filter(preference == "prop_bare_only") |> 
+  ggplot(aes(x = aridity, y = proportion_of_sp)) + 
+  geom_point(color = brewer.pal(8, "Dark2")[7]) +
+  theme_classic() +
+  xlab("Aridity") +
+  ylab(expression("Percentage of species occurring \n only in bare microsites"))
 
 
 
