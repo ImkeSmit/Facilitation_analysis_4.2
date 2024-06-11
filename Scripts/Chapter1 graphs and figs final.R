@@ -262,14 +262,23 @@ plotlevel_prefbar
 
 
 ###Scatterplot of Pbare ~ aridity####
-long_plot_sp_pref |> 
+#get the model line to add to the graph
+bare_mod2 <- glmmTMB(prop_bare_only ~ aridity ,family = binomial, data = sp_preference)
+summary(bare_mod2)
+pred_data2 <- data.frame(aridity = c(unique(sp_preference$aridity)))
+pred_data2$prop_bare_only_prediction <- predict(bare_mod2, pred_data2, type = "response")
+
+Pbare_scatterplot <- long_plot_sp_pref |> 
   filter(preference == "prop_bare_only") |> 
   ggplot(aes(x = aridity, y = proportion_of_sp)) + 
-  geom_point(color = brewer.pal(8, "Dark2")[7]) +
+  geom_point(color = "darkslategrey", alpha = 0.6) +
+  geom_line(data = pred_data2, 
+            aes(x = aridity, y = prop_bare_only_prediction), color = brewer.pal(8, "Dark2")[7], lwd = 1) +
   theme_classic() +
   xlab("Aridity") +
-  ylab(expression("Percentage of species occurring \n only in bare microsites"))
-
+  ylab(expression("Percentage of competitively excluded species"))
+ggsave("Pbare_scatterplot.png", Pbare_scatterplot, width = 1200, height = 1200, units = "px",
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
 ####Graphs of Chisq results###
