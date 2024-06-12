@@ -1,5 +1,4 @@
 ###Models and other descriptive statistics regarding NIntc across grazing and aridity gradients
-
 library(glmmTMB)
 library(DHARMa)
 library(car)
