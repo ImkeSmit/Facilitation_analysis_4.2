@@ -179,7 +179,7 @@ results_table
 write.csv(results_table, "Facilitation data\\results\\nint_model_results_11Apr2024.csv")
 
 #find model with lowest AIC:
-results_table |> 
+results_table <- read.csv("Facilitation data\\results\\nint_model_results_11Apr2024.csv", row.names = 1) |> 
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC))
@@ -406,7 +406,7 @@ prefmod_results_table
 write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv")
 
 #find model with lowest AIC
-prefmod_results_table |> 
+prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)|> 
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC))

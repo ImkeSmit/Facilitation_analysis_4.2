@@ -1,5 +1,4 @@
 ###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI
-
 library(glmmTMB)
 library(car)
 library(lsmeans)
