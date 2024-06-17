@@ -416,7 +416,7 @@ lsmean_cov_graz_bar <- ggplot() +
   geom_bar(data = cov_grazlevel_lsmeans, aes(x = graz, y = lsmean, fill = graz), stat = "identity", alpha = 0.6) +
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
   geom_errorbar(data = cov_grazlevel_lsmeans, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(0, 0.62) +
+  ylim(-1, 1) +
   geom_text(data = cov_grazlevel_lsmeans, aes(x = graz, y = ycoord), label = c(cov_grazlevel_lsmeans$sign_letters))+
   xlab("Grazing pressure") +
   ylab(expression(Estimated~mean~NInt[C]~cover))+
@@ -477,7 +477,7 @@ arith_cov_graz_bar <- ggplot() +
   geom_bar(data = cov_grazlevel_stats, aes(x = graz, y = mean_NIntc_cover, fill = graz), stat = "identity", alpha = 0.6) +
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
   geom_errorbar(data = cov_grazlevel_stats, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(0, 0.62) +
+  ylim(-1, 1) +
   geom_text(data = cov_aster, aes(x = graz, y = ycoord), label = "*", size = 6) +
   xlab("Grazing pressure") +
   ylab(expression(Arithmetic~mean~NInt[C]~cover))+
@@ -489,7 +489,7 @@ arith_cov_graz_bar
 ##arrange the arithmetic and lsmean plots on the same pane
 cov_grazlevel_arith_and_lsmeans <- ggarrange(lsmean_cov_graz_bar, arith_cov_graz_bar, ncol = 2, nrow = 1, labels = c("a", "b"))
 ggsave("combo_arithmetic_lsmean_cov_grazlevel_bar.png", cov_grazlevel_arith_and_lsmeans, width = 1900, height = 1000, unit = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
 
