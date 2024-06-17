@@ -188,6 +188,30 @@ bestmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|sit
 summary(bestmod)
 Anova(bestmod)
 
+
+##Make some figures###
+mod <- glmmTMB(NIntc_cover_binom ~ AMT+RAI+AMT2+AMT:RAI+RAI:AMT2, data = all_result, family = binomial)
+pred_data <- data.frame(RAI = c(all_result$RAI), AMT = c(all_result$AMT))
+pred_data$AMT2 = (pred_data$AMT)^2
+pred_data$mod_predictions <- predict(mod, pred_data, type = "response")
+pred_data$untransformed_predictions <- (pred_data$mod_predictions*2) -1
+pred_data <- pred_data |> distinct()
+
+
+nint_rai <- ggplot(all_result, aes(x = RAI, y = NIntc_cover)) +
+  geom_jitter(alpha = 0.6, color = "darkslategray", height = 0.02, width = 10) +
+  geom_line(data = pred_data, aes(y= untransformed_predictions, x = RAI), col = "orange", lwd = 1) +
+  theme_classic()
+
+nint_amt <- ggplot(all_result, aes(x = AMT2, y = NIntc_cover)) +
+  geom_jitter(alpha = 0.6, color = "darkslategray", height = 0.02, width = 10) +
+  geom_line(data = pred_data, aes(y= untransformed_predictions, x = AMT2), col = "orange", lwd = 1) +
+  theme_classic()
+
+
+
+
+
 ###SPECIES PREFERENCE ANALYSIS####
 #Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
 #We require raw country data
