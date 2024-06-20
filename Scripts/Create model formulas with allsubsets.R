@@ -1,5 +1,5 @@
 ###Create model formulas with different predictor combinations####
-###nint ~ graz + MAT + RAI###
+###nint ~ graz + MAT + aridity + RASE + pH.b + SAC.b###
 ##Ceate a function called AllSubsets to do this
 library(DescTools)
 library(tidyverse)
@@ -100,10 +100,15 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
         InteractionCombinations3[[counter3]] <- temp.form
       }
     }
-    #remove all interactions of the main effect with its squared effect eg the aridity:aridity2 interaction
+    #remove forbidden interactions
     InteractionCombinations3 <- 
-      InteractionCombinations3[- which(InteractionCombinations3 %in% c("AMT:AMT2", "RAI:RAI2", 
-                                                                       "AMT2:RAI2", "RAI2:AMT2"))]
+      InteractionCombinations3[- which(InteractionCombinations3 %in% c("AMT:AMT2", "aridity:aridity2", 
+                                                                       "AMT2:aridity2", "aridity2:AMT2", 
+                                                                       "pH.b:AMT", "pH.b:AMT2", "pH.b:aridity", "pH.b:aridity2", 
+                                                                       "AMT:pH.b", "AMT2:pH.b", "aridity:pH.b", "aridity2:pH.b", 
+                                                                       "SAC.b:AMT", "SAC.b:AMT2", "SAC.b:aridity", "SAC.b:aridity2", 
+                                                                       "SAC.b:pH.b", "SAC.b:pH.b", "SAC.b:pH.b", "SAC.b:pH.b", 
+                                                                       "pH.b:SAC.b", "SAC.b:pH.b"))]
     AllPredictorsNames <- c(AllPredictorsNames, InteractionCombinations3)
     NumberExplanatoryVariables <- length(AllPredictorsNames)
     
@@ -114,10 +119,6 @@ AllSubsets <- function(ResponseVariableColumn, PredictorsColumns, data.source = 
   for (counter in c(1 : NumberExplanatoryVariables)) {
     
     temp.combn <- t(combn(AllPredictorsNames, counter))
-    #remove unessecary combos
-    #Interactions where functional div indices interact, and where the interaction has an NA in it
-    #temp.combn <- t(t(temp.combn[-which(temp.combn[ , c(1:ncol(temp.combn))] %in% c("FRic:FEve", "FEve:FRic", "FRic:FDiv", "FDiv:FRic", "FEve:FDiv", "FDiv:FEve")) , ]))
-    #temp.combn <- t(t(temp.combn[-which(temp.combn[ , c(1:ncol(temp.combn))] %like% "%:NA%") , ]))
     
     for (counter2 in 1 : length(temp.combn[,1])) {
       PredictorCombinations[[length(PredictorCombinations) + 1]] <- temp.combn[counter2, ]
@@ -195,14 +196,24 @@ all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
 
-#import siteinfo, so that we can add RAI and AMT
-siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
-#select the columns we want to add
-siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
-siteinfo$ID <- as.factor(siteinfo$ID)
-#join to all_result
+#import siteinfo, we will use this to add ID to drypop
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the facilitation data
 all_result <- all_result |> 
-  left_join(siteinfo, by = "ID")
+  inner_join(drypop, by = "ID")
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
@@ -217,10 +228,10 @@ all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
 formulas <- AllSubsets(ResponseVariableColumn = which(colnames(all_result) == "NIntc_richness_binom"), 
-                       PredictorsColumns = c(which(colnames(all_result) %in% c("graz", "AMT", "RAI"))), 
+                       PredictorsColumns = c(which(colnames(all_result) %in% c("graz", "AMT", "aridity", "RASE", "pH.b", "SAC.b"))), 
                        data.source = all_result, 
                        Add.PolynomialTerms = TRUE,
-                       Polynom.exclude = c(which(colnames(all_result) %in% c("graz"))), 
+                       Polynom.exclude = c(which(colnames(all_result) %in% c("graz", "RASE", "pH.b", "SAC.b"))), 
                        Polynom.order = 2, 
                        Do.PredictorInteractions = TRUE, 
                        Interaction.Level = 2, #interaction level = 3 takes wayyy too long
@@ -233,4 +244,4 @@ for(f in 1:length(formulas)) {
   one_formula <- formulas[[f]]
   formula_table[f, 1] <- one_formula
 }
-write.csv(formula_table, "Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv")
+write.csv(formula_table, "Facilitation data\\results\\nint_models_allsubsets_clim_soil.csv")
