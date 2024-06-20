@@ -1,4 +1,4 @@
-###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI
+###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand content
 library(glmmTMB)
 library(car)
 library(lsmeans)
@@ -16,14 +16,24 @@ all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
 
-#import siteinfo, so that we can add RAI and AMT
-siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") 
-#select the columns we want to add
-siteinfo <- siteinfo[, which(colnames(siteinfo) %in% c("ID", "AMT", "RAI"))]
-siteinfo$ID <- as.factor(siteinfo$ID)
-#join to all_result
+#import siteinfo, we will use this to add ID to drypop
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the facilitation data
 all_result <- all_result |> 
-  left_join(siteinfo, by = "ID")
+  inner_join(drypop, by = "ID")
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
@@ -38,9 +48,10 @@ all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
 
-
-
 ###Correlations####
+#env variables
+
+
 #Is NInta and NIntc correlated?
 plot(all_result$NInta_richness, all_result$NIntc_richness)
 plot(all_result$NInta_shannon, all_result$NIntc_shannon)
