@@ -49,54 +49,32 @@ all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
 
 ###Correlations####
+
 #env variables
+cordata <- all_result |> 
+  select(aridity, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  na.omit()
+cormat <- cor(cordata, method = "pearson")
 
+setwd("Figures")
+png("environmental_variables_correlation.png")
+corrplot(cormat, method = "number", type = "lower")
+dev.off()
 
-#Is NInta and NIntc correlated?
-plot(all_result$NInta_richness, all_result$NIntc_richness)
-plot(all_result$NInta_shannon, all_result$NIntc_shannon)
-plot(all_result$NInta_cover, all_result$NIntc_cover)
-cordat <- all_result[-which(is.na(all_result$NIntc_cover)) , ] #remove NA values
-cor.test(cordat$NInta_cover, cordat$NIntc_cover, method = "spearman")
+#only RAI and aridity is strongly correlated
+#in the models we will use graz+aridity+AMT+RASE+ph.b+SAc.b
 
-cordat <- all_result[-which(is.na(all_result$NIntc_richness)) , ] #remove NA values
-cor.test(cordat$NInta_richness, cordat$NIntc_richness, method = "spearman")
+#Interaction indexes
+cordata2 <- all_result |> 
+  select(contains("NInt")) |>
+  select(!contains("binom")) |> 
+  na.omit()
+cormat2 <- cor(cordata2, method = "pearson")
 
-cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
-cor.test(cordat$NInta_shannon, cordat$NIntc_shannon, method = "spearman")
-
-
-###Is NIntc richness, cover and diversity correlated
-#Richness and shannon
-plot(all_result$NIntc_richness, all_result$NIntc_shannon)
-cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
-cor.test(cordat$NIntc_richness, cordat$NIntc_shannon, method = "spearman") #0.8483084
-
-#Richness and cover
-plot(all_result$NIntc_richness, all_result$NIntc_cover)
-cordat <- all_result[-which(is.na(all_result$NIntc_cover)) , ] #remove NA values
-cor.test(cordat$NIntc_richness, cordat$NIntc_cover, method = "spearman") #0.7377719
-
-#Shannon and cover
-plot(all_result$NIntc_shannon, all_result$NIntc_cover)
-cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
-cor.test(cordat$NIntc_shannon, cordat$NIntc_cover, method = "spearman") #0.346839
-
-###Is NInta richness, cover and diversity correlated
-#Richness and shannon
-plot(all_result$NInta_richness, all_result$NInta_shannon)
-cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA values
-cor.test(cordat$NInta_richness, cordat$NInta_shannon, method = "spearman") #0.8483084
-
-#Richness and cover
-plot(all_result$NInta_richness, all_result$NInta_cover)
-cordat <- all_result[-which(is.na(all_result$NInta_cover)) , ] #remove NA values
-cor.test(cordat$NInta_richness, cordat$NInta_cover, method = "spearman") #0.7344117 
-
-#Shannon and cover
-plot(all_result$NInta_shannon, all_result$NInta_cover)
-cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA values
-cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.3414124
+setwd("Figures")
+png("nint_correlation.png")
+corrplot(cormat2, method = "number", type = "lower")
+dev.off()
 
 
 ###Generalised linear modelling with glmmTMB####
