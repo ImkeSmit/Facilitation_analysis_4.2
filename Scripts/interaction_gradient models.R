@@ -76,4 +76,6 @@ png("nint_correlation.png")
 corrplot(cormat2, method = "number", type = "lower")
 dev.off()
 
+##now run allsubsets to get the model formulas
 
+##then run those models (get code from interaction_gradient_models_allsubsets)
