@@ -227,7 +227,7 @@ for(r in 1:length(response_list)) {
 results_table
 
 #save the results
-write.csv(results_table, "Facilitation data\\results\\nint_model_results_11Apr2024.csv")
+write.csv(results_table, "Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
 
 #find model with lowest AIC:
 results_table <- read.csv("Facilitation data\\results\\nint_model_results_11Apr2024.csv", row.names = 1) |> 
