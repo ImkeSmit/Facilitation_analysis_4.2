@@ -136,11 +136,11 @@ for(m in 1:nrow(modlist)) {
 }
 #subset modlist to keep only valid models
 valid_modlist <- data.frame(predictors = modlist[c(which(validity == TRUE)), ])
-write.csv(valid_modlist, "Facilitation data\\results\\model_formulas_22Jul2024.csv")
+write.csv(valid_modlist, "Facilitation data\\results\\model_formulas_22Jun2024.csv")
 
 
 ###Generalised linear modelling with glmmTMB : NINt ~ AMT + RASE + aridity + GRAZ####
-formula_table <- read.csv("Facilitation data\\results\\model_formulas_22Jul2024.csv", row.names = 1) |>
+formula_table <- read.csv("Facilitation data\\results\\model_formulas_22Jun2024.csv", row.names = 1) |>
   mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
