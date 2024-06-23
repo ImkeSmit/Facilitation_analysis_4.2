@@ -221,7 +221,7 @@ results_table
 write.csv(results_table, "Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
 
 #find model with lowest AIC:
-results_table <- read.csv("Facilitation data\\results\\nint_model_results_11Apr2024.csv", row.names = 1) |> 
+results_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC))
@@ -253,7 +253,7 @@ nint_amt <- ggplot(all_result, aes(x = AMT2, y = NIntc_cover)) +
 ###SPECIES PREFERENCE ANALYSIS####
 #Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
 #We require raw country data
-data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
+data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
@@ -348,30 +348,41 @@ sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
 #write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
-sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1) |> 
+  rename(aridity2 = arid_sq)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
 
-#join AMT and RAI to sp_preference
-#import siteinfo
+#import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, RAI, AMT) |> 
-  mutate(RAI2 = RAI^2, 
-         AMT2 = AMT^2)
-siteinfo$ID <- as.factor(siteinfo$ID)
-#join to all_result
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the sp preference data
 sp_preference <- sp_preference |> 
-  left_join(siteinfo, by = "ID")
+  inner_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(AMT2 = AMT^2)
 
 #In how many of the plots did the majority of sp prefer nurse microsites?
-length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #12
+length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #14
 
 #In how many of the sites did the majority of sp prefer open microsites?
-length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #12
+length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #14
 
 #On average, how many species ocurred in both nurse and bare microsites
-avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.57
+avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.60
 
 
 ###Generalised linear modelling with glmmTMB: P ~ graz + RAI + AMT####
