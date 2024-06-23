@@ -467,10 +467,10 @@ for(r in 1:length(response_list)) {
 results_table
 
 #save results
-write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv")
+write.csv(results_table, "Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv")
 
 #find model with lowest AIC
-prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)|> 
+prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC))
@@ -660,7 +660,7 @@ Chisq_results |>
 Chisq_results |> 
   filter(association == "neutral") |> 
   distinct(species) |> 
-  summarise(nsp = n()) #241
+  summarise(nsp = n()) #243
 
 #How many sp are adequately sampled?
 Chisq_results |> 
@@ -677,14 +677,21 @@ Chisq_results |>
 
 ###get the proportion of species in a plot that show a certain association
 #import siteinfo, so that we can add RAI and AMT
+#import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, SITE_ID, GRAZ, AMT, RAI) |> 
-  rename(site_ID = SITE_ID, 
-         graz = GRAZ) |> 
-  #calculate squared terms
-  mutate(AMT2 = AMT^2, 
-         RAI2 = RAI^2)
-siteinfo$ID <- as.factor(siteinfo$ID)
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, SITE_ID, plotref, GRAZ, ARIDITY.v3) |> 
+  rename(graz = "GRAZ", aridity = "ARIDITY.v3", site_ID = "SITE_ID") |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
 
 #calculate proportions and add siteinfo
 prop_chisq_reduced <- Chisq_results |> 
@@ -696,7 +703,9 @@ prop_chisq_reduced <- Chisq_results |>
   mutate(Proportion = Count / sum(Count)) |> 
   ungroup() |> 
   mutate(percentage = Proportion*100) |> 
-  left_join(siteinfo, by = "ID")
+  left_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(AMT2 = AMT^2, aridity2 = aridity^2)
 
 #make sure classifications are correct
 prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
@@ -715,14 +724,10 @@ nursedat <- prop_chisq_reduced |>
 
 ###Generalised linear modelling with glmmTMB: prop_association ~ graz + AMT + RAI####
 #Create a table for results
-assmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
-                                   Df = integer(), Pr_value = numeric(), AIC = numeric(), 
-                                   Warnings = character(), row.names = NULL)
+assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), row.names = NULL)
 #import model formulas
-formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
-  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
-  select(predictors) |> 
-  distinct(predictors) |> 
+formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
+  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 # Initialize warning_msg outside the loop
@@ -748,16 +753,13 @@ for(r in 1:length(response_list)) {
     # Clear existing warning messages
     warnings()
     
-    # Initialize anova_result and AIC_model outside the tryCatch block
-    anova_result <- NULL
+    # Initialize AIC_model outside the tryCatch block
     AIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
         model <- glmmTMB(formula, family = binomial, data = data)
         
-        # Perform Anova 
-        anova_result <- Anova(model, type = 2)
         # Get AIC
         AIC_model <- AIC(model)
         
@@ -765,10 +767,10 @@ for(r in 1:length(response_list)) {
         
         ##Do nothing if the warinng is about non integer successes
         # Check for the non-integer #successes warning
-        if ("non-integer #successes" %in% warning_messages) {
+        #if ("non-integer #successes" %in% warning_messages) {
           # Handle non-integer #successes warning (e.g., print a message)
-          message("Ignoring non-integer #successes warning")
-        }
+          #message("Ignoring non-integer #successes warning")
+        #}
         
         #Print the warning message if it is about model fit
         # Check for other warnings, excluding the non-integer #successes warning
@@ -789,9 +791,6 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
-                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
-                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
-                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
                              AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
                              Warnings = warning_msg)
     
@@ -803,7 +802,7 @@ for(r in 1:length(response_list)) {
 assmod_results_table
 
 #save results
-write.csv(assmod_results_table, "Facilitation data\\results\\association_model_results_11Apr2024.csv")
+write.csv(assmod_results_table, "Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv")
 
 #get the model with the lowest AIC
 assmod_results_table |> 
