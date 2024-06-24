@@ -676,7 +676,6 @@ Chisq_results |>
 
 
 ###get the proportion of species in a plot that show a certain association
-#import siteinfo, so that we can add RAI and AMT
 #import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
   mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
