@@ -309,10 +309,11 @@ bare_ass_bestmod <- ass_bestmods[1,2]$Model
 #subset for the species that are bare associated
 baredat <- prop_chisq_reduced |> 
   filter(association == "bare") |> 
-  rename(prop_bare_association = Proportion)
+  rename(prop_bare_association = Proportion) |> 
+  mutate(log_prop_bare_association= log(prop_bare_association))
 
-bare_ass_bestmod <- glmmTMB(prop_bare_association ~ graz+aridity+AMT+AMT2+RASE+pH+SAC+
-                            graz:AMT+graz:pH+RASE:AMT+RASE:aridity+AMT:aridity+(1|site_ID), 
+bare_ass_bestmod <- glmmTMB(log_prop_bare_association ~ graz+aridity+AMT+AMT2+RASE+pH+SAC+
+                            graz:AMT+ graz:pH+ RASE:AMT+ RASE:aridity+ AMT:aridity+(1|site_ID), 
                             family = binomial, data = baredat)
 
 bare_ass_nullmod <- glmmTMB(prop_bare_association ~ 1+(1|site_ID), 
@@ -320,6 +321,7 @@ bare_ass_nullmod <- glmmTMB(prop_bare_association ~ 1+(1|site_ID),
 summary(bare_ass_bestmod)#NA p values??
 Anova(bare_ass_bestmod)
 anova(bare_ass_nullmod, bare_ass_bestmod)
+r.squaredGLMM(bare_ass_bestmod)
 
 #look at residuals
 bare_ass_res <- simulateResiduals(bare_ass_bestmod)
@@ -335,14 +337,17 @@ nursedat <- prop_chisq_reduced |>
   rename(prop_nurse_association = Proportion)
 
 nurse_ass_bestmod <- glmmTMB(prop_nurse_association ~ graz+aridity+aridity2+AMT+AMT2+RASE+pH+SAC+
-                              graz:aridity+graz:RASE+graz:SAC+RASE:aridity+(1|site_ID), 
+                              graz:aridity+ graz:RASE+ graz:SAC+ RASE:aridity+(1|site_ID), 
                             family = binomial, data = nursedat)
 
 nurse_ass_nullmod <- glmmTMB(prop_nurse_association ~ 1+(1|site_ID), 
                             family = binomial, data = nursedat)
-summary(nurse_ass_bestmod)#NA p values??
+summary(nurse_ass_bestmod)
 Anova(nurse_ass_bestmod)
 anova(nurse_ass_nullmod, nurse_ass_bestmod)
+r.squaredGLMM(nurse_ass_bestmod)
+
+emmeans(nurse_ass_bestmod, specs = "graz")
 
 #look at residuals
 nurse_ass_res <- simulateResiduals(nurse_ass_bestmod)
