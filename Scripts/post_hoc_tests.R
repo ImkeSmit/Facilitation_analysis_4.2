@@ -9,6 +9,7 @@ library(ggplot2)
 library(ggpubr)
 library(multcomp)
 library(multcompView)
+library(DHARMa)
 
 ###NInt models####
 #import nint results
@@ -261,14 +262,23 @@ Chisq_results$ID <- as.factor(Chisq_results$ID)
 Chisq_results$site_ID <- as.factor(Chisq_results$site_ID)
 Chisq_results$graz <- as.factor(Chisq_results$graz)
 
-#import siteinfo
+#import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, RAI, AMT) |> 
-  mutate(RAI2 = RAI^2, 
-         AMT2 = AMT^2)
-siteinfo$ID <- as.factor(siteinfo$ID)
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, SITE_ID, plotref, GRAZ, ARIDITY.v3) |> 
+  rename(graz = "GRAZ", aridity = "ARIDITY.v3", site_ID = "SITE_ID") |> 
+  distinct() |> 
+  na.omit()
 
-#join siteinfo and calcu;ate proportion
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#calculate proportions and add siteinfo
 prop_chisq_reduced <- Chisq_results |> 
   filter(!association == "too_rare") |> #remove sp that are too rare to do chisq test and do not take them into account for proportion calculation
   group_by(ID, association) |> 
@@ -278,15 +288,63 @@ prop_chisq_reduced <- Chisq_results |>
   mutate(Proportion = Count / sum(Count)) |> 
   ungroup() |> 
   mutate(percentage = Proportion*100) |> 
-  left_join(siteinfo, by = "ID")
+  left_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(AMT2 = AMT^2, aridity2 = aridity^2)
+prop_chisq_reduced$ID <- as.factor(prop_chisq_reduced$ID)
+prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
+prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 
 #import the modelling results
-ass_model_results <- read.csv("Facilitation data\\results\\association_model_results_11Apr2024.csv")
+ass_model_results <- read.csv("Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv", row.names = 1)
 
 ass_bestmods <- ass_model_results |> 
   filter(!is.na(AIC))|> #remove models with convergence errors
   group_by(Response) |> 
   filter(AIC == min(AIC))
 
-#only null models selected
-#!!82% of models did not converge
+##best model for prop_bare_ass###
+bare_ass_bestmod <- ass_bestmods[1,2]$Model
+
+#subset for the species that are bare associated
+baredat <- prop_chisq_reduced |> 
+  filter(association == "bare") |> 
+  rename(prop_bare_association = Proportion)
+
+bare_ass_bestmod <- glmmTMB(prop_bare_association ~ graz+aridity+AMT+AMT2+RASE+pH+SAC+
+                            graz:AMT+graz:pH+RASE:AMT+RASE:aridity+AMT:aridity+(1|site_ID), 
+                            family = binomial, data = baredat)
+
+bare_ass_nullmod <- glmmTMB(prop_bare_association ~ 1+(1|site_ID), 
+                            family = binomial, data = baredat)
+summary(bare_ass_bestmod)#NA p values??
+Anova(bare_ass_bestmod)
+anova(bare_ass_nullmod, bare_ass_bestmod)
+
+#look at residuals
+bare_ass_res <- simulateResiduals(bare_ass_bestmod)
+plot(bare_ass_res)#underdispersed...
+
+
+##best model for prop_nurse_ass###
+nurse_ass_bestmod <- ass_bestmods[2,2]$Model
+
+#subset for the species that are bare associated
+nursedat <- prop_chisq_reduced |> 
+  filter(association == "nurse") |> 
+  rename(prop_nurse_association = Proportion)
+
+nurse_ass_bestmod <- glmmTMB(prop_nurse_association ~ graz+aridity+aridity2+AMT+AMT2+RASE+pH+SAC+
+                              graz:aridity+graz:RASE+graz:SAC+RASE:aridity+(1|site_ID), 
+                            family = binomial, data = nursedat)
+
+nurse_ass_nullmod <- glmmTMB(prop_nurse_association ~ 1+(1|site_ID), 
+                            family = binomial, data = nursedat)
+summary(nurse_ass_bestmod)#NA p values??
+Anova(nurse_ass_bestmod)
+anova(nurse_ass_nullmod, nurse_ass_bestmod)
+
+#look at residuals
+nurse_ass_res <- simulateResiduals(nurse_ass_bestmod)
+plot(nurse_ass_res)#underdispersed...
+
