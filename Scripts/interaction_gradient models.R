@@ -402,7 +402,7 @@ formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_form
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 #Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), row.names = NULL)
+results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), row.names = NULL)
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
@@ -429,6 +429,7 @@ for(r in 1:length(response_list)) {
     
     # Initialize AIC_model outside the tryCatch block
     AIC_model <- NULL
+    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
@@ -436,6 +437,7 @@ for(r in 1:length(response_list)) {
         
         # Get AIC
         AIC_model <- AIC(model)
+        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
@@ -465,8 +467,8 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
-                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA))
-    
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
+                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA))
     
     results_table <- rbind(results_table, result_row)
   }
@@ -477,11 +479,11 @@ results_table
 #save results
 write.csv(results_table, "Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv")
 
-#find model with lowest AIC
+#find model with lowest BIC
 prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
-  filter(!is.na(AIC)) |> 
-  filter(AIC == min(AIC))
+  filter(!is.na(BIC)) |> 
+  filter(BIC == min(BIC))
 
 
 ####CHISQ TESTS OF SP ASSOCIATION WITH BARE OR NURSE MICROSITE####
