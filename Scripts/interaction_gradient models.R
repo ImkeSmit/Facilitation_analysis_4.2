@@ -733,7 +733,8 @@ nursedat <- prop_chisq_reduced |>
 
 ###Generalised linear modelling with glmmTMB: prop_association ~ graz + AMT + RAI####
 #Create a table for results
-assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), row.names = NULL)
+assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
+                                   Warnings = character(), row.names = NULL)
 #import model formulas
 formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
   mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
@@ -764,6 +765,7 @@ for(r in 1:length(response_list)) {
     
     # Initialize AIC_model outside the tryCatch block
     AIC_model <- NULL
+    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
@@ -771,6 +773,7 @@ for(r in 1:length(response_list)) {
         
         # Get AIC
         AIC_model <- AIC(model)
+        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
@@ -801,6 +804,7 @@ for(r in 1:length(response_list)) {
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
                              AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
+                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA),
                              Warnings = warning_msg)
     
     
@@ -815,9 +819,9 @@ write.csv(assmod_results_table, "Facilitation data\\results\\association_clim_so
 
 #get the model with the lowest AIC
 assmod_results_table |> 
-  filter(!is.na(AIC)) |> 
+  filter(!is.na(BIC)) |> 
   group_by(Response) |> 
-  filter(AIC == min(AIC))
+  filter(BIC == min(BIC))
 
 
 ###DESCRIPTIVE STATISTICS####
