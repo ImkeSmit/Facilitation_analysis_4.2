@@ -50,6 +50,12 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
+#make sure variables are correctly classified
+all_result$site_ID <- as.factor(all_result$site_ID)
+all_result$ID <- as.factor(all_result$ID)
+##Treat grazing as an unordered factor!
+all_result$graz <- as.factor(all_result$graz)
+
 
 ###Correlations####
 
@@ -140,12 +146,12 @@ write.csv(valid_modlist, "Facilitation data\\results\\nint_clim_soil_model_formu
 
 
 ###Generalised linear modelling with glmmTMB : NINt ~ AMT + RASE + aridity + GRAZ####
-formula_table <- read.csv("Facilitation data\\results\\model_formulas_22Jun2024.csv", row.names = 1) |>
+formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
   mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 #Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), row.names = NULL)
+results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), row.names = NULL)
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
@@ -172,6 +178,7 @@ for(r in 1:length(response_list)) {
     
     # Initialize AIC_model outside the tryCatch block
     AIC_model <- NULL
+    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
@@ -179,6 +186,7 @@ for(r in 1:length(response_list)) {
         
         # Get AIC
         AIC_model <- AIC(model)
+        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
@@ -208,8 +216,8 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
-                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA))
-    
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA), 
+                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA))
     
     results_table <- rbind(results_table, result_row)
   }
