@@ -233,8 +233,8 @@ write.csv(results_table, "Facilitation data\\results\\nint_clim_soil_model_resul
 #find model with lowest AIC:
 results_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
   group_by(Response) |> 
-  filter(!is.na(AIC)) |> 
-  filter(AIC == min(AIC))
+  filter(!is.na(BIC)) |> 
+  filter(BIC == min(BIC))
 
 bestmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), data = all_result, family = binomial)
 summary(bestmod)
