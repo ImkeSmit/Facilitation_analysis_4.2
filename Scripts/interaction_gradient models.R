@@ -27,6 +27,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
 drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
   mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
   select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
   left_join(siteinfo, by = "plotref") |> 
   select(!plotref)
 drypop$ID <- as.factor(drypop$ID)
@@ -61,7 +62,7 @@ all_result$graz <- as.factor(all_result$graz)
 
 #env variables
 cordata <- all_result |> 
-  select(aridity, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  select(aridity, AMT, RAI, RASE, pH, SAC) |> 
   na.omit()
 cormat <- cor(cordata, method = "pearson")
 
@@ -146,7 +147,7 @@ write.csv(valid_modlist, "Facilitation data\\results\\nint_clim_soil_model_formu
 
 
 ###Generalised linear modelling with glmmTMB : NINt ~ AMT + RASE + aridity + GRAZ####
-formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
+formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
   mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
@@ -228,17 +229,14 @@ for(r in 1:length(response_list)) {
 results_table
 
 #save the results
-write.csv(results_table, "Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
+write.csv(results_table, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
 
 #find model with lowest AIC:
-results_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
+results_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
   group_by(Response) |> 
   filter(!is.na(BIC)) |> 
   filter(BIC == min(BIC))
 
-bestmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), data = all_result, family = binomial)
-summary(bestmod)
-Anova(bestmod)
 
 
 ##Make some figures###
