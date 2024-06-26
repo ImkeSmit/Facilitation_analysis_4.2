@@ -258,8 +258,17 @@ sp_preference <- sp_preference |>
 prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
   filter(!is.na(BIC)) |> 
-  filter(BIC == min(BIC))
+  filter(BIC == min(BIC)) 
+#null model selected for prop_bare_only
+#graz selected for prop_nurse_only
 
+nurse_only_bestmod <- glmmTMB(prop_nurse_only ~ graz+(1|site_ID), data = sp_preference, family = binomial)
+nurse_only_nullmod <- glmmTMB(prop_nurse_only ~ 1+(1|site_ID), data = sp_preference, family = binomial)
+summary(nurse_only_bestmod)
+anova(nurse_only_nullmod, nurse_only_bestmod)
+emmeans(nurse_only_bestmod, specs = "graz")
+r.squaredGLMM(nurse_only_bestmod)
+plot(simulateResiduals(nurse_only_bestmod)) #underdispersed, HOV violated
 
 
 ###Species association models####
@@ -306,57 +315,26 @@ prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 ass_model_results <- read.csv("Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv", row.names = 1)
 
 ass_bestmods <- ass_model_results |> 
-  filter(!is.na(AIC))|> #remove models with convergence errors
+  filter(!is.na(BIC))|> #remove models with convergence errors
   group_by(Response) |> 
-  filter(AIC == min(AIC))
-
-##best model for prop_bare_ass###
-bare_ass_bestmod <- ass_bestmods[1,2]$Model
-
-#subset for the species that are bare associated
-baredat <- prop_chisq_reduced |> 
-  filter(association == "bare") |> 
-  rename(prop_bare_association = Proportion) |> 
-  mutate(log_prop_bare_association= log(prop_bare_association))
-
-bare_ass_bestmod <- glmmTMB(log_prop_bare_association ~ graz+aridity+AMT+AMT2+RASE+pH+SAC+
-                            graz:AMT+ graz:pH+ RASE:AMT+ RASE:aridity+ AMT:aridity+(1|site_ID), 
-                            family = binomial, data = baredat)
-
-bare_ass_nullmod <- glmmTMB(prop_bare_association ~ 1+(1|site_ID), 
-                            family = binomial, data = baredat)
-summary(bare_ass_bestmod)#NA p values??
-Anova(bare_ass_bestmod)
-anova(bare_ass_nullmod, bare_ass_bestmod)
-r.squaredGLMM(bare_ass_bestmod)
-
-#look at residuals
-bare_ass_res <- simulateResiduals(bare_ass_bestmod)
-plot(bare_ass_res)#underdispersed...
+  filter(BIC == min(BIC))
+#null model selected for bare ass
+#pH selected for nurse ass
 
 
 ##best model for prop_nurse_ass###
-nurse_ass_bestmod <- ass_bestmods[2,2]$Model
-
 #subset for the species that are bare associated
 nursedat <- prop_chisq_reduced |> 
   filter(association == "nurse") |> 
   rename(prop_nurse_association = Proportion)
 
-nurse_ass_bestmod <- glmmTMB(prop_nurse_association ~ graz+aridity+aridity2+AMT+AMT2+RASE+pH+SAC+
-                              graz:aridity+ graz:RASE+ graz:SAC+ RASE:aridity+(1|site_ID), 
-                            family = binomial, data = nursedat)
+nurse_ass_bestmod <- glmmTMB(prop_nurse_association ~ pH +(1|site_ID), family = binomial, data = nursedat)
 
-nurse_ass_nullmod <- glmmTMB(prop_nurse_association ~ 1+(1|site_ID), 
-                            family = binomial, data = nursedat)
+nurse_ass_nullmod <- glmmTMB(prop_nurse_association ~ 1+(1|site_ID), family = binomial, data = nursedat)
+
 summary(nurse_ass_bestmod)
-Anova(nurse_ass_bestmod)
 anova(nurse_ass_nullmod, nurse_ass_bestmod)
 r.squaredGLMM(nurse_ass_bestmod)
 
-emmeans(nurse_ass_bestmod, specs = "graz")
-
-#look at residuals
-nurse_ass_res <- simulateResiduals(nurse_ass_bestmod)
-plot(nurse_ass_res)#underdispersed...
+plot(simulateResiduals(nurse_ass_bestmod))#underdispersed...
 
