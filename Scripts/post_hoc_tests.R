@@ -7,8 +7,6 @@ library(MuMIn)
 library(emmeans)
 library(ggplot2)
 library(ggpubr)
-library(multcomp)
-library(multcompView)
 library(DHARMa)
 
 ###NInt models####
@@ -228,31 +226,40 @@ r.squaredGLMM(best_ninta_covmod) #take the theoretical
 
 ####sp preference models####
 ##Import sp preference data
-sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1) |> 
+  rename(aridity2 = arid_sq)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
 
-#import siteinfo
+#import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, RAI, AMT) |> 
-  mutate(RAI2 = RAI^2, 
-         AMT2 = AMT^2)
-siteinfo$ID <- as.factor(siteinfo$ID)
-#join to all_result
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the sp preference data
 sp_preference <- sp_preference |> 
-  left_join(siteinfo, by = "ID")
+  inner_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(AMT2 = AMT^2)
 
 ##Import the modelling result
-pref_model_results <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)
-
-#Find the lowest AIC model for each response variable
-pref_bestmods <- pref_model_results |> 
-  filter(!is.na(AIC))|> #remove models with convergence errors
+#find model with lowest BIC
+prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
-  filter(AIC == min(AIC))
-#Null models selected for both response variables
-#!!!80% of the models have convergenec errors. Is this a problem?
+  filter(!is.na(BIC)) |> 
+  filter(BIC == min(BIC))
+
 
 
 ###Species association models####
