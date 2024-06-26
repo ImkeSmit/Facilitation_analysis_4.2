@@ -10,22 +10,35 @@ library(ggpubr)
 library(DHARMa)
 
 ###NInt models####
-#import nint results
+##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
 
-#import siteinfo, so that we can add RAI and AMT
+#import siteinfo, we will use this to add ID to drypop
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  select(ID, RAI, AMT) |> 
-  mutate(RAI2 = RAI^2, 
-         AMT2 = AMT^2)
-siteinfo$ID <- as.factor(siteinfo$ID)
-#join to all_result
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the facilitation data
 all_result <- all_result |> 
-  left_join(siteinfo, by = "ID")
+  inner_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(aridity2 = aridity^2, 
+         AMT2 = AMT^2)
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
@@ -39,19 +52,32 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
+#make sure variables are correctly classified
+all_result$site_ID <- as.factor(all_result$site_ID)
+all_result$ID <- as.factor(all_result$ID)
+##Treat grazing as an unordered factor!
+all_result$graz <- as.factor(all_result$graz)
+
 ###import the modelling result:
-nint_model_results <- read.csv("Facilitation data//results//nint_model_results_11Apr2024.csv", row.names = 1)
+nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model_results_22Jun2024.csv", row.names = 1)
 
 #Find the lowest AIC model for each response variable
 bestmods <- nint_model_results |> 
-  filter(!is.na(AIC))|> #remove models with convergence errors
+  filter(!is.na(BIC))|> #remove models with convergence errors
   group_by(Response) |> 
-  filter(AIC == min(AIC))
+  filter(BIC == min(BIC))
 
 ###Make all of the above models and get p values and R squared
 ##NINtc richness
+nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+ AMT +AMT2 +RASE +pH +SAC 
+                              +graz:RASE +graz:AMT +graz:SAC +RASE:AMT +(1|site_ID), family = binomial, data = all_result)
 null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
-summary(null_nintc_richmod)
+
+summary(nintc_rich_bestmod)
+anova(null_nintc_richmod, nintc_rich_bestmod)
+
+r.squaredGLMM(nintc_rich_bestmod)
+plot(simulateResiduals(nintc_rich_bestmod))
 
 
 ##NIntc cover
@@ -243,6 +269,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
 drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
   mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
   select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
   left_join(siteinfo, by = "plotref") |> 
   select(!plotref)
 drypop$ID <- as.factor(drypop$ID)
@@ -290,6 +317,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
 drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
   mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
   select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
   left_join(siteinfo, by = "plotref") |> 
   select(!plotref)
 drypop$ID <- as.factor(drypop$ID)
@@ -336,5 +364,5 @@ summary(nurse_ass_bestmod)
 anova(nurse_ass_nullmod, nurse_ass_bestmod)
 r.squaredGLMM(nurse_ass_bestmod)
 
-plot(simulateResiduals(nurse_ass_bestmod))#underdispersed...
+plot(simulateResiduals(nurse_ass_bestmod))#underdispersed
 
