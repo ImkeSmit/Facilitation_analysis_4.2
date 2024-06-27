@@ -63,9 +63,9 @@ nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model
 
 #Find the lowest AIC model for each response variable
 bestmods <- nint_model_results |> 
-  filter(!is.na(BIC))|> #remove models with convergence errors
+  filter(!is.na(AIC))|> #remove models with convergence errors
   group_by(Response) |> 
-  filter(BIC == min(BIC))
+  filter(AIC == min(AIC))
 
 ###Make all of the above models and get p values and R squared
 ##NINtc richness
@@ -284,8 +284,8 @@ sp_preference <- sp_preference |>
 #find model with lowest BIC
 prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
-  filter(!is.na(BIC)) |> 
-  filter(BIC == min(BIC)) 
+  filter(!is.na(AIC)) |> 
+  filter(AIC == min(AIC)) 
 #null model selected for prop_bare_only
 #graz selected for prop_nurse_only
 
@@ -343,9 +343,9 @@ prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 ass_model_results <- read.csv("Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv", row.names = 1)
 
 ass_bestmods <- ass_model_results |> 
-  filter(!is.na(BIC))|> #remove models with convergence errors
+  filter(!is.na(AIC))|> #remove models with convergence errors
   group_by(Response) |> 
-  filter(BIC == min(BIC))
+  filter(AIC == min(AIC))
 #null model selected for bare ass
 #pH selected for nurse ass
 
