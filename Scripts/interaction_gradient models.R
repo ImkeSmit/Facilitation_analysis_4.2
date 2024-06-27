@@ -373,6 +373,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
 drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
   mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
   select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
   left_join(siteinfo, by = "plotref") |> 
   select(!plotref)
 drypop$ID <- as.factor(drypop$ID)
@@ -402,7 +403,8 @@ formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_form
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 #Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), row.names = NULL)
+results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
+                            Warnings = character(), row.names = NULL)
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
@@ -468,7 +470,8 @@ for(r in 1:length(response_list)) {
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
                              AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
-                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA))
+                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA), 
+                             Warnings = warning_msg)
     
     results_table <- rbind(results_table, result_row)
   }
@@ -698,6 +701,7 @@ siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |>
 drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
   mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
   select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
   left_join(siteinfo, by = "plotref") |> 
   select(!plotref)
 drypop$ID <- as.factor(drypop$ID)
