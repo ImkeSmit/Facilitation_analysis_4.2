@@ -1,5 +1,6 @@
-###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand content
+###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand con
 library(glmmTMB)
+library(DHARMa)
 library(car)
 library(lsmeans)
 library(multcomp)
@@ -59,7 +60,6 @@ all_result$graz <- as.factor(all_result$graz)
 
 
 ###Correlations####
-
 #env variables
 cordata <- all_result |> 
   select(aridity, AMT, RAI, RASE, pH, SAC) |> 
@@ -356,8 +356,7 @@ sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
 #write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
-sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1) |> 
-  rename(aridity2 = arid_sq)
+sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
@@ -382,7 +381,8 @@ drypop$ID <- as.factor(drypop$ID)
 sp_preference <- sp_preference |> 
   inner_join(drypop, by = "ID") |> 
   rename(pH = "pH.b", SAC = "SAC.b") |> 
-  mutate(AMT2 = AMT^2)
+  mutate(AMT2 = AMT^2) |>
+  mutate(aridity2 = aridity^2)
 
 #In how many of the plots did the majority of sp prefer nurse microsites?
 length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #14
@@ -489,7 +489,7 @@ prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_cli
   filter(BIC == min(BIC))
 
 
-####CHISQ TESTS OF SP ASSOCIATION WITH BARE OR NURSE MICROSITE####
+###CHisq tests of species association with nurse or bare microsites####
 ###First we need to get the number times a species is present/absent in each microsite
 #Import the country_v3 data
 data_files <- list.files("Facilitation analysis\\Facilitation data\\Countriesv3")

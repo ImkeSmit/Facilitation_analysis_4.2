@@ -197,7 +197,7 @@ ggsave("combo_barplot.png", combo_barplot, width = 1500, height = 2100, units = 
 ###Fig3: Species position along aridity####
 ###AT THE PLOTLEVEL
 #import the plotlevel species preference data that was made in the interaction_gradient models script
-plot_sp_pref <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+plot_sp_pref <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 #make it long format
 long_plot_sp_pref <- gather(plot_sp_pref, key = preference, #name of the new column that will be made up of the last 3 columns
                              value = proportion_of_sp, #name of the new column that will hold the proportions
@@ -260,6 +260,25 @@ plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)
   theme(legend.position = "right", legend.title = element_blank(), axis.text.x = element_text(angle = 90))
 plotlevel_prefbar
 
+
+###Scatterplot of Pbare ~ aridity####
+#get the model line to add to the graph
+bare_mod2 <- glmmTMB(prop_bare_only ~ aridity ,family = binomial, data = sp_preference)
+summary(bare_mod2)
+pred_data2 <- data.frame(aridity = c(unique(sp_preference$aridity)))
+pred_data2$prop_bare_only_prediction <- predict(bare_mod2, pred_data2, type = "response")
+
+Pbare_scatterplot <- long_plot_sp_pref |> 
+  filter(preference == "prop_bare_only") |> 
+  ggplot(aes(x = aridity, y = proportion_of_sp)) + 
+  geom_point(color = "darkslategrey", alpha = 0.6) +
+  geom_line(data = pred_data2, 
+            aes(x = aridity, y = prop_bare_only_prediction), color = brewer.pal(8, "Dark2")[7], lwd = 1) +
+  theme_classic() +
+  xlab("Aridity") +
+  ylab(expression("Percentage of competitively excluded species"))
+ggsave("Pbare_scatterplot.png", Pbare_scatterplot, width = 1200, height = 1200, units = "px",
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
 ####Graphs of Chisq results###
@@ -397,7 +416,7 @@ lsmean_cov_graz_bar <- ggplot() +
   geom_bar(data = cov_grazlevel_lsmeans, aes(x = graz, y = lsmean, fill = graz), stat = "identity", alpha = 0.6) +
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
   geom_errorbar(data = cov_grazlevel_lsmeans, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(0, 0.62) +
+  ylim(-1, 1) +
   geom_text(data = cov_grazlevel_lsmeans, aes(x = graz, y = ycoord), label = c(cov_grazlevel_lsmeans$sign_letters))+
   xlab("Grazing pressure") +
   ylab(expression(Estimated~mean~NInt[C]~cover))+
@@ -458,7 +477,7 @@ arith_cov_graz_bar <- ggplot() +
   geom_bar(data = cov_grazlevel_stats, aes(x = graz, y = mean_NIntc_cover, fill = graz), stat = "identity", alpha = 0.6) +
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
   geom_errorbar(data = cov_grazlevel_stats, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(0, 0.62) +
+  ylim(-1, 1) +
   geom_text(data = cov_aster, aes(x = graz, y = ycoord), label = "*", size = 6) +
   xlab("Grazing pressure") +
   ylab(expression(Arithmetic~mean~NInt[C]~cover))+
@@ -470,7 +489,7 @@ arith_cov_graz_bar
 ##arrange the arithmetic and lsmean plots on the same pane
 cov_grazlevel_arith_and_lsmeans <- ggarrange(lsmean_cov_graz_bar, arith_cov_graz_bar, ncol = 2, nrow = 1, labels = c("a", "b"))
 ggsave("combo_arithmetic_lsmean_cov_grazlevel_bar.png", cov_grazlevel_arith_and_lsmeans, width = 1900, height = 1000, unit = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
 
