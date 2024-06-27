@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand content
-=======
-###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand con
->>>>>>> 07ce5c1e134593291f227b7901d3b686af48ceed
+###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT and RAI###
 library(glmmTMB)
-library(DHARMa)
 library(car)
-library(lsmeans)
-library(multcomp)
-library(multcompView)
-library(MuMIn)
-library(dplyr)
+#library(multcomp)
+#library(multcompView)
+#library(MuMIn)
 library(tidyverse)
 library(tidylog)
 
+###NINT ANALYSIS####
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
@@ -21,28 +15,15 @@ all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
 
-#import siteinfo, we will use this to add ID to drypop
+#import siteinfo, so that we can add RAI and AMT
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
-  select(ID, plotref) |> 
-  distinct() |> 
-  na.omit()
-
-#import drypop, so which contains the env covariates
-drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
-  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
-  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
-  distinct() |> 
-  left_join(siteinfo, by = "plotref") |> 
-  select(!plotref)
-drypop$ID <- as.factor(drypop$ID)
-
-#join the env covariates to the facilitation data
-all_result <- all_result |> 
-  inner_join(drypop, by = "ID") |> 
-  rename(pH = "pH.b", SAC = "SAC.b") |> 
-  mutate(aridity2 = aridity^2, 
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
          AMT2 = AMT^2)
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
+all_result <- all_result |> 
+  left_join(siteinfo, by = "ID")
 
 #NIntc is bounded beween -1 and 1, so binomial family is appropriate
 #However the function requires that the response be bounded between 0 and 1, so rescale NIntc
@@ -56,107 +37,65 @@ all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1
 all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
 all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
-#make sure variables are correctly classified
-all_result$site_ID <- as.factor(all_result$site_ID)
-all_result$ID <- as.factor(all_result$ID)
-##Treat grazing as an unordered factor!
-all_result$graz <- as.factor(all_result$graz)
-
 
 ###Correlations####
-#env variables
-cordata <- all_result |> 
-  select(aridity, AMT, RAI, RASE, pH, SAC) |> 
-  na.omit()
-cormat <- cor(cordata, method = "pearson")
+#Is NInta and NIntc correlated?
+plot(all_result$NInta_richness, all_result$NIntc_richness)
+plot(all_result$NInta_shannon, all_result$NIntc_shannon)
+plot(all_result$NInta_cover, all_result$NIntc_cover)
+cordat <- all_result[-which(is.na(all_result$NIntc_cover)) , ] #remove NA values
+cor.test(cordat$NInta_cover, cordat$NIntc_cover, method = "spearman")
 
-setwd("Figures")
-png("environmental_variables_correlation.png")
-corrplot(cormat, method = "number", type = "lower")
-dev.off()
+cordat <- all_result[-which(is.na(all_result$NIntc_richness)) , ] #remove NA values
+cor.test(cordat$NInta_richness, cordat$NIntc_richness, method = "spearman")
 
-#only RAI and aridity is strongly correlated
-#in the models we will use graz+aridity+AMT+RASE+ph.b+SAc.b
-
-#Interaction indexes
-cordata2 <- all_result |> 
-  select(contains("NInt")) |>
-  select(!contains("binom")) |> 
-  na.omit()
-cormat2 <- cor(cordata2, method = "pearson")
-
-setwd("Figures")
-png("nint_correlation.png")
-corrplot(cormat2, method = "number", type = "lower")
-dev.off()
-
-###Get the model formulas####
-predictors <- c("graz", "aridity", "aridity2", "AMT", "AMT2", "RASE", "pH", "SAC", 
-                "graz:aridity", "graz:RASE", "graz:AMT", "graz:pH", "graz:SAC", "RASE:AMT", "RASE:aridity", "AMT:aridity")
-
-#how many combinations are possible?
-n_possible_models = 2^length(predictors) -1
-
-modlist <- data.frame(formula = character(length = n_possible_models))
-l = 1
-for(counter1 in 1:length(predictors)) {
-  combos <- as.matrix(combn(predictors, counter1))
-  
-  for(counter2 in 1:ncol(combos)) {
-    mod <- paste(c(combos[, counter2]), collapse = "+")
-    
-    modlist[l, 1] <- mod
-    l = l+1
-}}
-
-# Function to check if a model is valid
-is_valid_model <- function(model) {
-  terms <- unlist(strsplit(model, "\\+"))
-  
-  # Define main effects and their corresponding interaction/squared terms
-  interactions <- list("graz" = c("graz:aridity", "graz:RASE", "graz:AMT", "graz:pH", "graz:SAC"),
-                       "aridity" = c("graz:aridity", "RASE:aridity", "AMT:aridity"),
-                       "RASE" = c("graz:RASE", "RASE:AMT", "RASE:aridity"),
-                       "AMT" = c("graz:AMT", "RASE:AMT", "AMT:aridity"),
-                       "pH" = "graz:pH",
-                       "SAC" = "graz:SAC")
-  
-  squared_terms <- list("aridity" = "aridity2", "AMT" = "AMT2")
-  
-  # Check for interaction terms without main effects
-  for (main_effect in names(interactions)) {
-    if (any(interactions[[main_effect]] %in% terms) && !(main_effect %in% terms)) {
-      return(FALSE)
-    }
-  }
-  
-  # Check for squared terms without main effects
-  for (main_effect in names(squared_terms)) {
-    if ((squared_terms[[main_effect]] %in% terms) && !(main_effect %in% terms)) {
-      return(FALSE)
-    }
-  }
-  
-  return(TRUE)
-}
-
-#run modlist through the function to see which models are valid
-validity = c()
-for(m in 1:nrow(modlist)) {
-  validity[m] <- is_valid_model(modlist[m, 1])
-}
-#subset modlist to keep only valid models
-valid_modlist <- data.frame(predictors = modlist[c(which(validity == TRUE)), ])
-write.csv(valid_modlist, "Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv")
+cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
+cor.test(cordat$NInta_shannon, cordat$NIntc_shannon, method = "spearman")
 
 
-###Generalised linear modelling with glmmTMB : NINt ~ AMT + RASE + aridity + GRAZ####
-formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
-  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
+###Is NIntc richness, cover and diversity correlated
+#Richness and shannon
+plot(all_result$NIntc_richness, all_result$NIntc_shannon)
+cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
+cor.test(cordat$NIntc_richness, cordat$NIntc_shannon, method = "spearman") #0.8483084
+
+#Richness and cover
+plot(all_result$NIntc_richness, all_result$NIntc_cover)
+cordat <- all_result[-which(is.na(all_result$NIntc_cover)) , ] #remove NA values
+cor.test(cordat$NIntc_richness, cordat$NIntc_cover, method = "spearman") #0.7377719
+
+#Shannon and cover
+plot(all_result$NIntc_shannon, all_result$NIntc_cover)
+cordat <- all_result[-which(is.na(all_result$NIntc_shannon)) , ] #remove NA values
+cor.test(cordat$NIntc_shannon, cordat$NIntc_cover, method = "spearman") #0.346839
+
+###Is NInta richness, cover and diversity correlated
+#Richness and shannon
+plot(all_result$NInta_richness, all_result$NInta_shannon)
+cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA values
+cor.test(cordat$NInta_richness, cordat$NInta_shannon, method = "spearman") #0.8483084
+
+#Richness and cover
+plot(all_result$NInta_richness, all_result$NInta_cover)
+cordat <- all_result[-which(is.na(all_result$NInta_cover)) , ] #remove NA values
+cor.test(cordat$NInta_richness, cordat$NInta_cover, method = "spearman") #0.7344117 
+
+#Shannon and cover
+plot(all_result$NInta_shannon, all_result$NInta_cover)
+cordat <- all_result[-which(is.na(all_result$NInta_shannon)) , ] #remove NA values
+cor.test(cordat$NInta_shannon, cordat$NInta_cover, method = "spearman") #0.3414124
+
+
+###Generalised linear modelling with glmmTMB : NINt ~ AMT + RAI + GRAZ####
+formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
+  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
+  select(predictors) |> 
+  distinct(predictors) |> 
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 #Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
+results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
+                            Df = integer(), Pr_value = numeric(), AIC = numeric(), 
                             Warnings = character(), row.names = NULL)
 
 # Initialize warning_msg outside the loop
@@ -182,26 +121,27 @@ for(r in 1:length(response_list)) {
     # Clear existing warning messages
     warnings()
     
-    # Initialize AIC_model outside the tryCatch block
+    # Initialize anova_result and AIC_model outside the tryCatch block
+    anova_result <- NULL
     AIC_model <- NULL
-    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
         model <- glmmTMB(formula, family = binomial, data = data)
         
+        # Perform Anova 
+        anova_result <- Anova(model, type = 2)
         # Get AIC
         AIC_model <- AIC(model)
-        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
         ##Do nothing if the warinng is about non integer successes
         # Check for the non-integer #successes warning
-        #if ("non-integer #successes" %in% warning_messages) {
+        if ("non-integer #successes" %in% warning_messages) {
           # Handle non-integer #successes warning (e.g., print a message)
-          #message("Ignoring non-integer #successes warning")
-        #}
+          message("Ignoring non-integer #successes warning")
+        }
         
         #Print the warning message if it is about model fit
         # Check for other warnings, excluding the non-integer #successes warning
@@ -222,9 +162,12 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
-                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA), 
-                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA), 
+                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
+                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
+                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
                              Warnings = warning_msg)
+    
     
     results_table <- rbind(results_table, result_row)
   }
@@ -233,14 +176,17 @@ for(r in 1:length(response_list)) {
 results_table
 
 #save the results
-write.csv(results_table, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
+write.csv(results_table, "Facilitation data\\results\\nint_model_results_11Apr2024.csv")
 
 #find model with lowest AIC:
-results_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
+results_table <- read.csv("Facilitation data\\results\\nint_model_results_11Apr2024.csv", row.names = 1) |> 
   group_by(Response) |> 
-  filter(!is.na(BIC)) |> 
-  filter(BIC == min(BIC))
+  filter(!is.na(AIC)) |> 
+  filter(AIC == min(AIC))
 
+bestmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), data = all_result, family = binomial)
+summary(bestmod)
+Anova(bestmod)
 
 
 ##Make some figures###
@@ -262,10 +208,14 @@ nint_amt <- ggplot(all_result, aes(x = AMT2, y = NIntc_cover)) +
   geom_line(data = pred_data, aes(y= untransformed_predictions, x = AMT2), col = "orange", lwd = 1) +
   theme_classic()
 
+
+
+
+
 ###SPECIES PREFERENCE ANALYSIS####
 #Does aridity influence how many species grow exclusively in bare, open and both microsites (Pbare and Pdominant analysis)
 #We require raw country data
-data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\Countriesv3")
+data_files <- list.files("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3")
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
@@ -365,50 +315,40 @@ sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
 
-#import siteinfo, we will use this to add ID to drypop
+#join AMT and RAI to sp_preference
+#import siteinfo
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
-  select(ID, plotref) |> 
-  distinct() |> 
-  na.omit()
-
-#import drypop, so which contains the env covariates
-drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
-  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
-  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
-  distinct() |> 
-  left_join(siteinfo, by = "plotref") |> 
-  select(!plotref)
-drypop$ID <- as.factor(drypop$ID)
-
-#join the env covariates to the sp preference data
+  select(ID, RAI, AMT) |> 
+  mutate(RAI2 = RAI^2, 
+         AMT2 = AMT^2)
+siteinfo$ID <- as.factor(siteinfo$ID)
+#join to all_result
 sp_preference <- sp_preference |> 
-  inner_join(drypop, by = "ID") |> 
-  rename(pH = "pH.b", SAC = "SAC.b") |> 
-  mutate(AMT2 = AMT^2) |>
-  mutate(aridity2 = aridity^2)
+  left_join(siteinfo, by = "ID")
 
 #In how many of the plots did the majority of sp prefer nurse microsites?
-length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #14
+length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #12
 
 #In how many of the sites did the majority of sp prefer open microsites?
-length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #14
+length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #12
 
 #On average, how many species ocurred in both nurse and bare microsites
-avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.60
+avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.57
 
 
-###Generalised linear modelling with glmmTMB: P ~ graz + AMT+ aridity + rase + pH +SAC####
+###Generalised linear modelling with glmmTMB: P ~ graz + RAI + AMT####
 ##in text the proportion of nurse only species = Pdominant
+#Create a table for results
+prefmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
+                            Df = integer(), Pr_value = numeric(), AIC = numeric(), 
+                            Warnings = character(), row.names = NULL)
 
 #import model formulas
-formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
-  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
+formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
+  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
+  select(predictors) |> 
+  distinct(predictors) |> 
   add_row(predictors = "1+(1|site_ID)")  #add the null model
-
-#Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
-                            Warnings = character(), row.names = NULL)
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
@@ -433,26 +373,27 @@ for(r in 1:length(response_list)) {
     # Clear existing warning messages
     warnings()
     
-    # Initialize AIC_model outside the tryCatch block
+    # Initialize anova_result and AIC_model outside the tryCatch block
+    anova_result <- NULL
     AIC_model <- NULL
-    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
         model <- glmmTMB(formula, family = binomial, data = data)
         
+        # Perform Anova 
+        anova_result <- Anova(model, type = 2)
         # Get AIC
         AIC_model <- AIC(model)
-        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
         ##Do nothing if the warinng is about non integer successes
         # Check for the non-integer #successes warning
-        #if ("non-integer #successes" %in% warning_messages) {
-        # Handle non-integer #successes warning (e.g., print a message)
-        #message("Ignoring non-integer #successes warning")
-        #}
+        if ("non-integer #successes" %in% warning_messages) {
+          # Handle non-integer #successes warning (e.g., print a message)
+          message("Ignoring non-integer #successes warning")
+        }
         
         #Print the warning message if it is about model fit
         # Check for other warnings, excluding the non-integer #successes warning
@@ -473,27 +414,29 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
+                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
+                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
+                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
                              AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
-                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA), 
                              Warnings = warning_msg)
     
-    results_table <- rbind(results_table, result_row)
+    
+    prefmod_results_table <- rbind(prefmod_results_table, result_row)
   }
 }
 ##if there is no AIC value, the model did not converge
-results_table
-
+prefmod_results_table
 #save results
-write.csv(results_table, "Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv")
+write.csv(prefmod_results_table, "Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv")
 
-#find model with lowest BIC
-prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
+#find model with lowest AIC
+prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_model_results_11Apr2024.csv", row.names = 1)|> 
   group_by(Response) |> 
-  filter(!is.na(BIC)) |> 
-  filter(BIC == min(BIC))
+  filter(!is.na(AIC)) |> 
+  filter(AIC == min(AIC))
 
 
-###CHisq tests of species association with nurse or bare microsites####
+####CHISQ TESTS OF SP ASSOCIATION WITH BARE OR NURSE MICROSITE####
 ###First we need to get the number times a species is present/absent in each microsite
 #Import the country_v3 data
 data_files <- list.files("Facilitation analysis\\Facilitation data\\Countriesv3")
@@ -677,7 +620,7 @@ Chisq_results |>
 Chisq_results |> 
   filter(association == "neutral") |> 
   distinct(species) |> 
-  summarise(nsp = n()) #243
+  summarise(nsp = n()) #241
 
 #How many sp are adequately sampled?
 Chisq_results |> 
@@ -693,22 +636,15 @@ Chisq_results |>
 
 
 ###get the proportion of species in a plot that show a certain association
-#import siteinfo, we will use this to add ID to drypop
+#import siteinfo, so that we can add RAI and AMT
 siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
-  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
-  select(ID, SITE_ID, plotref, GRAZ, ARIDITY.v3) |> 
-  rename(graz = "GRAZ", aridity = "ARIDITY.v3", site_ID = "SITE_ID") |> 
-  distinct() |> 
-  na.omit()
-
-#import drypop, so which contains the env covariates
-drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
-  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
-  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
-  distinct() |> 
-  left_join(siteinfo, by = "plotref") |> 
-  select(!plotref)
-drypop$ID <- as.factor(drypop$ID)
+  select(ID, SITE_ID, GRAZ, AMT, RAI) |> 
+  rename(site_ID = SITE_ID, 
+         graz = GRAZ) |> 
+  #calculate squared terms
+  mutate(AMT2 = AMT^2, 
+         RAI2 = RAI^2)
+siteinfo$ID <- as.factor(siteinfo$ID)
 
 #calculate proportions and add siteinfo
 prop_chisq_reduced <- Chisq_results |> 
@@ -720,9 +656,7 @@ prop_chisq_reduced <- Chisq_results |>
   mutate(Proportion = Count / sum(Count)) |> 
   ungroup() |> 
   mutate(percentage = Proportion*100) |> 
-  left_join(drypop, by = "ID") |> 
-  rename(pH = "pH.b", SAC = "SAC.b") |> 
-  mutate(AMT2 = AMT^2, aridity2 = aridity^2)
+  left_join(siteinfo, by = "ID")
 
 #make sure classifications are correct
 prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
@@ -741,11 +675,14 @@ nursedat <- prop_chisq_reduced |>
 
 ###Generalised linear modelling with glmmTMB: prop_association ~ graz + AMT + RAI####
 #Create a table for results
-assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
-                                   Warnings = character(), row.names = NULL)
+assmod_results_table <- data.frame(Response = character(), Model = character(), Chisq = numeric(), 
+                                    Df = integer(), Pr_value = numeric(), AIC = numeric(), 
+                                    Warnings = character(), row.names = NULL)
 #import model formulas
-formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
-  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
+formula_table <- read.csv("Facilitation data\\results\\nint_models_allsubsets_AMT_RAI.csv") |> 
+  separate_wider_delim(formula, delim = "~", names = c("response", "predictors")) |> 
+  select(predictors) |> 
+  distinct(predictors) |> 
   add_row(predictors = "1+(1|site_ID)")  #add the null model
 
 # Initialize warning_msg outside the loop
@@ -771,26 +708,27 @@ for(r in 1:length(response_list)) {
     # Clear existing warning messages
     warnings()
     
-    # Initialize AIC_model outside the tryCatch block
+    # Initialize anova_result and AIC_model outside the tryCatch block
+    anova_result <- NULL
     AIC_model <- NULL
-    BIC_model <- NULL
     
     tryCatch( #tryCatch looks for errors and warinngs in the expression
       expr = {
         model <- glmmTMB(formula, family = binomial, data = data)
         
+        # Perform Anova 
+        anova_result <- Anova(model, type = 2)
         # Get AIC
         AIC_model <- AIC(model)
-        BIC_model <- BIC(model)
         
         warning_messages <- warnings()
         
         ##Do nothing if the warinng is about non integer successes
         # Check for the non-integer #successes warning
-        #if ("non-integer #successes" %in% warning_messages) {
+        if ("non-integer #successes" %in% warning_messages) {
           # Handle non-integer #successes warning (e.g., print a message)
-          #message("Ignoring non-integer #successes warning")
-        #}
+          message("Ignoring non-integer #successes warning")
+        }
         
         #Print the warning message if it is about model fit
         # Check for other warnings, excluding the non-integer #successes warning
@@ -811,8 +749,10 @@ for(r in 1:length(response_list)) {
     # Extract relevant information
     result_row <- data.frame(Response = response_var,
                              Model = paste(response_var, "~",  predictors), 
+                             Chisq = ifelse(!is.null(anova_result), anova_result$Chisq[1], NA), 
+                             Df = ifelse(!is.null(anova_result), anova_result$"Df"[1], NA), 
+                             Pr_value = ifelse(!is.null(anova_result), anova_result$"Pr(>Chisq)"[1], NA), 
                              AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
-                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA),
                              Warnings = warning_msg)
     
     
@@ -823,13 +763,13 @@ for(r in 1:length(response_list)) {
 assmod_results_table
 
 #save results
-write.csv(assmod_results_table, "Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv")
+write.csv(assmod_results_table, "Facilitation data\\results\\association_model_results_11Apr2024.csv")
 
 #get the model with the lowest AIC
 assmod_results_table |> 
-  filter(!is.na(BIC)) |> 
+  filter(!is.na(AIC)) |> 
   group_by(Response) |> 
-  filter(BIC == min(BIC))
+  filter(AIC == min(AIC))
 
 
 ###DESCRIPTIVE STATISTICS####
@@ -913,3 +853,5 @@ ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , which(colnames(a
 avg_NInta_cov <- mean(ad_covdat) #0.4940919
 SE_NInta_cov <- sd(ad_covdat)/sqrt(length((ad_covdat))) #0.01798452
 t.test(ad_covdat)
+
+
