@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand content
-=======
-###Models and other descriptive statistics regarding NIntc across grazing and gradients of MAT, Aridity, RASE, ph and sand con
->>>>>>> 07ce5c1e134593291f227b7901d3b686af48ceed
 library(glmmTMB)
 library(DHARMa)
 library(car)
