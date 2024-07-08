@@ -272,16 +272,6 @@ prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_cli
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC)) 
-#null model selected for prop_bare_only
-#graz selected for prop_nurse_only
-
-nurse_only_bestmod <- glmmTMB(prop_nurse_only ~ graz+(1|site_ID), data = sp_preference, family = binomial)
-nurse_only_nullmod <- glmmTMB(prop_nurse_only ~ 1+(1|site_ID), data = sp_preference, family = binomial)
-summary(nurse_only_bestmod)
-anova(nurse_only_nullmod, nurse_only_bestmod)
-emmeans(nurse_only_bestmod, specs = "graz")
-r.squaredGLMM(nurse_only_bestmod)
-plot(simulateResiduals(nurse_only_bestmod)) #underdispersed, HOV violated
 
 
 ###Species association models####
@@ -332,23 +322,3 @@ ass_bestmods <- ass_model_results |>
   filter(!is.na(AIC))|> #remove models with convergence errors
   group_by(Response) |> 
   filter(AIC == min(AIC))
-#null model selected for bare ass
-#pH selected for nurse ass
-
-
-##best model for prop_nurse_ass###
-#subset for the species that are bare associated
-nursedat <- prop_chisq_reduced |> 
-  filter(association == "nurse") |> 
-  rename(prop_nurse_association = Proportion)
-
-nurse_ass_bestmod <- glmmTMB(prop_nurse_association ~ pH +(1|site_ID), family = binomial, data = nursedat)
-
-nurse_ass_nullmod <- glmmTMB(prop_nurse_association ~ 1+(1|site_ID), family = binomial, data = nursedat)
-
-summary(nurse_ass_bestmod)
-anova(nurse_ass_nullmod, nurse_ass_bestmod)
-r.squaredGLMM(nurse_ass_bestmod)
-
-plot(simulateResiduals(nurse_ass_bestmod))#underdispersed
-
