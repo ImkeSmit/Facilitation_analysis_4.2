@@ -69,33 +69,32 @@ bestmods <- nint_model_results |>
 
 ###Make all of the above models and get p values and R squared
 ##NINtc richness
-nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+ AMT +AMT2 +RASE +pH +SAC 
-                              +graz:RASE +graz:AMT +graz:SAC +RASE:AMT +(1|site_ID), family = binomial, data = all_result)
+nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC +(1|site_ID), family = binomial, data = all_result)
 null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
 
 summary(nintc_rich_bestmod)
 anova(null_nintc_richmod, nintc_rich_bestmod)
+emmeans(nintc_rich_bestmod, specs = 'graz')
 
 r.squaredGLMM(nintc_rich_bestmod)
-plot(simulateResiduals(nintc_rich_bestmod))
+plot(simulateResiduals(nintc_rich_bestmod)) #underdispersed
 
 
 ##NIntc cover
 #null model
 null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
 #best subset model
-best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), 
+best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC+(1|site_ID), 
                              family = binomial, data = all_result)
 summary(best_nintc_covmod)
-anova(null_nintc_covmod, best_nintc_covmod) #p = 0.01212, full model is better than null model
-  Anova(best_nintc_covmod)
+emmeans(best_nintc_covmod, specs = "graz")
+anova(null_nintc_covmod, best_nintc_covmod) 
+Anova(best_nintc_covmod)
 r.squaredGLMM(best_nintc_covmod) #take the theoretical
 
-emmeans(best_nintc_covmod, specs = "graz")
 
-#is it a problem to model with the binom variable and graph with the untransformed variable?
 
-##Some basic plots
+##Some basic plots####
 ###NIntc cover ~ graz
 covdat <- all_result[-which(is.na(all_result$NIntc_cover)) , ]
 #does graz affect NINtc cover
@@ -208,46 +207,33 @@ nintc_cov_AMT <- ggplot(all_result, aes(x = AMT, y = NIntc_cover)) +
   geom_line(data = pred_df, aes(x = AMT, y = AMT_mod_predictions), color = "red", lwd = 1) +
   theme_classic() 
 
-##NINtc cover ~ RAI
-#get model predictions
-RAI_mod <- glmmTMB(NIntc_cover_binom ~ RAI, data = all_result, family = binomial)
-#values to predict over
-RAI_pred_df <- data.frame(RAI = c(unique(all_result$RAI)))
-#get predicted vals and add them to dataframe
-RAI_pred_df$RAI_mod_predictions <- c(predict(RAI_mod, RAI_pred_df))
-
-
-nintc_cov_RAI <- ggplot(all_result, aes(x = RAI, y = NIntc_cover)) +
-  geom_jitter(shape = 21, size = 2, fill = "darkslategrey", stroke = 0, alpha = 0.3, width = 10, height = 0.1) +
-  ylab("NIntc cover") +
-  geom_line(data = RAI_pred_df, aes(x = RAI, y = RAI_mod_predictions), color = "blue", lwd = 1) +
-  theme_classic() 
-
 
 
 ##Ninta richness
 #nullmodel
 null_ninta_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
 #bets model
-best_ninta_richmod <- glmmTMB(NInta_richness_binom ~ AMT+(1|site_ID), data = all_result, family = binomial)
+best_ninta_richmod <- glmmTMB(NInta_richness_binom ~ graz+AMT+SAC+graz:SAC +(1|site_ID), data = all_result, family = binomial)
 
 summary(best_ninta_richmod)
-anova(null_ninta_richmod, best_ninta_richmod) #p = 0.00635
+anova(null_ninta_richmod, best_ninta_richmod) #
 Anova(best_ninta_richmod)
 r.squaredGLMM(best_ninta_richmod) #take the theoretical
+plot(simulateResiduals(best_ninta_richmod)) #underdispersed
 
 
 ##NInta cover
 #null model
 null_ninta_covmod <- glmmTMB(NInta_cover_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
 #best model
-best_ninta_covmod <- glmmTMB(NInta_cover_binom ~ graz+AMT+RAI+AMT2+AMT:RAI+RAI:AMT2+(1|site_ID), 
+best_ninta_covmod <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC+(1|site_ID), 
                             data = all_result, family = binomial)
 
 summary(best_ninta_covmod)
-anova(null_ninta_covmod, best_ninta_covmod) #p = 0.00202
+anova(null_ninta_covmod, best_ninta_covmod) 
 Anova(best_ninta_covmod)
 r.squaredGLMM(best_ninta_covmod) #take the theoretical
+plot(simulateResiduals(best_ninta_covmod)) #underdispersed
 
 
 ####sp preference models####
@@ -281,7 +267,7 @@ sp_preference <- sp_preference |>
   mutate(AMT2 = AMT^2)
 
 ##Import the modelling result
-#find model with lowest BIC
+#find model with lowest AIC
 prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_clim_soil_model_results_23Jun2024.csv", row.names = 1)|> 
   group_by(Response) |> 
   filter(!is.na(AIC)) |> 
