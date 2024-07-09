@@ -97,8 +97,22 @@ r.squaredGLMM(best_nintc_covmod) #take the theoretical
 interaction.plot(x.factor = all_result$SAC, trace.factor = all_result$graz, response = all_result$NIntc_cover_binom)
 
 ##Some basic plots###
-ggplot(all_result, aes(y = NIntc_richness, x = SAC, color = graz)) +
-  geom_jitter(height = 0.01, width = 2) +
+#get model predictions of nintc richness over SAC for different graz
+pred_data <- all_result |>
+  select(ID, SAC, pH, graz, site_ID) |> 
+  distinct() |> 
+  mutate(mean_pH = mean(pH)) |> 
+  select(!c(ID, pH))
+
+test <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)
+
+pred_data$NIntc_richness_binom_prediction <- predict(test, newdata = pred_data, type = "response") #get nintc_binom predictions
+pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
+
+
+ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.6) +
+  geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1) +
   theme_classic()
 
 ggplot(all_result, aes(y = NIntc_cover, x = SAC, color = graz)) +
