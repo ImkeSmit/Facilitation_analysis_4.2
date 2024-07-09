@@ -101,27 +101,65 @@ interaction.plot(x.factor = all_result$SAC, trace.factor = all_result$graz, resp
 pred_data <- all_result |>
   select(ID, SAC, pH, graz, site_ID) |> 
   distinct() |> 
-  mutate(mean_pH = mean(pH)) |> 
-  select(!c(ID, pH))
+  mutate(pH = mean(pH))#get the mean pH so that we can keep it constant in the nintc cover prediction
 
-test <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)
+##NIntc richness##
+graphmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
-pred_data$NIntc_richness_binom_prediction <- predict(test, newdata = pred_data, type = "response") #get nintc_binom predictions
+pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_data, type = "response") #get nintc_binom predictions
 pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
 
-
-ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.6) +
+nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.6, size = 1) +
   geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1) +
-  theme_classic()
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[C]~richness), x = "Sand content (%)") +
+  theme_classic() 
 
-ggplot(all_result, aes(y = NIntc_cover, x = SAC, color = graz)) +
-  geom_jitter(height = 0.01, width = 2) +
-  theme_classic()
+##Nintc cover##
+graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
+                     family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
-ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
-  geom_jitter(height = 0.01, width = 0.2) +
-  theme_classic()
+pred_data$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$fit #get nintc_binom predictions
+pred_data$NIntc_cover_prediction <- pred_data$NIntc_cover_binom_prediction*2 -1
+
+pred_data$NIntc_cover_binom_se <-predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$se.fit
+pred_data$NIntc_cover_se <- pred_data$NIntc_cover_binom_se*2 -1
+
+nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.6, size = 1) +
+  geom_line(data = pred_data, aes(x = SAC, y = NIntc_cover_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "Sand content (%)") +
+  theme_classic() 
+
+nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, legend = "bottom")
+ggsave("nint_sac_scatter.png", nint_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
+
+##Nintc cover over pH##
+pred_data2 <- all_result |>
+  select(ID, SAC, pH, graz, site_ID) |> 
+  distinct() |> 
+  mutate(SAC = mean(SAC))
+
+graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
+                     family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
+
+pred_data2$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data2, type = "response", se.fit = T)$fit #get nintc_binom predictions
+pred_data2$NIntc_cover_prediction <- pred_data2$NIntc_cover_binom_prediction*2 -1
+
+nintc_cover_ph <- ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
+  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.6, size = 1.5) +
+  geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "pH") +
+  theme_classic() +
+  theme(legend.position = "right")
+ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, width = 1400, units = 'px')
+
 
 ##Ninta richness
 #nullmodel
