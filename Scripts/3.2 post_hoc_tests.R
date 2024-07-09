@@ -135,7 +135,8 @@ nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
   labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "Sand content (%)") +
   theme_classic() 
 
-nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, legend = "bottom")
+nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
+                            legend = "bottom", labels = c("a", "b"))
 ggsave("nint_sac_scatter.png", nint_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
 
 ##Nintc cover over pH##
