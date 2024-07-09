@@ -13,7 +13,7 @@ library(multcompView)
 library(glmmTMB)
 
 #import nint results
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv")
+all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv")
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$graz <- as.factor(all_result$graz)
 all_result$ID <- as.factor(all_result$ID)
@@ -21,14 +21,14 @@ all_result$ID <- as.factor(all_result$ID)
   
 ###Fig2: Plot richness and cover of plots along aridity gradient####
 #To get this data we have to import the raw data again
-wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3"
+wd <- "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\Countriesv3"
 ###read in the facilitation data for each country
 data_files <- list.files(wd)
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
                   "israel", "namibiablaum", "namibiawang", "southafrica",  "spainmaestre", "spainrey")
 for(i in 1:length(data_files)) {                              
   assign(paste0(countrynames[i]),                                   
-         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\Countriesv3\\",
+         read.csv2(paste0("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\Countriesv3\\",
                           data_files[i])))
 }
 
