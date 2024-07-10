@@ -472,8 +472,6 @@ ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, wi
 
 
 ###Fig 6: Barplot of NINtc at different grazing levels####
-
-
 nintc_rich_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_richness, fill = graz)) +
   geom_boxplot(alpha = 0.6)+
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4")) +
@@ -494,111 +492,6 @@ nintc_cov_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_cover, fill
 
 graz_boxes <- ggarrange(nintc_rich_graz_boxplot, nintc_cov_graz_boxplot, nrow = 1, ncol = 2, labels = c("a", "b"))
 
-
-
-
-
-
-
-#we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
-
-###lsmeans
-covdat <- all_result[-which(is.na(all_result$NIntc_cover)) , ]
-#does graz affect NINtc cover
-covdat$NIntc_cover_binom <- (covdat$NIntc_cover + 1)/2
-cov_mod1 <- glmmTMB(NIntc_cover_binom ~ graz +(1|site_ID),  
-                    family = binomial, data = covdat)
-summary(cov_mod1)
-lsmeans(cov_mod1, specs = "graz")
-lsmeans <- c(0.376,0.146,0.356,0.427)#these are the means of each grazlevel predicted by the model. 
-SE <- c(0.146, 0.127, 0.126, 0.130) #these are the SE of the mean estimates
-cld(glht(model = cov_mod1, mcp(graz = "Tukey"))) ##these are the significance letters showing significance between the predicted means
-lsmeans_letters <- c("ab", "a", "ab", "b")
-
-cov_grazlevel_lsmeans <- data.frame(lsmean = lsmeans, std_error = SE, 
-                                    graz = c(0,1,2,3), sign_letters = lsmeans_letters, ycoord = c(0.6, 0.6, 0.6, 0.6))
-cov_grazlevel_lsmeans$ymin <- cov_grazlevel_lsmeans$lsmean - cov_grazlevel_lsmeans$std_error
-cov_grazlevel_lsmeans$ymax <- cov_grazlevel_lsmeans$lsmean + cov_grazlevel_lsmeans$std_error
-cov_grazlevel_lsmeans$graz <- as.factor(cov_grazlevel_lsmeans$graz)
-
-lsmean_cov_graz_bar <- ggplot() +
-  geom_bar(data = cov_grazlevel_lsmeans, aes(x = graz, y = lsmean, fill = graz), stat = "identity", alpha = 0.6) +
-  scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
-  geom_errorbar(data = cov_grazlevel_lsmeans, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(-1, 1) +
-  geom_text(data = cov_grazlevel_lsmeans, aes(x = graz, y = ycoord), label = c(cov_grazlevel_lsmeans$sign_letters))+
-  xlab("Grazing pressure") +
-  ylab(expression(Estimated~mean~NInt[C]~cover))+
-  scale_x_discrete(labels = c("ungrazed", "low", "medium", "high")) +
-  theme_classic()+
-  theme(legend.position = "none")
-lsmean_cov_graz_bar
-
-
-###Arithmetic means
-###get the mean and se of NINtc at each grazing level. Use covdat because NA has been removed
-arith_means <- data.frame(tapply(covdat$NIntc_cover, covdat$graz, FUN = "mean"))
-colnames(arith_means) <- "mean_NIntc_cover"
-arith_means$graz = rownames(arith_means)
-rownames(arith_means) <- c(1:nrow(arith_means))
-
-n_replicates <- data.frame(tapply(covdat$NIntc_cover, covdat$graz, FUN = "length"))
-colnames(n_replicates) <- "n_replicates"
-n_replicates$graz = rownames(n_replicates)
-rownames(n_replicates) <- c(1:nrow(n_replicates))
-
-sd <- data.frame(tapply(covdat$NIntc_cover, covdat$graz, FUN = "sd"))
-colnames(sd) <- "std_dev"
-sd$graz = rownames(sd)
-rownames(sd) <- c(1:nrow(sd))
-
-se <- data.frame(std_error = sd$std_dev/sqrt(n_replicates$n_replicates))
-
-cov_grazlevel_stats <- cbind(arith_means, se)
-#get mean - std error
-cov_grazlevel_stats$ymin <- cov_grazlevel_stats$mean_NIntc_cover - cov_grazlevel_stats$std_error
-#get mean + std error
-cov_grazlevel_stats$ymax <- cov_grazlevel_stats$mean_NIntc_cover + cov_grazlevel_stats$std_error
-
-##Now we need to do one sample t tests to see if the means are significantly differnt from 0
-#graz0
-t.test(covdat[which(covdat$graz == 0) , ]$NIntc_cover)
-#p-value = 0.004373v
-
-#graz1
-t.test(covdat[which(covdat$graz == 1) , ]$NIntc_cover)
-# p-value = 4.88e-07
-
-#graz2
-t.test(covdat[which(covdat$graz == 2) , ]$NIntc_cover)
-#p-value < 2.2e-16
-
-#graz3
-t.test(covdat[which(covdat$graz == 3) , ]$NIntc_cover)
-#p-value < 2.2e-16
-##SO ALL are differnt from 0
-
-
-#create a dataframe so that we can add asterisks to the plot
-cov_aster <- data.frame(graz = c("0", "1", "2", "3"), ycoord = c(0.12, 0.14, 0.19, 0.23))
-
-arith_cov_graz_bar <- ggplot() +
-  geom_bar(data = cov_grazlevel_stats, aes(x = graz, y = mean_NIntc_cover, fill = graz), stat = "identity", alpha = 0.6) +
-  scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
-  geom_errorbar(data = cov_grazlevel_stats, aes(x = graz, ymin  = ymin, ymax = ymax), colour="black", width = 0.5)+
-  ylim(-1, 1) +
-  geom_text(data = cov_aster, aes(x = graz, y = ycoord), label = "*", size = 6) +
-  xlab("Grazing pressure") +
-  ylab(expression(Arithmetic~mean~NInt[C]~cover))+
-  scale_x_discrete(labels = c("ungrazed", "low", "medium", "high")) +
-  theme_classic()+
-  theme(legend.position = "none")
-arith_cov_graz_bar
-
-##arrange the arithmetic and lsmean plots on the same pane
-cov_grazlevel_arith_and_lsmeans <- ggarrange(lsmean_cov_graz_bar, arith_cov_graz_bar, ncol = 2, nrow = 1, labels = c("a", "b"))
-ggsave("combo_arithmetic_lsmean_cov_grazlevel_bar.png", cov_grazlevel_arith_and_lsmeans, width = 1900, height = 1000, unit = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
 
