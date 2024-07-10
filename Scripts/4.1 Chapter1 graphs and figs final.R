@@ -3,20 +3,55 @@ library(data.table)
 library(ggplot2)
 library(hexbin)
 library(RColorBrewer)
-library(dplyr)
 library(ggpubr)
 library(forcats)
-library(tidyr)
 library(lsmeans)
-library(multcomp)
-library(multcompView)
+#library(multcomp)
+#library(multcompView)
 library(glmmTMB)
+library(tidyverse)
 
 #import nint results
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv")
+all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
-all_result$graz <- as.factor(all_result$graz)
 all_result$ID <- as.factor(all_result$ID)
+##Treat grazing as an unordered factor!
+all_result$graz <- as.factor(all_result$graz)
+
+#import siteinfo, we will use this to add ID to drypop
+siteinfo <- read.csv("Facilitation data\\BIODESERT_sites_information.csv") |> 
+  mutate(plotref = str_c(SITE, PLOT, sep = "_")) |> 
+  select(ID, plotref) |> 
+  distinct() |> 
+  na.omit()
+
+#import drypop, so which contains the env covariates
+drypop <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Functional trait analysis clone\\Functional trait data\\Raw data\\drypop_20MAy.csv") |> 
+  mutate(plotref = str_c(Site, Plot, sep = "_")) |> #create a variable to identify each plot
+  select(plotref, AMT, RAI, RASE, pH.b, SAC.b) |> 
+  distinct() |> 
+  left_join(siteinfo, by = "plotref") |> 
+  select(!plotref)
+drypop$ID <- as.factor(drypop$ID)
+
+#join the env covariates to the facilitation data
+all_result <- all_result |> 
+  inner_join(drypop, by = "ID") |> 
+  rename(pH = "pH.b", SAC = "SAC.b") |> 
+  mutate(aridity2 = aridity^2, 
+         AMT2 = AMT^2)
+
+#NIntc is bounded beween -1 and 1, so binomial family is appropriate
+#However the function requires that the response be bounded between 0 and 1, so rescale NIntc
+#x-min/max- min (here the formula is just already simplified)
+all_result$NIntc_richness_binom <- (all_result$NIntc_richness + 1)/2
+all_result$NIntc_cover_binom <- (all_result$NIntc_cover + 1)/2
+all_result$NIntc_shannon_binom <- (all_result$NIntc_shannon + 1)/2
+
+#x-min/max- min
+all_result$NInta_richness_binom <- (all_result$NInta_richness - (-1)) / (2 - (-1))
+all_result$NInta_cover_binom <- (all_result$NInta_cover - (-1)) / (2 - (-1))
+all_result$NInta_shannon_binom <- (all_result$NInta_shannon - (-1)) / (2 - (-1))
 
   
 ###Fig2: Plot richness and cover of plots along aridity gradient####
@@ -261,25 +296,6 @@ plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)
 plotlevel_prefbar
 
 
-###Scatterplot of Pbare ~ aridity####
-#get the model line to add to the graph
-bare_mod2 <- glmmTMB(prop_bare_only ~ aridity ,family = binomial, data = sp_preference)
-summary(bare_mod2)
-pred_data2 <- data.frame(aridity = c(unique(sp_preference$aridity)))
-pred_data2$prop_bare_only_prediction <- predict(bare_mod2, pred_data2, type = "response")
-
-Pbare_scatterplot <- long_plot_sp_pref |> 
-  filter(preference == "prop_bare_only") |> 
-  ggplot(aes(x = aridity, y = proportion_of_sp)) + 
-  geom_point(color = "darkslategrey", alpha = 0.6) +
-  geom_line(data = pred_data2, 
-            aes(x = aridity, y = prop_bare_only_prediction), color = brewer.pal(8, "Dark2")[7], lwd = 1) +
-  theme_classic() +
-  xlab("Aridity") +
-  ylab(expression("Percentage of competitively excluded species"))
-ggsave("Pbare_scatterplot.png", Pbare_scatterplot, width = 1200, height = 1200, units = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
-
 
 ####Graphs of Chisq results###
 chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
@@ -389,8 +405,94 @@ ggsave("chisq_preference_bar_combo.png",chisq_combo_pref, width = 2000, height =
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
 
 
+###Fig.4: Sactterplot of nint accross SAC with different graz####
+##getdata to predict nint over
+pred_data <- all_result |>
+  select(ID, SAC, pH, graz, site_ID) |> 
+  distinct() |> 
+  mutate(pH = mean(pH))#get the mean pH so that we can keep it constant in the nintc cover prediction
 
-###Fig 6: Barplot of NINtc  cover at different grazing levels####
+##NIntc richness##
+graphmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
+
+pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_data, type = "response") #get nintc_binom predictions
+pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
+
+nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
+  geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[C]~richness), x = "Sand content (%)") +
+  theme_classic() 
+
+##Nintc cover##
+graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
+                     family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
+
+pred_data$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$fit #get nintc_binom predictions
+pred_data$NIntc_cover_prediction <- pred_data$NIntc_cover_binom_prediction*2 -1
+
+pred_data$NIntc_cover_binom_se <-predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$se.fit
+pred_data$NIntc_cover_se <- pred_data$NIntc_cover_binom_se*2 -1
+
+nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
+  geom_line(data = pred_data, aes(x = SAC, y = NIntc_cover_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "Sand content (%)") +
+  theme_classic() 
+
+nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
+                            legend = "bottom", labels = c("a", "b"))
+ggsave("nint_sac_scatter.png", nint_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
+
+
+###Fig.5: Scatterplot of nintc cover over pH####
+#get data to predict over
+pred_data2 <- all_result |>
+  select(ID, SAC, pH, graz, site_ID) |> 
+  distinct() |> 
+  mutate(SAC = mean(SAC), graz = 1)
+pred_data2$graz <- as.factor(pred_data2$graz)
+
+graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
+                     family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
+
+pred_data2$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data2, type = "response", se.fit = T)$fit #get nintc_binom predictions
+pred_data2$NIntc_cover_prediction <- pred_data2$NIntc_cover_binom_prediction*2 -1
+
+nintc_cover_ph <- ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
+  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.6, size = 1.5) +
+  geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction), lwd = 1, colour = "darkorange") +
+  labs(y = expression(NInt[C]~cover), x = "pH") +
+  theme_classic() 
+ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, width = 800, units = 'px')
+
+
+###Fig 6: Barplot of NINtc at different grazing levels####
+nintc_rich_graz_sum <- all_result |> 
+  filter(!is.na(NIntc_richness)) |> 
+  group_by(graz) |> 
+  summarise(mean_NIntc_richness = mean(NIntc_richness), 
+            sd_NIntc_richness = sd(NIntc_richness), 
+            n_NIntc_richness = n()) |> 
+  ungroup() |> 
+  mutate(se_NIntc_richness = sd_NIntc_richness/sqrt(n_NIntc_richness))
+
+nintc_cov_graz_sum <- all_result |> 
+  filter(!is.na(NIntc_cover)) |> 
+  group_by(graz) |> 
+  summarise(mean_NIntc_cover = mean(NIntc_cover), 
+            sd_NIntc_cover = sd(NIntc_cover), 
+            n_NIntc_cover = n()) |> 
+  ungroup() |> 
+  mutate(se_NIntc_cover = sd_NIntc_cover/sqrt(n_NIntc_cover))
+
+
+
+
 #we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
 
 ###lsmeans
