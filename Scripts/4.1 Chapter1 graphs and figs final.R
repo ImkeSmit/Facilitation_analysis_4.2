@@ -472,6 +472,7 @@ ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, wi
 
 
 ###Fig 6: Barplot of NINtc at different grazing levels####
+#due to the interactions and random effects, the model mean estimates are different to the boxes, therefore it doesn't make sense to look at the significance letters.
 nintc_rich_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_richness, fill = graz)) +
   geom_boxplot(alpha = 0.6)+
   scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4")) +
@@ -491,7 +492,7 @@ nintc_cov_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_cover, fill
   theme(legend.position = "none")
 
 graz_boxes <- ggarrange(nintc_rich_graz_boxplot, nintc_cov_graz_boxplot, nrow = 1, ncol = 2, labels = c("a", "b"))
-
+ggsave("nint_grazlevel_boxplot.png", graz_boxes, path = "Figures", width = 1500, height = 900, units = "px")
 
 
 
