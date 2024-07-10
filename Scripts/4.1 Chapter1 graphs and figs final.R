@@ -472,23 +472,30 @@ ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, wi
 
 
 ###Fig 6: Barplot of NINtc at different grazing levels####
-nintc_rich_graz_sum <- all_result |> 
-  filter(!is.na(NIntc_richness)) |> 
-  group_by(graz) |> 
-  summarise(mean_NIntc_richness = mean(NIntc_richness), 
-            sd_NIntc_richness = sd(NIntc_richness), 
-            n_NIntc_richness = n()) |> 
-  ungroup() |> 
-  mutate(se_NIntc_richness = sd_NIntc_richness/sqrt(n_NIntc_richness))
 
-nintc_cov_graz_sum <- all_result |> 
-  filter(!is.na(NIntc_cover)) |> 
-  group_by(graz) |> 
-  summarise(mean_NIntc_cover = mean(NIntc_cover), 
-            sd_NIntc_cover = sd(NIntc_cover), 
-            n_NIntc_cover = n()) |> 
-  ungroup() |> 
-  mutate(se_NIntc_cover = sd_NIntc_cover/sqrt(n_NIntc_cover))
+
+nintc_rich_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_richness, fill = graz)) +
+  geom_boxplot(alpha = 0.6)+
+  scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4")) +
+  scale_x_discrete(labels = c("ungrazed", "low", "medium", "high")) +
+  xlab("Grazing pressure") +
+  ylab(expression(NInt[C]~richness)) +
+  theme_classic() +
+  theme(legend.position = "none")
+
+nintc_cov_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_cover, fill = graz)) +
+  geom_boxplot(alpha = 0.6)+
+  scale_fill_manual(values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4")) +
+  scale_x_discrete(labels = c("ungrazed", "low", "medium", "high")) +
+  xlab("Grazing pressure") +
+  ylab(expression(NInt[C]~cover)) +
+  theme_classic() +
+  theme(legend.position = "none")
+
+graz_boxes <- ggarrange(nintc_rich_graz_boxplot, nintc_cov_graz_boxplot, nrow = 1, ncol = 2, labels = c("a", "b"))
+
+
+
 
 
 
