@@ -87,17 +87,6 @@ png("nint_correlation.png")
 corrplot(cormat2, method = "number", type = "lower")
 dev.off()
 
-###Env variables discriptive statistics####
-range(all_result$aridity)
-range(all_result$AMT)
-range(all_result$RASE)
-range(all_result$SAC)
-range(all_result$pH)
-
-#number of dominant-bare pairs
-all_result |> 
-  filter(!is.na(NIntc_richness)) |> #remove those records that have no nintc richness
-  summarise(nreps = n())
 
 ###Get the model formulas####
 predictors <- c("graz", "aridity", "aridity2", "AMT", "AMT2", "RASE", "pH", "SAC", 
@@ -369,7 +358,7 @@ sp_preference$arid_sq <- sp_preference$aridity^2
 
 ##Write to a .csv file to use in graphing
 #write.csv(sp_preference, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv")
-sp_preference <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+sp_preference <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 sp_preference$ID <- as.factor(sp_preference$ID)
 sp_preference$site_ID <- as.factor(sp_preference$site_ID)
 sp_preference$graz <- as.factor(sp_preference$graz)
@@ -398,13 +387,13 @@ sp_preference <- sp_preference |>
   mutate(aridity2 = aridity^2)
 
 #In how many of the plots did the majority of sp prefer nurse microsites?
-length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #14
+length(sp_preference[which(sp_preference$prop_nurse_only > sp_preference$prop_both) , ]) #15
 
 #In how many of the sites did the majority of sp prefer open microsites?
-length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #14
+length(sp_preference[which(sp_preference$prop_bare_only > sp_preference$prop_both) , ]) #15
 
 #On average, how many species ocurred in both nurse and bare microsites
-avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.60
+avg_both <- sum(sp_preference$prop_both)/nrow(sp_preference) #0.57
 
 
 ###Generalised linear modelling with glmmTMB: P ~ graz + AMT+ aridity + rase + pH +SAC####
@@ -667,7 +656,7 @@ for(i in 1:nrow(Chisq_results)) {
 
 #write to csv file
 #write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
-Chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 Chisq_results$ID <- as.factor(Chisq_results$ID)
 
 #How many sp significantly associated with the nurse?
@@ -842,12 +831,20 @@ assmod_results_table |>
 
 
 ###DESCRIPTIVE STATISTICS####
+range(all_result$aridity)
+range(all_result$AMT)
+range(all_result$RASE)
+range(all_result$SAC)
+range(all_result$pH)
+
+#number of dominant-bare pairs
+all_result |> 
+  filter(!is.na(NIntc_richness)) |> #remove those records that have no nintc richness
+  summarise(nreps = n())
+
 #How many plots and sites
 length(unique(all_result$ID))#97
 length(unique(all_result$site_ID))#29
-
-#how many dominant bare pairs
-nrow(all_result)
 
 #How many species in total?
 countrynames <- c("algeria", "argentina", "australia", "chile", "chinachong", "chinaxin", "iranabedi", "iranfarzam", 
