@@ -536,7 +536,27 @@ ninta_sac_combo <- ggarrange(ninta_richness_sac, ninta_cover_sac, ncol = 2, nrow
 ggsave("nintA_sac_scatter.png", ninta_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
 
 
-###Appendix Fig1: Barplot of NINta  cover at different grazing levels####
+###Appendix Fig S3: Scatterplot of ninta richness across AMT####
+#get data to predict over
+pred_data3 <- all_result |>
+  select(ID, SAC, aridity, AMT, graz, site_ID) |> 
+  distinct() |> 
+  mutate(aridity = mean(aridity), graz = 1, SAC = mean(SAC))
+pred_data3$graz <- as.factor(pred_data3$graz)
+
+graphmod3 <- glmmTMB(NInta_richness_binom ~ graz+AMT+SAC+graz:SAC, data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
+
+pred_data3$NInta_richness_binom_prediction <- predict(graphmod3, newdata = pred_data3, type = "response") #get nintc_binom predictions
+pred_data3$NInta_richness_prediction <- pred_data3$NInta_richness_binom_prediction*3 -1
+
+ninta_richness_AMT <- ggplot(all_result, aes(y = NInta_richness, x = AMT)) +
+  geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.6, size = 1.5) +
+  geom_line(data = pred_data3, aes(x = AMT, y = NInta_richness_prediction), lwd = 1, colour = "darkorange") +
+  labs(y = expression(NInt[A]~richness), x = "AMT") +
+  theme_classic() 
+ggsave("nintA_AMT_scatter.png", ninta_richness_AMT, path = "Figures", height = 700, width = 800, units = 'px')
+
+###Old stuff:Barplot of NINta  cover at different grazing levels####
 #we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , ]
 
