@@ -572,6 +572,27 @@ ninta_cover_AMT <- ggplot(all_result, aes(y = NInta_cover, x = AMT)) +
 ninta_AMT_scatter <- ggarrange(ninta_richness_AMT, ninta_cover_AMT, nrow = 1, ncol = 2)
 ggsave("nintA_AMT_scatter.png", ninta_AMT_scatter, path = "Figures", height = 700, width = 1250, units = "px")
 
+
+###Appendix Fig S4: Scatterplot of NIntA cover over aridity####
+pred_data4 <- all_result |>
+  select(ID, SAC, aridity, AMT, graz, site_ID) |> 
+  distinct() |> 
+  mutate(AMT = mean(AMT), graz = 1, SAC = mean(SAC))
+pred_data4$graz <- as.factor(pred_data4$graz)
+
+graphmod4 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
+
+pred_data4$NInta_cover_binom_prediction <- predict(graphmod4, newdata = pred_data4, type = "response") #get nintc_binom predictions
+pred_data4$NInta_cover_prediction <- pred_data4$NInta_cover_binom_prediction*3 -1
+
+ninta_cover_aridity <- ggplot(all_result, aes(y = NInta_cover, x = aridity)) +
+  geom_jitter(height = 0.01, width = 0.01, color = "darkslategrey", alpha = 0.6, size = 1.5) +
+  geom_line(data = pred_data4, aes(x = aridity, y = NInta_cover_prediction), lwd = 1, colour = "darkorange") +
+  labs(y = expression(NInt[A]~cover), x = "Aridity") +
+  theme_classic()
+
+ggsave("nintA_cover_aridity_scatter.png", ninta_cover_aridity, path = "Figures", height = 700, width = 800, units = 'px')
+
 ###Old stuff:Barplot of NINta  cover at different grazing levels####
 #we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , ]
