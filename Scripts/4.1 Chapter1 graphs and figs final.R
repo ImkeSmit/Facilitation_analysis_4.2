@@ -416,7 +416,7 @@ pred_data <- all_result |>
 graphmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
 pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_data, type = "response") #get nintc_binom predictions
-pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction* -1
+pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
 
 nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
   geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
@@ -425,6 +425,10 @@ nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
   labs(color = "Grazing pressure", y = expression(NInt[C]~richness), x = "Sand content (%)") +
   theme_classic() 
+#number of points:
+all_result |> 
+  filter(!is.na(NIntc_richness)) |> 
+  summarise(n = n()) #3789
 
 ##Nintc cover##
 graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
@@ -443,6 +447,11 @@ nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
   labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "Sand content (%)") +
   theme_classic() 
+
+#number of points:
+all_result |> 
+  filter(!is.na(NIntc_cover)) |> 
+  summarise(n = n()) #3736
 
 nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
                             legend = "bottom", labels = c("a", "b"))
