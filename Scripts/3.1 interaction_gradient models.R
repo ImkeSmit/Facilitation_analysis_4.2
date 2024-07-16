@@ -3,12 +3,13 @@ library(glmmTMB)
 library(DHARMa)
 library(car)
 library(lsmeans)
-library(multcomp)
-library(multcompView)
+#library(multcomp)
+#library(multcompView)
 library(MuMIn)
 library(dplyr)
 library(tidyverse)
 library(tidylog)
+library(corrplot)
 
 ##Import results of NIntc calculations (from interaction-gradient analysis scripts)
 all_result <- read.csv("Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
@@ -85,6 +86,18 @@ setwd("Figures")
 png("nint_correlation.png")
 corrplot(cormat2, method = "number", type = "lower")
 dev.off()
+
+###Env variables discriptive statistics####
+range(all_result$aridity)
+range(all_result$AMT)
+range(all_result$RASE)
+range(all_result$SAC)
+range(all_result$pH)
+
+#number of dominant-bare pairs
+all_result |> 
+  filter(!is.na(NIntc_richness)) |> #remove those records that have no nintc richness
+  summarise(nreps = n())
 
 ###Get the model formulas####
 predictors <- c("graz", "aridity", "aridity2", "AMT", "AMT2", "RASE", "pH", "SAC", 
