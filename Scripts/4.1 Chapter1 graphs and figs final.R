@@ -405,7 +405,7 @@ ggsave("chisq_preference_bar_combo.png",chisq_combo_pref, width = 2000, height =
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
 
 
-###Fig.4: Sactterplot of nint accross SAC with different graz####
+###Fig.4: Sactterplot of nintC accross SAC with different graz####
 ##getdata to predict nint over
 pred_data <- all_result |>
   select(ID, SAC, pH, graz, site_ID) |> 
@@ -416,7 +416,7 @@ pred_data <- all_result |>
 graphmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC, family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
 pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_data, type = "response") #get nintc_binom predictions
-pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
+pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction* -1
 
 nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
   geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
@@ -494,6 +494,46 @@ nintc_cov_graz_boxplot <- ggplot(all_result, aes(x = graz, y = NIntc_cover, fill
 graz_boxes <- ggarrange(nintc_rich_graz_boxplot, nintc_cov_graz_boxplot, nrow = 1, ncol = 2, labels = c("a", "b"))
 ggsave("nint_grazlevel_boxplot.png", graz_boxes, path = "Figures", width = 1500, height = 900, units = "px")
 
+
+###Appendix Fig S2:Scatterplot of nintA accross SAc with different graz####
+##getdata to predict nint over
+pred_data <- all_result |>
+  select(ID, SAC, AMT, aridity, graz, site_ID) |> 
+  distinct() |> 
+  mutate(AMT = mean(AMT), aridity = mean(aridity))#get the mean AMT and aridity so that we can keep it constant in the prediction
+
+##NIntA richness##
+graphmod <- glmmTMB(NInta_richness_binom ~ graz+AMT+SAC+graz:SAC, data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
+
+pred_data$NInta_richness_binom_prediction <- predict(graphmod, newdata = pred_data, type = "response") #get nintc_binom predictions
+pred_data$NInta_richness_prediction <- pred_data$NInta_richness_binom_prediction*3 -1
+
+ninta_richness_sac <- ggplot(all_result, aes(y = NInta_richness, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
+  geom_line(data = pred_data, aes(x = SAC, y = NInta_richness_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[A]~richness), x = "Sand content (%)") +
+  theme_classic() 
+
+##Nintc cover##
+graphmod2 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, 
+                            data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
+
+pred_data$NInta_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response") #get nintc_binom predictions
+pred_data$NInta_cover_prediction <- pred_data$NInta_cover_binom_prediction*3 -1
+
+ninta_cover_sac <- ggplot(all_result, aes(y = NInta_cover, x = SAC)) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
+  geom_line(data = pred_data, aes(x = SAC, y = NInta_cover_prediction, color = graz), lwd = 1) +
+  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
+  labs(color = "Grazing pressure", y = expression(NInt[A]~cover), x = "Sand content (%)") +
+  theme_classic() 
+
+ninta_sac_combo <- ggarrange(ninta_richness_sac, ninta_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
+                            legend = "bottom", labels = c("a", "b"))
+ggsave("nintA_sac_scatter.png", ninta_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
 
 
 ###Appendix Fig1: Barplot of NINta  cover at different grazing levels####
