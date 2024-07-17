@@ -562,9 +562,8 @@ pred_data3$NInta_richness_prediction <- pred_data3$NInta_richness_binom_predicti
 ninta_richness_AMT <- ggplot(all_result, aes(y = NInta_richness, x = AMT)) +
   geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.6, size = 1.5) +
   geom_line(data = pred_data3, aes(x = AMT, y = NInta_richness_prediction), lwd = 1, colour = "darkorange") +
-  labs(y = expression(NInt[A]~richness), x = "AMT") +
+  labs(y = expression(NInt[A]~richness), x = expression(AMT~(degree*C))) +
   theme_classic() 
-ggsave("nintA_AMT_scatter.png", ninta_richness_AMT, path = "Figures", height = 700, width = 800, units = 'px')
 
 ##Ninta cover
 graphmod4 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
@@ -575,7 +574,7 @@ pred_data3$NInta_cover_prediction <- pred_data3$NInta_cover_binom_prediction*3 -
 ninta_cover_AMT <- ggplot(all_result, aes(y = NInta_cover, x = AMT)) +
   geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.6, size = 1.5) +
   geom_line(data = pred_data3, aes(x = AMT, y = NInta_cover_prediction), lwd = 1, colour = "darkorange") +
-  labs(y = expression(NInt[A]~cover), x = "AMT") +
+  labs(y = expression(NInt[A]~cover), x = expression(AMT~(degree*C))) +
   theme_classic()
 
 ninta_AMT_scatter <- ggarrange(ninta_richness_AMT, ninta_cover_AMT, nrow = 1, ncol = 2)
