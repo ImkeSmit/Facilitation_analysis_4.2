@@ -58,6 +58,15 @@ all_result$ID <- as.factor(all_result$ID)
 ##Treat grazing as an unordered factor!
 all_result$graz <- as.factor(all_result$graz)
 
+##How many reps?
+all_result |> 
+  filter(!is.na(NIntc_richness)) |> 
+  summarise(n = n()) #3789
+
+all_result |> 
+  filter(!is.na(NIntc_cover)) |> 
+  summarise(n = n()) #3736
+
 ###import the modelling result:
 nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model_results_22Jun2024.csv", row.names = 1)
 
