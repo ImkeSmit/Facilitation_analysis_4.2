@@ -170,6 +170,9 @@ prefmod_results_table <- read.csv("Facilitation data\\results\\sp_preference_cli
   filter(!is.na(AIC)) |> 
   filter(AIC == min(AIC)) 
 
+#How many reps?
+
+
 
 ###Species association models####
 #import species associations (from Chi2 tests)
@@ -219,3 +222,14 @@ ass_bestmods <- ass_model_results |>
   filter(!is.na(AIC))|> #remove models with convergence errors
   group_by(Response) |> 
   filter(AIC == min(AIC))
+
+#how many reps?
+#prop_bare:
+prop_chisq_reduced |> 
+  filter(association == "bare") |> 
+  summarise(n = n()) #37
+
+#prop_nurse:
+prop_chisq_reduced |> 
+  filter(association == "nurse") |> 
+  summarise(n = n()) #47
