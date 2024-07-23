@@ -434,11 +434,8 @@ all_result |>
 graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
                      family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
-pred_data$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$fit #get nintc_binom predictions
+pred_data$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response") #get nintc_binom predictions
 pred_data$NIntc_cover_prediction <- pred_data$NIntc_cover_binom_prediction*2 -1
-
-pred_data$NIntc_cover_binom_se <-predict(graphmod2, newdata = pred_data, type = "response", se.fit = T)$se.fit
-pred_data$NIntc_cover_se <- pred_data$NIntc_cover_binom_se*2 -1
 
 nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
   geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
