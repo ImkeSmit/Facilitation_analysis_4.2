@@ -249,10 +249,18 @@ prop_chisq_reduced <- chisq_results |>
   mutate(percentage = Proportion*100)
 prop_chisq_reduced <- as.data.frame(prop_chisq_reduced)
 
-ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
-  geom_point() +
-  facet_wrap(~ association) +
-  theme_classic()
+facet_labels <- c("Bare", "Neutral", "Dominant")
+names(facet_labels) <- c("bare", "neutral", "nurse")
+
+Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
+  geom_point(color = "darkslategrey", alpha = 0.5, size = 2) +
+  facet_wrap(~ association, labeller = labeller(association = facet_labels)) +
+  labs(x = "Aridity", y = "Percentage of species showing association") +
+  theme_bw() +
+  theme(panel.grid.minor = element_blank(),
+        panel.grid.major = element_blank())
+
+ggsave("Chisq_scatter.png", Chisq_scatter, path = "Figures", width = 1500,height = 1100,units = "px")
 
 
 ###Fig.4: Sactterplot of nintC accross SAC with different graz####
