@@ -256,7 +256,7 @@ names(facet_labels) <- c("bare", "neutral", "nurse")
 Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
   geom_point(color = "darkslategrey", alpha = 0.5, size = 2) +
   facet_wrap(~ association, labeller = labeller(association = facet_labels)) +
-  labs(x = "Aridity", y = "Percentage of species showing association") +
+  labs(x = "Aridity of plot", y = "Percentage of species showing association") +
   theme_bw() +
   theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_blank())
