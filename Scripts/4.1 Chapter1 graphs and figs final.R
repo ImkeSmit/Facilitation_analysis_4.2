@@ -247,9 +247,10 @@ prop_chisq_reduced <- chisq_results |>
   group_by(ID) |> 
   mutate(Proportion = Count / sum(Count)) |> 
   mutate(percentage = Proportion*100)
-prop_chisq_reduced <- as.data.frame(prop_chisq_reduced)
 
-facet_labels <- c("Bare", "Neutral", "Dominant")
+prop_chisq_reduced$association <- factor(prop_chisq_reduced$association, levels = c("nurse", "bare", "neutral"))
+
+facet_labels <- c("b) Bare", "c) Neutral", "a) Dominant")
 names(facet_labels) <- c("bare", "neutral", "nurse")
 
 Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
@@ -261,7 +262,6 @@ Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
         panel.grid.major = element_blank())
 
 ggsave("Chisq_scatter.png", Chisq_scatter, path = "Figures", width = 1500,height = 1100,units = "px")
-
 
 ###Fig.4: Sactterplot of nintC accross SAC with different graz####
 ##getdata to predict nint over
