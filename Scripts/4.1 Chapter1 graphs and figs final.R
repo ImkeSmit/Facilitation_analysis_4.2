@@ -249,85 +249,10 @@ prop_chisq_reduced <- chisq_results |>
   mutate(percentage = Proportion*100)
 prop_chisq_reduced <- as.data.frame(prop_chisq_reduced)
 
-
-
-#calculate the mean aridity of each site
-site_arid <- data.frame(mean_aridity_of_site = tapply(prop_chisq_reduced$aridity, prop_chisq_reduced$site_ID, FUN = mean))
-site_arid$site_ID <- rownames(site_arid)
-rownames(site_arid) <- 1:nrow(site_arid)
-##merge the mean aridity of each site with all_plotlvl
-prop_chisq_reduced <- merge(prop_chisq_reduced, site_arid, by = "site_ID")
-##define the order of grazing levels
-prop_chisq_reduced$graz <- factor(prop_chisq_reduced$graz, levels = c("0", "1", "2", "3"))
-prop_chisq_reduced$ID <- as.factor(prop_chisq_reduced$ID)
-prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
-
-##which plots had only rare species in them?
-lost_plots <- anti_join(chisq_results, prop_chisq_reduced, by = "ID") |> 
-  distinct(ID)
- #134 147 155 156 157 158 159 162 44  47
-
-
-###specify the order of the plots manually(following plotlevel_prefbar), because ordering by site aridity, then graz doesnt work
-prop_chisq_bar <- prop_chisq_reduced %>%
-  mutate(ID = fct_relevel(ID, 
-                            "85","84","83","296","295","294","293",
-                            "274","273","272","103","102","101","100",
-                            "143", "142","141", "140", "50","49", "48", "99", "98",  
-                            "97","154","153","152", "151","299","298","297","146",
-                            "145","144","201","200","199","46","45", 
-                            "96","95","94","93","139", "138","137","18","17", 
-                            "16","136","135","3","2","1","198","197",
-                            "196","252","251","250","292","291","290","289","21", 
-                            "20","19","150","149","148","249","248","247",
-                            "161","160","195","194","193","43","42", 
-                            "41","40","216","215","214","115","114")) %>%
-  ggplot(aes(x = ID, y = percentage)) + 
-  geom_bar(aes(fill = association), position = position_stack(), stat = "identity", width = 0.9) +
-  scale_fill_manual(values = c(brown, blue, green) , 
-                    labels = c("Associated with bare microsites", "Neutral", "Associated with dominant microsites")) +
-  scale_x_discrete(labels = c("85" = "0.50", "84" = "", "83" = "", 
-                              "296" = "0.64", "295" = "", "294" = "", "293" = "",
-                              "274" = "0.75", "273" = "", "272" = "",
-                              "103" = "0.75", "102" = "", "101" = "", "100" = "", 
-                              "143" = "0.76", "142" = "", "141" = "", "140" = "", 
-                              "50" = "0.76", "49" = "", "48" = "",
-                              "99" = "0.77", "98" = "", "97" = "", 
-                              "154" = "0.79", "153" = "", "152" = "", "151" = "",
-                              "299" = "0.79", "298" = "", "297" = "", 
-                              "146" = "0.80", "145" = "", "144" = "", 
-                              "201" = "0.80", "200" = "", "199" = "", 
-                              "46" = "0.81", "45" = "", 
-                              "96" = "0.81", "95" = "", "94" = "", "93" = "", 
-                              "139" = "0.82", "138" = "", "137" = "", 
-                              "18" = "0.82", "17" = "", "16" = "", 
-                              "136" = "0.83", "135" = "", 
-                              "3" = "0.83", "2" = "", "1" = "", 
-                              "198" = "0.84", "197" = "", "196" = "", 
-                              "252" = "0.85", "251" = "", "250" = "", 
-                              "292" = "0.85", "291" = "", "290" = "", "289" = "", 
-                              "21" = "0.87", "20" = "", "19" = "", 
-                              "150" = "0.87", "149" = "", "148" = "", 
-                              "249" = "0.88", "248" = "", "247" = "", 
-                              "161" = "0.89", "160" = "", 
-                              "195" = "0.90", "194" = "", "193" = "", 
-                              "43" = "0.90", "42" = "", "41" = "", "40" = "", 
-                              "216" = "0.91", "215" = "", "214" = "", 
-                              "115" = "0.94", "114" = "")) +
-  theme_classic() +
-  ylab("Percentage of species showing association") +
-  xlab("Aridity of plot") +
-  guides(fill = guide_legend(nrow = 3)) +
-  theme(legend.position = "right", legend.title = element_blank(), axis.text.x = element_text(angle = 90))
-prop_chisq_bar
-
-
-
-###Combine prop_chisq and plotlevel_prefbar in one figure
-chisq_combo_pref <- ggarrange(prop_chisq_bar, plotlevel_prefbar, ncol = 1, nrow = 2, labels = c("a", "b"), 
-                              hjust = -50)
-ggsave("chisq_preference_bar_combo.png",chisq_combo_pref, width = 2000, height = 2200, units = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
+ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
+  geom_point() +
+  facet_wrap(~ association) +
+  theme_classic()
 
 
 ###Fig.4: Sactterplot of nintC accross SAC with different graz####
