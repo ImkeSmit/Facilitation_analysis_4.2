@@ -227,8 +227,8 @@ ggsave("combo_barplot.png", combo_barplot, width = 1500, height = 2100, units = 
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
 
 
-###Fig3: Graph of Chosq results####
-chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
+###Fig3: Graph of Chisq results####
+chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 chisq_results$ID <- as.factor(chisq_results$ID)
 
 grey <- brewer.pal(9, "Set1")[9]
@@ -237,24 +237,19 @@ brown <- brewer.pal(8, "Dark2")[7]
 green <- brewer.pal(8, "Dark2")[1]
 
 ##WITHOUT RARE SPECIES, ORDER BY MEAN ARIDITY OF SITE, THEN BY GRAZ
-#remove the rare species
-chisq_reduced <- chisq_results[-which(chisq_results$association == "too_rare") , ]
-
 #recalculate proportions, without taking the rares into account
-prop_chisq_reduced <- chisq_reduced %>%
-  group_by(ID, association) %>%
-  summarize(Count = n()) %>%
-  ungroup() %>%
-  group_by(ID) %>%
-  mutate(Proportion = Count / sum(Count))
+prop_chisq_reduced <- chisq_results |> 
+  filter(!association == "too_rare") |> 
+  group_by(ID, association) |> 
+  mutate(Count = n()) |> 
+  distinct(site_ID, ID, aridity, graz, association, Count) |> 
+  ungroup() |> 
+  group_by(ID) |> 
+  mutate(Proportion = Count / sum(Count)) |> 
+  mutate(percentage = Proportion*100)
 prop_chisq_reduced <- as.data.frame(prop_chisq_reduced)
-prop_chisq_reduced$percentage <- prop_chisq_reduced$Proportion*100
 
-#Add aridity and site ID to prop_chisq
-ymerge <- chisq_results[-which(duplicated(chisq_results$ID) == TRUE) , which(colnames(chisq_results) %in% c("site_ID", "ID", "graz", "aridity"))]
-prop_chisq_reduced <- merge(prop_chisq_reduced, ymerge, 
-                    by = "ID", all.x = FALSE, all.y = FALSE, no.dups = TRUE)
-prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
+
 
 #calculate the mean aridity of each site
 site_arid <- data.frame(mean_aridity_of_site = tapply(prop_chisq_reduced$aridity, prop_chisq_reduced$site_ID, FUN = mean))
