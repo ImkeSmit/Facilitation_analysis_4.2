@@ -231,11 +231,6 @@ ggsave("combo_barplot.png", combo_barplot, width = 1500, height = 2100, units = 
 chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 chisq_results$ID <- as.factor(chisq_results$ID)
 
-grey <- brewer.pal(9, "Set1")[9]
-blue <- brewer.pal(10, "Set3")[5] 
-brown <- brewer.pal(8, "Dark2")[7]
-green <- brewer.pal(8, "Dark2")[1]
-
 ##WITHOUT RARE SPECIES, ORDER BY MEAN ARIDITY OF SITE, THEN BY GRAZ
 #recalculate proportions, without taking the rares into account
 prop_chisq_reduced <- chisq_results |> 
@@ -260,6 +255,11 @@ Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
   theme_bw() +
   theme(panel.grid.minor = element_blank(),
         panel.grid.major = element_blank())
+
+#how many points in each pane?
+prop_chisq_reduced |> 
+  group_by(association) |> 
+  summarise(n = n())
 
 ggsave("Chisq_scatter.png", Chisq_scatter, path = "Figures", width = 1500,height = 1100,units = "px")
 
