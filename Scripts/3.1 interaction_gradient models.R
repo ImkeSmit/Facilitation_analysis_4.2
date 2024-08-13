@@ -150,11 +150,11 @@ write.csv(valid_modlist, "Facilitation data\\results\\nint_clim_soil_model_formu
 
 ###Generalised linear modelling with glmmTMB : NINt ~ AMT + RASE + aridity + GRAZ####
 formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
-  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
+  mutate(predictors = paste(predictors, "(1|site_ID/ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID/ID)")  #add the null model
 
 #Initialise output file for results
-output_file <- "\Facilitation data\\results\\nint_clim_soil_nestedRE_model_results_13Aug2024.csv"
+output_file <- "Facilitation data\\results\\nint_clim_soil_nestedRE_model_results_13Aug2024.csv"
 
 # Initialize the output file
 write.csv(data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
