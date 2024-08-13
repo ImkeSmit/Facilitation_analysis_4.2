@@ -153,88 +153,6 @@ formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation
   mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID/ID)")  #add the null model
 
-#Create a table for results
-results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
-                            Warnings = character(), row.names = NULL)
-
-# Initialize warning_msg outside the loop
-warning_msg <- ""
-
-##Also loop through response variables
-response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_binom", "NInta_cover_binom")
-datalist = c("all_result", "all_result", "all_result", "all_result")
-
-##LOOP THROUGH MODELS STARTS HERE##
-#Loop through response variables
-for(r in 1:length(response_list)) {
-  
-  response_var <- response_list[r]  
-  data = get(datalist[r])
-  
-  #Loop through response variables
-  for (f in 1:nrow(formula_table)) {
-    
-    predictors <- as.character(formula_table[f, ])
-    formula <- as.formula(paste(response_var, "~",  predictors))
-    
-    # Clear existing warning messages
-    warnings()
-    
-    # Initialize AIC_model outside the tryCatch block
-    AIC_model <- NULL
-    BIC_model <- NULL
-    
-    tryCatch( #tryCatch looks for errors and warinngs in the expression
-      expr = {
-        model <- glmmTMB(formula, family = binomial, data = data)
-        
-        # Get AIC
-        AIC_model <- AIC(model)
-        BIC_model <- BIC(model)
-        
-        warning_messages <- warnings()
-        
-        ##Do nothing if the warinng is about non integer successes
-        # Check for the non-integer #successes warning
-        #if ("non-integer #successes" %in% warning_messages) {
-          # Handle non-integer #successes warning (e.g., print a message)
-          #message("Ignoring non-integer #successes warning")
-        #}
-        
-        #Print the warning message if it is about model fit
-        # Check for other warnings, excluding the non-integer #successes warning
-        other_warnings <- setdiff(warning_messages, "non-integer #successes")
-        if (length(other_warnings) > 0) {
-          warning_msg <- paste("warning :", as.character(other_warnings), collapse = "; ")
-          message(paste("WARNING_", "r =" , response_var, "f =", f, warning_msg))
-        }
-      }, 
-      
-      #Also show me errors
-      error = function(e) {
-        message(paste("ERROR_", "r =" , response_var, "f =", f, conditionMessage(e)))
-        print(e)
-      }
-    )
-    
-    # Extract relevant information
-    result_row <- data.frame(Response = response_var,
-                             Model = paste(response_var, "~",  predictors), 
-                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA), 
-                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA), 
-                             Warnings = warning_msg)
-    
-    results_table <- rbind(results_table, result_row)
-  }
-}
-##if there is no AIC value, the model did not converge
-results_table
-
-#save the results
-write.csv(results_table, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv")
-
-
-
 #Initialise output file for results
 output_file <- "\Facilitation data\\results\\nint_clim_soil_nestedRE_model_results_13Aug2024.csv"
 
@@ -245,7 +163,6 @@ write.csv(data.frame(Response = character(), Model = character(), AIC = numeric(
 # Initialize warning_msg outside the loop
 warning_msg <- ""
 
-##Also loop through response variables
 ##Also loop through response variables
 response_list <- c("NIntc_richness_binom", "NIntc_cover_binom", "NInta_richness_binom", "NInta_cover_binom")
 datalist = c("all_result", "all_result", "all_result", "all_result")
@@ -320,8 +237,8 @@ for(r in 1:length(response_list)) {
 #find model with lowest AIC:
 results_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
   group_by(Response) |> 
-  filter(!is.na(BIC)) |> 
-  filter(BIC == min(BIC))
+  filter(!is.na(AIC)) |> 
+  filter(BIC == min(AIC))
 
 ##Make some figures###
 mod <- glmmTMB(NIntc_cover_binom ~ AMT+RAI+AMT2+AMT:RAI+RAI:AMT2, data = all_result, family = binomial)
