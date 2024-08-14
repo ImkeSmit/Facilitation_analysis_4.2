@@ -235,13 +235,7 @@ for(r in 1:length(response_list)) {
 #start 17:25 on 13 Aug
 #end 23:30 on 13 Aug
 
-
-#find model with lowest AIC:
-results_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_results_22Jun2024.csv", row.names = 1) |> 
-  group_by(Response) |> 
-  filter(!is.na(AIC)) |> 
-  filter(BIC == min(AIC))
-
+#find the model with the lowest AIC in post hoc tests script
 
 
 ###SPECIES PREFERENCE ANALYSIS####
