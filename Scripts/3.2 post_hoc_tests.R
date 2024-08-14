@@ -84,13 +84,12 @@ null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = bin
 #does th ebest model run with a nested random effect?
 #does not run: test <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC +(ID|site_ID), family = binomial, data = all_result)
 test2 <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC + (1|ID) + (1|site_ID), family = binomial, data = all_result)
-
+test3 <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC + (1|site_ID/ID), family = binomial, data = all_result)
+#test2 and test3 are equivalent
 
 summary(nintc_rich_bestmod)
 anova(null_nintc_richmod, nintc_rich_bestmod)
 emmeans(nintc_rich_bestmod, specs = 'graz')
-
-interaction.plot(x.factor = all_result$SAC, trace.factor = all_result$graz, response = all_result$NIntc_richness_binom)
 
 r.squaredGLMM(nintc_rich_bestmod)
 plot(simulateResiduals(nintc_rich_bestmod)) #underdispersed
