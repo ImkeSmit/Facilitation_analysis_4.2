@@ -68,7 +68,10 @@ all_result |>
   summarise(n = n()) #3736
 
 ###import the modelling result:
-nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model_results_22Jun2024.csv", row.names = 1)
+#models without the nested RE
+#nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model_results_22Jun2024.csv", row.names = 1)
+#latest model with the nested RE
+nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_nestedRE_model_results_13Aug2024.csv")
 
 #Find the lowest AIC model for each response variable
 bestmods <- nint_model_results |> 
