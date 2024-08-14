@@ -232,6 +232,8 @@ for(r in 1:length(response_list)) {
   }
 }
 
+#start 17:25 on 13 Aug
+#end 23:30 on 13 Aug
 
 
 #find model with lowest AIC:
