@@ -361,25 +361,6 @@ ninta_richness_sac <- ggplot(all_result, aes(y = NInta_richness, x = SAC)) +
 
 ggsave("ninta_sac_scatter.png", ninta_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
 
-##Nintc cover##
-graphmod2 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, 
-                            data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
-
-pred_data$NInta_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response") #get nintc_binom predictions
-pred_data$NInta_cover_prediction <- pred_data$NInta_cover_binom_prediction*3 -1
-
-ninta_cover_sac <- ggplot(all_result, aes(y = NInta_cover, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
-  geom_line(data = pred_data, aes(x = SAC, y = NInta_cover_prediction, color = graz), lwd = 1) +
-  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
-                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
-  labs(color = "Grazing pressure", y = expression(NInt[A]~cover), x = "Sand content (%)") +
-  theme_classic() 
-
-ninta_sac_combo <- ggarrange(ninta_richness_sac, ninta_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
-                            legend = "bottom", labels = c("a", "b"))
-ggsave("nintA_sac_scatter.png", ninta_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
-
 
 ###Appendix Fig S3: Scatterplot of ninta richness and cover across AMT####
 #get data to predict over
