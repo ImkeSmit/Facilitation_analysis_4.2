@@ -96,7 +96,7 @@ plot(simulateResiduals(nintc_rich_bestmod)) #underdispersed
 #null model
 null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
 #best subset model
-best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC+(1|site_ID), 
+best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ pH+ (1|site_ID/ID), 
                              family = binomial, data = all_result)
 summary(best_nintc_covmod)
 emmeans(best_nintc_covmod, specs = "graz")
