@@ -803,13 +803,6 @@ for(r in 1:length(response_list)) {
 }
 
 
-#get the model with the lowest AIC
-assmod_results_table |> 
-  filter(!is.na(BIC)) |> 
-  group_by(Response) |> 
-  filter(BIC == min(BIC))
-
-
 ###DESCRIPTIVE STATISTICS####
 range(all_result$aridity)
 range(all_result$AMT)
