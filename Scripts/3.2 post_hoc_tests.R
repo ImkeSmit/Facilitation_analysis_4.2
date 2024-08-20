@@ -81,7 +81,7 @@ bestmods <- nint_model_results |>
 
 ###Make all of the above models and get p values and R squared
 ##NINtc richness
-nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC +(1|site_ID), family = binomial, data = all_result)
+nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+ SAC+ graz:SAC+ (1|site_ID/ID), family = binomial, data = all_result)
 null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
 
 #does th ebest model run with a nested random effect?
