@@ -223,7 +223,7 @@ prop_chisq_reduced$site_ID <- as.factor(prop_chisq_reduced$site_ID)
 prop_chisq_reduced$graz <- as.factor(prop_chisq_reduced$graz)
 
 #import the modelling results
-ass_model_results <- read.csv("Facilitation data\\results\\association_clim_soil_model_results_23Jun2024.csv", row.names = 1)
+ass_model_results <- read.csv("Facilitation data\\results\\association_clim_soil_nestedRE_model_results_13Aug2024.csv")
 
 ass_bestmods <- ass_model_results |> 
   filter(!is.na(AIC))|> #remove models with convergence errors
