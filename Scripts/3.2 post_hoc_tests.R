@@ -84,12 +84,6 @@ bestmods <- nint_model_results |>
 nintc_rich_bestmod <- glmmTMB(NIntc_richness_binom ~ graz+ SAC+ graz:SAC+ (1|site_ID/ID), family = binomial, data = all_result)
 null_nintc_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
 
-#does th ebest model run with a nested random effect?
-#does not run: test <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC +(ID|site_ID), family = binomial, data = all_result)
-test2 <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC + (1|ID) + (1|site_ID), family = binomial, data = all_result)
-test3 <- glmmTMB(NIntc_richness_binom ~ graz+SAC+graz:SAC + (1|site_ID/ID), family = binomial, data = all_result)
-#test2 and test3 are equivalent
-
 summary(nintc_rich_bestmod)
 anova(null_nintc_richmod, nintc_rich_bestmod)
 emmeans(nintc_rich_bestmod, specs = 'graz')
