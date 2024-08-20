@@ -717,13 +717,93 @@ nursedat <- prop_chisq_reduced |>
 
 
 ###Generalised linear modelling with glmmTMB: prop_association ~ graz + AMT + RAI####
-#Create a table for results
-assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
-                                   Warnings = character(), row.names = NULL)
 #import model formulas
 formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
   mutate(predictors = paste(predictors, "(1|site_ID/ID)", sep = "+")) |> #add the random effect to all formulas
   add_row(predictors = "1+(1|site_ID/ID)")  #add the null model
+
+#Initialise output file for results
+output_file <- "Facilitation data\\results\\association_clim_soil_nestedRE_model_results_13Aug2024.csv"
+
+# Initialize the output file
+write.csv(data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
+                     Warnings = character()), output_file, row.names = FALSE)
+
+# Initialize warning_msg outside the loop
+warning_msg <- ""
+
+##Also loop through response variables
+##Also loop through response variables
+response_list <- c("prop_bare_association", "prop_nurse_association")
+datalist = c("baredat", "nursedat")
+
+##LOOP THROUGH MODELS STARTS HERE##
+#Loop through response variables
+for(r in 1:length(response_list)) {
+  
+  response_var <- response_list[r]  
+  data = get(datalist[r])
+  
+  #Loop through response variables
+  for (f in 1:nrow(formula_table)) {
+    
+    predictors <- as.character(formula_table[f, ])
+    formula <- as.formula(paste(response_var, "~",  predictors))
+    
+    # Clear existing warning messages
+    warnings()
+    
+    # Initialize AIC_model outside the tryCatch block
+    AIC_model <- NULL
+    BIC_model <- NULL
+    
+    tryCatch( #tryCatch looks for errors and warinngs in the expression
+      expr = {
+        model <- glmmTMB(formula, family = binomial, data = data)
+        
+        # Get AIC
+        AIC_model <- AIC(model)
+        BIC_model <- BIC(model)
+        
+        warning_messages <- warnings()
+        
+        ##Do nothing if the warinng is about non integer successes
+        # Check for the non-integer #successes warning
+        #if ("non-integer #successes" %in% warning_messages) {
+        # Handle non-integer #successes warning (e.g., print a message)
+        # message("Ignoring non-integer #successes warning")
+        #}
+        
+        #Print the warning message if it is about model fit
+        # Check for other warnings, excluding the non-integer #successes warning
+        other_warnings <- setdiff(warning_messages, "non-integer #successes")
+        if (length(other_warnings) > 0) {
+          warning_msg <- paste("warning :", as.character(other_warnings), collapse = "; ")
+          message(paste("WARNING_", "r =" , response_var, "f =", f, warning_msg))
+        }
+      }, 
+      
+      #Also show me errors
+      error = function(e) {
+        message(paste("ERROR_", "r =" , response_var, "f =", f, conditionMessage(e)))
+        print(e)
+      }
+    )
+    
+    # Extract relevant information
+    result_row <- data.frame(Response = response_var,
+                             Model = paste(response_var, "~",  predictors), 
+                             AIC = ifelse(!is.null(AIC_model), AIC_model, NA),
+                             BIC = ifelse(!is.null(BIC_model), BIC_model, NA),
+                             Warnings = warning_msg)
+    
+    
+    write.table(result_row, output_file, append = TRUE, sep = ",", row.names = FALSE, col.names = FALSE) #append the new model to the existing file
+  }
+}
+
+
+---
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
