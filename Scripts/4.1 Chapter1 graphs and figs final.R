@@ -277,18 +277,22 @@ pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_da
 pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
 
 nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
-  geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1) +
+  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1.5) +
   scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
   labs(color = "Grazing pressure", y = expression(NInt[C]~richness), x = "Sand content (%)") +
-  theme_classic() 
+  theme_classic() +
+  theme(legend.position = "right")
 #number of points:
 all_result |> 
   filter(!is.na(NIntc_richness)) |> 
   summarise(n = n()) #3789
 
+ggsave("nintc_sac_scatter.png", nintc_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
+
 ##Nintc cover##
+#This figure is obsolete because the best model changed
 graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
                      family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
