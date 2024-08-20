@@ -733,7 +733,6 @@ write.csv(data.frame(Response = character(), Model = character(), AIC = numeric(
 warning_msg <- ""
 
 ##Also loop through response variables
-##Also loop through response variables
 response_list <- c("prop_bare_association", "prop_nurse_association")
 datalist = c("baredat", "nursedat")
 
@@ -801,6 +800,9 @@ for(r in 1:length(response_list)) {
     write.table(result_row, output_file, append = TRUE, sep = ",", row.names = FALSE, col.names = FALSE) #append the new model to the existing file
   }
 }
+
+#start:09:06 20 Aug
+#end
 
 
 ###DESCRIPTIVE STATISTICS####
