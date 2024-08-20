@@ -98,6 +98,10 @@ null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomia
 #best subset model
 best_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ pH+ (1|site_ID/ID), 
                              family = binomial, data = all_result)
+
+test <- glmmTMB(NIntc_cover ~ graz + SAC + graz:SAC+ (1|site_ID/ID), 
+         data = all_result)
+
 summary(best_nintc_covmod)
 emmeans(best_nintc_covmod, specs = "graz")
 anova(null_nintc_covmod, best_nintc_covmod) 
@@ -109,9 +113,9 @@ interaction.plot(x.factor = all_result$SAC, trace.factor = all_result$graz, resp
 
 ##Ninta richness
 #nullmodel
-null_ninta_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
+null_ninta_richmod <- glmmTMB(NIntc_richness_binom ~ 1+(1|site_ID/ID), data = all_result, family = binomial)
 #bets model
-best_ninta_richmod <- glmmTMB(NInta_richness_binom ~ graz+AMT+SAC+graz:SAC+(1|site_ID), data = all_result, family = binomial)
+best_ninta_richmod <- glmmTMB(NInta_richness_binom ~ graz+AMT+SAC+graz:SAC+(1|site_ID/ID), data = all_result, family = binomial)
 
 summary(best_ninta_richmod)
 anova(null_ninta_richmod, best_ninta_richmod) #
@@ -122,9 +126,9 @@ emmeans(best_ninta_richmod, specs = "graz")
 
 ##NInta cover
 #null model
-null_ninta_covmod <- glmmTMB(NInta_cover_binom ~ 1+(1|site_ID), data = all_result, family = binomial)
+null_ninta_covmod <- glmmTMB(NInta_cover_binom ~ 1+(1|site_ID/ID), data = all_result, family = binomial)
 #best model
-best_ninta_covmod <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC+(1|site_ID), 
+best_ninta_covmod <- glmmTMB(NInta_cover_binom ~ pH+(1|site_ID/ID), 
                             data = all_result, family = binomial)
 
 summary(best_ninta_covmod)
