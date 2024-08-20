@@ -634,6 +634,7 @@ for(i in 1:nrow(Chisq_results)) {
 
 #write to csv file
 #write.csv(Chisq_results, "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\Chisq_results_6Feb2024.csv")
+###Import Chisq results####
 Chisq_results <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 Chisq_results$ID <- as.factor(Chisq_results$ID)
 
