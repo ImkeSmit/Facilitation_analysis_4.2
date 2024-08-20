@@ -721,9 +721,9 @@ nursedat <- prop_chisq_reduced |>
 assmod_results_table <- data.frame(Response = character(), Model = character(), AIC = numeric(), BIC = numeric(), 
                                    Warnings = character(), row.names = NULL)
 #import model formulas
-formula_table <- read.csv("Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
-  mutate(predictors = paste(predictors, "(1|site_ID)", sep = "+")) |> #add the random effect to all formulas
-  add_row(predictors = "1+(1|site_ID)")  #add the null model
+formula_table <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\nint_clim_soil_model_formulas_22Jun2024.csv", row.names = 1) |>
+  mutate(predictors = paste(predictors, "(1|site_ID/ID)", sep = "+")) |> #add the random effect to all formulas
+  add_row(predictors = "1+(1|site_ID/ID)")  #add the null model
 
 # Initialize warning_msg outside the loop
 warning_msg <- ""
