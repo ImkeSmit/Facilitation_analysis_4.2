@@ -291,31 +291,6 @@ all_result |>
 
 ggsave("nintc_sac_scatter.png", nintc_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
 
-##Nintc cover##
-#This figure is obsolete because the best model changed
-graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
-                     family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
-
-pred_data$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data, type = "response") #get nintc_binom predictions
-pred_data$NIntc_cover_prediction <- pred_data$NIntc_cover_binom_prediction*2 -1
-
-nintc_cover_sac <- ggplot(all_result, aes(y = NIntc_cover, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.5, size = 1) +
-  geom_line(data = pred_data, aes(x = SAC, y = NIntc_cover_prediction, color = graz), lwd = 1) +
-  scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
-                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
-  labs(color = "Grazing pressure", y = expression(NInt[C]~cover), x = "Sand content (%)") +
-  theme_classic() 
-
-#number of points:
-all_result |> 
-  filter(!is.na(NIntc_cover)) |> 
-  summarise(n = n()) #3736
-
-nint_sac_combo <- ggarrange(nintc_richness_sac, nintc_cover_sac, ncol = 2, nrow = 1, common.legend = T, 
-                            legend = "bottom", labels = c("a", "b"))
-ggsave("nint_sac_scatter.png", nint_sac_combo, path = "Figures", height = 700, width = 1250, units = "px")
-
 
 ###Fig.5: Scatterplot of nintc cover over pH####
 #get data to predict over
@@ -325,14 +300,14 @@ pred_data2 <- all_result |>
   mutate(SAC = mean(SAC), graz = 1)
 pred_data2$graz <- as.factor(pred_data2$graz)
 
-graphmod2 <- glmmTMB(NIntc_cover_binom ~ graz+pH+SAC+graz:SAC, 
+graphmod2 <- glmmTMB(NIntc_cover_binom ~ pH, 
                      family = binomial, data = all_result)#remove random effect because otherwise it makes jagged lines
 
 pred_data2$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_data2, type = "response", se.fit = T)$fit #get nintc_binom predictions
 pred_data2$NIntc_cover_prediction <- pred_data2$NIntc_cover_binom_prediction*2 -1
 
 nintc_cover_ph <- ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
-  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.6, size = 1.5) +
+  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.4, size = 1.3) +
   geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction), lwd = 1, colour = "darkorange") +
   labs(y = expression(NInt[C]~cover), x = "pH") +
   theme_classic() 
@@ -383,6 +358,7 @@ ninta_richness_sac <- ggplot(all_result, aes(y = NInta_richness, x = SAC)) +
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
   labs(color = "Grazing pressure", y = expression(NInt[A]~richness), x = "Sand content (%)") +
   theme_classic() 
+
 
 ##Nintc cover##
 graphmod2 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, 
