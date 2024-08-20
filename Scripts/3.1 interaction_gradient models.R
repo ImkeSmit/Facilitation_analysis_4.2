@@ -804,7 +804,6 @@ for(r in 1:length(response_list)) {
 #start:09:06 20 Aug
 #end 9:45 Aug
 
-
 ###DESCRIPTIVE STATISTICS####
 range(all_result$aridity)
 range(all_result$AMT)
