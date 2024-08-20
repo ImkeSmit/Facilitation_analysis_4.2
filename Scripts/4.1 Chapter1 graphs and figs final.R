@@ -362,7 +362,7 @@ ninta_richness_sac <- ggplot(all_result, aes(y = NInta_richness, x = SAC)) +
 ggsave("ninta_sac_scatter.png", ninta_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
 
 
-###Appendix Fig S3: Scatterplot of ninta richness and cover across AMT####
+###Appendix Fig S3: Scatterplot of ninta richness across AMT####
 #get data to predict over
 pred_data3 <- all_result |>
   select(ID, SAC, aridity, AMT, graz, site_ID) |> 
@@ -377,25 +377,12 @@ pred_data3$NInta_richness_binom_prediction <- predict(graphmod3, newdata = pred_
 pred_data3$NInta_richness_prediction <- pred_data3$NInta_richness_binom_prediction*3 -1
 
 ninta_richness_AMT <- ggplot(all_result, aes(y = NInta_richness, x = AMT)) +
-  geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.6, size = 1.5) +
-  geom_line(data = pred_data3, aes(x = AMT, y = NInta_richness_prediction), lwd = 1, colour = "darkorange") +
+  geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_line(data = pred_data3, aes(x = AMT, y = NInta_richness_prediction), lwd = 2, colour = "darkorange") +
   labs(y = expression(NInt[A]~richness), x = expression(AMT~(degree*C))) +
   theme_classic() 
 
-##Ninta cover
-graphmod4 <- glmmTMB(NInta_cover_binom ~ graz+aridity+AMT+SAC+graz:SAC, data = all_result, family = binomial)#remove random effect because otherwise it makes jagged lines
-
-pred_data3$NInta_cover_binom_prediction <- predict(graphmod4, newdata = pred_data3, type = "response") #get nintc_binom predictions
-pred_data3$NInta_cover_prediction <- pred_data3$NInta_cover_binom_prediction*3 -1
-
-ninta_cover_AMT <- ggplot(all_result, aes(y = NInta_cover, x = AMT)) +
-  geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.6, size = 1.5) +
-  geom_line(data = pred_data3, aes(x = AMT, y = NInta_cover_prediction), lwd = 1, colour = "darkorange") +
-  labs(y = expression(NInt[A]~cover), x = expression(AMT~(degree*C))) +
-  theme_classic()
-
-ninta_AMT_scatter <- ggarrange(ninta_richness_AMT, ninta_cover_AMT, nrow = 1, ncol = 2)
-ggsave("nintA_AMT_scatter.png", ninta_AMT_scatter, path = "Figures", height = 700, width = 1250, units = "px")
+ggsave("nintA_richness_AMT_scatter.png", ninta_richness_AMT, path = "Figures")
 
 
 ###Appendix Fig S4: Scatterplot of NIntA cover over aridity####
