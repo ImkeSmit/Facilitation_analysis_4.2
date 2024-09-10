@@ -67,6 +67,42 @@ all_result |>
   filter(!is.na(NIntc_cover)) |> 
   summarise(n = n()) #3736
 
+
+###Quantify the variation in nint
+summary(all_result)
+
+#get plots with nintc richness values above 0.5 or below -0.5
+var_desc_rich <- all_result |> 
+  select(ID, NIntc_richness) |> 
+  group_by(ID) |> 
+  mutate(max_NIntc_richness = max(NIntc_richness, na.rm = T), 
+         min_NIntc_richness = min(NIntc_richness, na.rm = T)) |> 
+  select(!c(NIntc_richness)) |> 
+  distinct(ID, .keep_all = T) |> 
+  mutate(NIntc_rich_above_0.5 = if_else(max_NIntc_richness > 0.5, "T", "F", missing = NA), 
+         NIntc_rich_below_neg0.5 = if_else(min_NIntc_richness < -0.5, "T", "F", missing = NA)) |> 
+  filter(NIntc_rich_above_0.5 == "T" & NIntc_rich_below_neg0.5 == "T")
+
+#how many plots have nintc richness values above 0.5 and below -0.5?
+percent_high_var_plots <- (nrow(var_desc_rich)/97)*100 #69.07216% of plots have nint richness alues belo -0.5 AND above 0.5
+
+#get plots with nintc cover values above 0.5 or below -0.5
+var_desc_cov <- all_result |> 
+  select(ID, NIntc_cover) |> 
+  group_by(ID) |> 
+  mutate(max_NIntc_cover = max(NIntc_cover, na.rm = T), 
+         min_NIntc_cover = min(NIntc_cover, na.rm = T)) |> 
+  select(!c( NIntc_cover)) |> 
+  distinct(ID, .keep_all = T) |> 
+  mutate(NIntc_cov_above_0.5 = if_else(max_NIntc_cover > 0.5, "T", "F", missing = NA), 
+         NIntc_cov_below_neg0.5 = if_else(min_NIntc_cover < -0.5, "T", "F", missing = NA)) |> 
+  filter(NIntc_cov_above_0.5 == "T" & NIntc_cov_below_neg0.5 == "T")
+
+#how many plots have nintc richness values above 0.5 and below -0.5?
+percent_high_var_plots <- (nrow(var_desc_cov)/97)*100 #81.4433% of plots have nint cover values below -0.5 AND above 0.5
+
+
+
 ###import the modelling result:
 #models without the nested RE
 #nint_model_results <- read.csv("Facilitation data//results//nint_clim_soil_model_results_22Jun2024.csv", row.names = 1)
