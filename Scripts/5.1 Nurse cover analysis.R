@@ -37,7 +37,7 @@ for(i in 1:length(data_files)) {
                           data_files[i])))
 }
 
-
+#summarise the data and bind the tables together
 for (i in 1:length(countrynames)) {
   cou <- get(countrynames[i]) #This is the original data for each country
   
@@ -80,3 +80,5 @@ hist(log10(canopy_area_final$canopy_area_cm2))
 canopy_mod <- lm(log10(canopy_area_cm2) ~ GRAZ*ARIDITY.v3, data = canopy_area_final)
 summary(canopy_mod)
 Anova(canopy_mod)
+
+emmeans(canopy_mod, ~GRAZ, at = list(ARIDITY.v3 = mean(canopy_area_final$ARIDITY.v3)))
