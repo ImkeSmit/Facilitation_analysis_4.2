@@ -81,4 +81,4 @@ canopy_mod <- lm(log10(canopy_area_cm2) ~ GRAZ*ARIDITY.v3, data = canopy_area_fi
 summary(canopy_mod)
 Anova(canopy_mod)
 
-emmeans(canopy_mod, ~GRAZ, at = list(ARIDITY.v3 = mean(canopy_area_final$ARIDITY.v3)))
+emmeans(canopy_mod, ~GRAZ, at = list(ARIDITY.v3 = mean(canopy_area_final$ARIDITY.v3))) #a, b, a, ab
