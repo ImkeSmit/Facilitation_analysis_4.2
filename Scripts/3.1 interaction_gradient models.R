@@ -81,11 +81,15 @@ cordata2 <- all_result |>
   select(!contains("binom")) |> 
   na.omit()
 cormat2 <- cor(cordata2, method = "pearson")
+cortest <- cor.mtest(cordata2) #test for significance, all correlations are significant
 
 setwd("Figures")
 png("nint_correlation.png")
-corrplot(cormat2, method = "number", type = "lower")
+corrplot(cormat2, p.mat = cortest$p, sig.level = 0.05, method = 'circle', type = 'lower', insig = "blank",
+         addCoef.col ="white", number.cex = 1, order = 'alphabet',diag = FALSE, tl.col = 'black', tl.srt = 45)
 dev.off()
+
+
 
 
 ###Get the model formulas####
