@@ -50,7 +50,7 @@ bubble_facets <- ggplot(all_result, aes(x = aridity, y = NIntc_richness)) +
   theme(legend.position = "none")
 bubble_facets
 ggsave("rich_grazing facets bubble.png", bubble_facets, width = 1400, height = 1500, units = "px",
-       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 #import model predictions
 rich_pred <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\rich_mod4_prediction_tmb_11Sept.csv", row.names = 1)
