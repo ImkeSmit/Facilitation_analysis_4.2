@@ -131,6 +131,12 @@ all_plotlvl <- merge(all_plotlvl, site_arid, by = "site_ID")
 ##define the order of grazing levels
 all_plotlvl$graz <- factor(all_plotlvl$graz, levels = c("0", "1", "2", "3"))
 
+#some descriptive stats
+ggplot(all_plotlvl, aes(x = country, y = plotlevel_sprichness)) +
+  geom_boxplot()
+min(all_plotlvl$plotlevel_sprichness)
+max(all_plotlvl$plotlevel_sprichness)
+
 ##plot species richness in plots ordered according to mean aridity of site, then by graz colour by graz
 bygraz_sprich_barplot <- 
   ggplot(all_plotlvl, aes(x = ID, y = plotlevel_sprichness, fill = graz)) + 
