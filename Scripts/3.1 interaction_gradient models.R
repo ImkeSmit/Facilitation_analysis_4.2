@@ -814,6 +814,17 @@ range(all_result$AMT)
 range(all_result$RASE)
 range(all_result$SAC)
 range(all_result$pH)
+range(all_result$RAI)
+
+#which country has lowest rainfall
+all_result |> filter(RAI == min(all_result$RAI))
+#which country has highest rainfall
+all_result |> filter(RAI == max(all_result$RAI))
+
+#which country has lowest temp
+all_result |> filter(AMT == min(all_result$AMT))
+#which country has highest temp
+all_result |> filter(AMT == max(all_result$AMT))
 
 #number of dominant-bare pairs
 all_result |> 
