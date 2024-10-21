@@ -8,8 +8,8 @@ library(ggpubr)
 library(forcats)
 library(tidyr)
 library(lsmeans)
-library(multcomp)
-library(multcompView)
+#library(multcomp)
+#library(multcompView)
 library(glmmTMB)
 
 IDlist <- unique(all_result$ID)
@@ -31,7 +31,7 @@ res$product <- res$max_reps*res$n_nurses
 
 
 
-all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
+all_result <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Facilitation data\\results\\NIntc_results_allcountries_6Feb2024.csv", row.names = 1)
 all_result$site_ID <- as.factor(all_result$site_ID)
 all_result$graz <- as.factor(all_result$graz)
 all_result$ID <- as.factor(all_result$ID)
@@ -51,6 +51,7 @@ bubble_facets <- ggplot(all_result, aes(x = aridity, y = NIntc_richness)) +
 bubble_facets
 ggsave("rich_grazing facets bubble.png", bubble_facets, width = 1400, height = 1500, units = "px",
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
+
 
 #import model predictions
 rich_pred <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\rich_mod4_prediction_tmb_11Sept.csv", row.names = 1)
