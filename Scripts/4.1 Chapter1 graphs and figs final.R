@@ -409,6 +409,27 @@ ninta_cover_pH <- ggplot(all_result, aes(y = NInta_cover, x = pH)) +
 
 ggsave("nintA_cover_pH_scatter.png", ninta_cover_pH, path = "Figures")
 
+
+###General conclusion figure: scatterplot of NInt~aridity####
+nintC_rich_arid_scatter <- ggplot(all_result, aes(x = aridity, y = NIntc_richness)) + 
+  geom_jitter(shape = 21, size = 2, fill = "darkslategrey", stroke = 0, alpha = 0.3, width = 0.1, height = 0.1) +
+  theme_classic() +
+  xlab("Aridity") +
+  scale_x_continuous(breaks = seq(0.4, 1.0, by = 0.1)) +
+  ylab(expression(NInt[C]~richness))
+
+nintC_cov_arid_scatter <- ggplot(all_result, aes(x = aridity, y = NIntc_cover)) + 
+  geom_jitter(shape = 21, size = 2, fill = "darkslategrey", stroke = 0, alpha = 0.3, width = 0.1, height = 0.1) +
+  theme_classic() +
+  xlab("Aridity") +
+  scale_x_continuous(breaks = seq(0.4, 1.0, by = 0.1)) +
+  ylab(expression(NInt[C]~cover))
+
+nint_arid_combo <- ggarrange(nintC_rich_arid_scatter, nintC_cov_arid_scatter, ncol = 2, nrow = 1, labels = c("a", "b"))
+ggsave("nint_aridity_scatterplots.png", nint_arid_combo, height = 900, width = 1600, units = "px", 
+       path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
+
+
 ###Old stuff:Barplot of NINta  cover at different grazing levels####
 #we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , ]
