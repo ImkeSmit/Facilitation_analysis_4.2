@@ -426,7 +426,7 @@ nintC_cov_arid_scatter <- ggplot(all_result, aes(x = aridity, y = NIntc_cover)) 
   ylab(expression(NInt[C]~cover))
 
 nint_arid_combo <- ggarrange(nintC_rich_arid_scatter, nintC_cov_arid_scatter, ncol = 2, nrow = 1, labels = c("a", "b"))
-ggsave("nint_aridity_scatterplots.png", nint_arid_combo, height = 900, width = 1600, units = "px", 
+ggsave("nint_aridity_scatterplots.png", nint_arid_combo, height = 900, width = 1800, units = "px", 
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
