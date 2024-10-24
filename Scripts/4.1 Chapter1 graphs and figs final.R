@@ -251,7 +251,7 @@ prop_chisq_reduced <- chisq_results |>
 
 prop_chisq_reduced$association <- factor(prop_chisq_reduced$association, levels = c("nurse", "bare", "neutral"))
 
-facet_labels <- c("b) Bare", "c) Neutral", "a) Dominant")
+facet_labels <- c("b) Bare-associated", "c) Neutral association", "a) Dominant-associated")
 names(facet_labels) <- c("bare", "neutral", "nurse")
 
 Chisq_scatter <- ggplot(prop_chisq_reduced, aes(x = aridity, y = percentage)) +
@@ -313,11 +313,11 @@ pred_data2$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_dat
 pred_data2$NIntc_cover_prediction <- pred_data2$NIntc_cover_binom_prediction*2 -1
 
 nintc_cover_ph <- ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
-  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.4, size = 1.3) +
+  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.4, size = 1.4) +
   geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction), lwd = 1, colour = "darkorange") +
   labs(y = expression(NInt[C]~cover), x = "pH") +
   theme_classic() 
-ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures", height = 700, width = 800, units = 'px')
+ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures")
 
 
 ###Fig 6: Barplot of NINtc at different grazing levels####
