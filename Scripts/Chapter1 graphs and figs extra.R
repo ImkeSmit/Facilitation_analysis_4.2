@@ -766,7 +766,7 @@ dev.off()
 ###Species position along aridity####
 ###AT THE PLOTLEVEL
 #import the plotlevel species preference data that was made in the interaction_gradient models script
-plot_sp_pref <- read.csv("C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation data\\results\\plotlevels_sp_preference_26Sept.csv", row.names = 1)
+plot_sp_pref <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
 #make it long format
 long_plot_sp_pref <- gather(plot_sp_pref, key = preference, #name of the new column that will be made up of the last 3 columns
                              value = proportion_of_sp, #name of the new column that will hold the proportions
@@ -786,12 +786,14 @@ long_plot_sp_pref <- merge(long_plot_sp_pref, site_arid, by = "site_ID")
 ##define the order of grazing levels
 long_plot_sp_pref$graz <- factor(long_plot_sp_pref$graz, levels = c("0", "1", "2", "3"))
 long_plot_sp_pref$ID <- as.factor(long_plot_sp_pref$ID)
+long_plot_sp_pref$preference <- factor(long_plot_sp_pref$preference, levels = c("prop_bare_only", "prop_both", "prop_nurse_only"))
 
-pal <- brewer.pal(8, "Dark2")[c(7,1,8)]
+pal <- brewer.pal(8, "Dark2")[c(7,8,1)]
 
 plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)) + 
   geom_bar(aes(fill = preference), position = position_stack(), stat = "identity") +
-  scale_fill_manual(values = c(pal) , labels = c("Bare microsite only", "Dominant microsite only", "Both")) +
+  scale_fill_manual(values = c(brewer.pal(8, "Dark2")[7], brewer.pal(8,"Pastel2")[8], brewer.pal(8, "Dark2")[1]), 
+                    labels = c("Bare microsite only", "Both","Dominant microsite only")) +
   theme_classic() +
   ylab("Percentage of species occurring in a microsite") +
   xlab("Aridity of plot") +
@@ -828,6 +830,7 @@ plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)
   guides(fill = guide_legend(nrow = 3)) +
   theme(legend.position = "right", legend.title = element_blank(), axis.text.x = element_text(angle = 90))
 plotlevel_prefbar
+
 
 
 

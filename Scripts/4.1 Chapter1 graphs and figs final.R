@@ -430,6 +430,76 @@ ggsave("nint_aridity_scatterplots.png", nint_arid_combo, height = 900, width = 1
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis clone\\Figures")
 
 
+###General conclusion figure:barplot of species preference for microsites####
+###Species position along aridity###
+###AT THE PLOTLEVEL
+#import the plotlevel species preference data that was made in the interaction_gradient models script
+plot_sp_pref <- read.csv("Facilitation data\\results\\plotlevels_sp_preference_6Feb2024.csv", row.names = 1)
+#make it long format
+long_plot_sp_pref <- gather(plot_sp_pref, key = preference, #name of the new column that will be made up of the last 3 columns
+                            value = proportion_of_sp, #name of the new column that will hold the proportions
+                            prop_bare_only:prop_both, #where to find the values to put in the proportion)of_sp column
+                            factor_key=TRUE) #make the key column a factor
+
+#multiply the proportion by 100 to make them percentages
+long_plot_sp_pref$proportion_of_sp <- long_plot_sp_pref$proportion_of_sp*100
+
+#we will order plots according to the mean aridity of the site, and then by graz
+#get the mean aridity at each site
+site_arid <- data.frame(mean_aridity_of_site = tapply(long_plot_sp_pref$aridity, long_plot_sp_pref$site_ID, FUN = mean))
+site_arid$site_ID <- rownames(site_arid)
+rownames(site_arid) <- 1:nrow(site_arid)
+##merge the mean aridity of each site with all_plotlvl
+long_plot_sp_pref <- merge(long_plot_sp_pref, site_arid, by = "site_ID")
+##define the order of grazing levels
+long_plot_sp_pref$graz <- factor(long_plot_sp_pref$graz, levels = c("0", "1", "2", "3"))
+long_plot_sp_pref$ID <- as.factor(long_plot_sp_pref$ID)
+long_plot_sp_pref$preference <- factor(long_plot_sp_pref$preference, levels = c("prop_bare_only", "prop_both", "prop_nurse_only"))
+
+plotlevel_prefbar <- ggplot(long_plot_sp_pref, aes(x = ID, y = proportion_of_sp)) + 
+  geom_bar(aes(fill = preference), position = position_stack(), stat = "identity") +
+  scale_fill_manual(values = c(brewer.pal(8, "Dark2")[7], brewer.pal(8,"Pastel2")[8], brewer.pal(8, "Dark2")[1]), 
+                    labels = c("Bare microsite only", "Both","Dominant microsite only")) +
+  theme_classic() +
+  ylab("Percentage of species occurring in a microsite") +
+  xlab("Aridity of plot") +
+  scale_x_discrete(limits = long_plot_sp_pref[order(long_plot_sp_pref$mean_aridity_of_site, long_plot_sp_pref$graz), "ID"], #first order by mean aridity then by graz
+                   labels = c("85" = "0.50", "84" = "", "83" = "", 
+                              "296" = "0.64", "295" = "", "294" = "", "293" = "",
+                              "158" = "0.67", "157" = "", "156" = "", "155" = "", 
+                              "274" = "0.75", "273" = "", "272" = "",
+                              "103" = "0.75", "102" = "", "101" = "", "100" = "", 
+                              "143" = "0.76", "142" = "", "141" = "", "140" = "", 
+                              "50" = "0.76", "49" = "", "48" = "",
+                              "99" = "0.77", "98" = "", "97" = "", 
+                              "154" = "0.79", "153" = "", "152" = "", "151" = "",
+                              "299" = "0.79", "298" = "", "297" = "", 
+                              "146" = "0.80", "145" = "", "144" = "", 
+                              "201" = "0.80", "200" = "", "199" = "", 
+                              "47" = "0.81", "46" = "", "45" = "", "44" = "", 
+                              "96" = "0.81", "95" = "", "94" = "", "93" = "", 
+                              "139" = "0.82", "138" = "", "137" = "", 
+                              "18" = "0.82", "17" = "", "16" = "", 
+                              "136" = "0.83", "135" = "", "134" = "", 
+                              "3" = "0.83", "2" = "", "1" = "", 
+                              "198" = "0.84", "197" = "", "196" = "", 
+                              "252" = "0.85", "251" = "", "250" = "", 
+                              "292" = "0.85", "291" = "", "290" = "", "289" = "", 
+                              "21" = "0.87", "20" = "", "19" = "", 
+                              "150" = "0.87", "149" = "", "148" = "", "147" = "", 
+                              "249" = "0.88", "248" = "", "247" = "", 
+                              "162" = "0.89", "161" = "", "160" = "", "159" = "", 
+                              "195" = "0.90", "194" = "", "193" = "", 
+                              "43" = "0.90", "42" = "", "41" = "", "40" = "", 
+                              "216" = "0.91", "215" = "", "214" = "", 
+                              "115" = "0.94", "114" = "")) +
+  guides(fill = guide_legend(nrow = 3)) +
+  theme(legend.position = "right", legend.title = element_blank(), axis.text.x = element_text(angle = 90))
+plotlevel_prefbar
+
+ggsave("species_position_along_aridity_stacked_bar.png", plotlevel_prefbar, path ="Figures", width = 2000, height = 1200, units = "px")
+
+
 ###Old stuff:Barplot of NINta  cover at different grazing levels####
 #we will do a plot of the arithmetic means, and also the lsmeans with significance letters.
 ad_covdat <- all_result[-which(is.na(all_result$NInta_cover)) , ]
@@ -557,6 +627,4 @@ nplots_graz <- ggplot(all_result, aes(x = graz, y = aridity, fill = graz)) +
 
 ggsave("nplots_graz.png", nplots_graz,
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
-
-
 
