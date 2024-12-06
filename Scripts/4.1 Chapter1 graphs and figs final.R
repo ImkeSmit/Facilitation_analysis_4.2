@@ -283,7 +283,7 @@ pred_data$NIntc_richness_binom_prediction <- predict(graphmod, newdata = pred_da
 pred_data$NIntc_richness_prediction <- pred_data$NIntc_richness_binom_prediction*2 -1
 
 nintc_richness_sac <- ggplot(all_result, aes(y = NIntc_richness, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_jitter(height = 0.01, width = 2, color = "azure3", alpha = 0.4, size = 1.5) +
   geom_line(data = pred_data, aes(x = SAC, y = NIntc_richness_prediction, color = graz), lwd = 1.5) +
   scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
@@ -295,7 +295,7 @@ all_result |>
   filter(!is.na(NIntc_richness)) |> 
   summarise(n = n()) #3789
 
-ggsave("nintc_sac_scatter.png", nintc_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
+ggsave("nintc_sac_scatter_post_exam.png", nintc_richness_sac, path = "Figures", width = 1500, height = 900, units = "px")
 
 
 ###Fig.5: Scatterplot of nintc cover over pH####
@@ -313,11 +313,11 @@ pred_data2$NIntc_cover_binom_prediction <- predict(graphmod2, newdata = pred_dat
 pred_data2$NIntc_cover_prediction <- pred_data2$NIntc_cover_binom_prediction*2 -1
 
 nintc_cover_ph <- ggplot(all_result, aes(y = NIntc_cover, x = pH)) +
-  geom_jitter(height = 0.01, width = 0.1, color = "darkslategrey", alpha = 0.4, size = 1.4) +
-  geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction), lwd = 1, colour = "darkorange") +
+  geom_jitter(height = 0.01, width = 0.1, color = "azure3", alpha = 0.4, size = 1.4) +
+  geom_line(data = pred_data2, aes(x = pH, y = NIntc_cover_prediction), lwd = 1.5, colour = "darkorange") +
   labs(y = expression(NInt[C]~cover), x = "pH") +
   theme_classic() 
-ggsave("nint_ph_scatter.png", nintc_cover_ph, path = "Figures")
+ggsave("nint_ph_scatter_post_exam.png", nintc_cover_ph, width = 1000, height = 1000, units = "px", path = "Figures")
 
 
 ###Fig 6: Barplot of NINtc at different grazing levels####
