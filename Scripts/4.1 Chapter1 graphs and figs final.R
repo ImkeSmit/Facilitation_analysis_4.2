@@ -380,7 +380,7 @@ pred_data$NInta_richness_binom_prediction <- predict(graphmod, newdata = pred_da
 pred_data$NInta_richness_prediction <- pred_data$NInta_richness_binom_prediction*3 -1
 
 ninta_richness_sac <- ggplot(all_result, aes(y = NInta_richness, x = SAC)) +
-  geom_jitter(height = 0.01, width = 2, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_jitter(height = 0.01, width = 2, color = "azure3", alpha = 0.4, size = 1.5) +
   geom_line(data = pred_data, aes(x = SAC, y = NInta_richness_prediction, color = graz), lwd = 2) +
   scale_color_manual(labels = c("ungrazed", "low", "medium", "high"),
                      values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" ))+
@@ -405,12 +405,12 @@ pred_data3$NInta_richness_binom_prediction <- predict(graphmod3, newdata = pred_
 pred_data3$NInta_richness_prediction <- pred_data3$NInta_richness_binom_prediction*3 -1
 
 ninta_richness_AMT <- ggplot(all_result, aes(y = NInta_richness, x = AMT)) +
-  geom_jitter(height = 0.01, width = 0.5, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_jitter(height = 0.01, width = 0.5, color = "azure3", alpha = 0.4, size = 1.5) +
   geom_line(data = pred_data3, aes(x = AMT, y = NInta_richness_prediction), lwd = 2, colour = "darkorange") +
   labs(y = expression(NInt[A]~richness), x = expression(AMT~(degree*C))) +
   theme_classic() 
 
-ggsave("nintA_richness_AMT_scatter.png", ninta_richness_AMT, path = "Figures")
+ggsave("nintA_richness_AMT_scatter.png", ninta_richness_AMT, path = "Figures", height = 900, width = 900, units = "px")
 
 
 ###Appendix Fig S4: Scatterplot of NIntA cover over pH####
@@ -424,12 +424,12 @@ pred_data4$NInta_cover_binom_prediction <- predict(graphmod4, newdata = pred_dat
 pred_data4$NInta_cover_prediction <- pred_data4$NInta_cover_binom_prediction*3 -1
 
 ninta_cover_pH <- ggplot(all_result, aes(y = NInta_cover, x = pH)) +
-  geom_jitter(height = 0.01, width = 0.01, color = "darkslategrey", alpha = 0.4, size = 1.5) +
+  geom_jitter(height = 0.01, width = 0.01, color = "azure3", alpha = 0.4, size = 1.5) +
   geom_line(data = pred_data4, aes(x = pH, y = NInta_cover_prediction), lwd = 2, colour = "darkorange") +
   labs(y = expression(NInt[A]~cover), x = "pH") +
   theme_classic()
 
-ggsave("nintA_cover_pH_scatter.png", ninta_cover_pH, path = "Figures")
+ggsave("nintA_cover_pH_scatter.png", ninta_cover_pH, path = "Figures", height = 900, width = 900, units = "px")
 
 
 ###General conclusion figure: scatterplot of NInt~aridity####
