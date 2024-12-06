@@ -233,6 +233,28 @@ ggsave("combo_barplot.png", combo_barplot, width = 1500, height = 2100, units = 
        path = "C:\\Users\\imke6\\Documents\\Msc Projek\\Facilitation analysis\\Figures")
 
 
+##Scatterplot version of above plots for rebuttal letter:
+richness_scatter <- ggplot(all_plotlvl, aes(x = aridity, y = plotlevel_sprichness, color = graz))+
+  geom_point() +
+  scale_color_manual(labels = c("Ungrazed", "Low grazing", "Medium grazing", "High grazing"), 
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
+  theme_classic() +
+  ylab("Perennial plant species richness") +
+  xlab("Aridity of plot") +
+  labs(color = "Grazing pressure")
+
+cover_scatter <- richness_scatter <- ggplot(all_plotlvl, aes(x = aridity, y = plotlevel_vegcover, color = graz))+
+  geom_point() +
+  scale_color_manual(labels = c("Ungrazed", "Low grazing", "Medium grazing", "High grazing"), 
+                     values = c("darkgreen", "chartreuse2" , "darkolivegreen3", "darkgoldenrod4", "azure4" )) +
+  theme_classic() +
+  ylab("Perennial vegetation cover (%)") +
+  xlab("Aridity of plot") +
+  labs(color = "Grazing pressure")
+
+scatter_combo <- ggarrange(richness_scatter, cover_scatter, ncol = 1, nrow = 2, labels = "auto", common.legend = T, legend = "right")
+ggsave("combo_scatterplot.png", scatter_combo, path = "Figures", height = 2100, width = 1500, units = "px")
+
 ###Fig3: Graph of Chisq results####
 chisq_results <- read.csv("Facilitation data\\results\\Chisq_results_6Feb2024.csv", row.names = 1)
 chisq_results$ID <- as.factor(chisq_results$ID)
