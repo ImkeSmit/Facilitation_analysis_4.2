@@ -128,6 +128,21 @@ r.squaredGLMM(nintc_rich_bestmod)
 plot(simulateResiduals(nintc_rich_bestmod)) #underdispersed
 
 
+# Calculate model-averaged importance for each fixed effect
+all_result2 <- na.omit(all_result)#remove na values for dredge to work
+nintc_rich_bestmod_varpart <- glmmTMB(NIntc_richness_binom ~ graz+ SAC+ graz:SAC+ (1|site_ID/ID), family = binomial, data = all_result2, na.action = na.fail)
+model_dredge <- dredge(nintc_rich_bestmod_varpart, fixed = c("graz", "SAC", "graz:SAC"))
+sw(model_dredge)
+
+fig <- rel_imp <- data.frame(var = c("SAC","graz", "graz:SAC"), relative_importance = c(0.285,0.169, 0.019)) |> 
+  mutate(var = fct_reorder(var, relative_importance)) |> 
+ggplot(aes(x = var, y = relative_importance))+
+  geom_bar(stat = "identity")+
+  coord_flip()+
+  xlab("Variable") +
+  ylab("Relative importance")+
+  theme_bw()
+
 ##NIntc cover
 #null model
 null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
