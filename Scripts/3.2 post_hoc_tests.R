@@ -143,6 +143,10 @@ ggplot(aes(x = var, y = relative_importance))+
   ylab("Relative importance")+
   theme_bw()
 
+test <- varpart(all_result2$NIntc_richness_binom, ~ SAC, ~graz, data = all_result2)
+draw.pairwise.venn(0.003+0.002,0.011+0.002,0.002,fill = c("yellow", "green"), category = c("Sand content", "Grazing pressure"))
+
+
 ##NIntc cover
 #null model
 null_nintc_covmod <- glmmTMB(NIntc_cover_binom ~ 1+(1|site_ID), family = binomial, data = all_result)
