@@ -103,6 +103,12 @@ corrplot(cormat2, p.mat = cortest$p, sig.level = 0.05, method = 'circle', type =
          addCoef.col ="white", number.cex = 1, order = 'alphabet',diag = FALSE, tl.col = 'black', tl.srt = 45)
 dev.off()
 
+#high res plot for paper
+setwd("Figures")
+pdf("FigureA1_nintc_correlation_for_paper.pdf", width = 5, height = 5)
+corrplot(cormat2, p.mat = cortest$p, sig.level = 0.05, method = 'circle', type = 'lower', insig = "blank",
+         addCoef.col ="white", number.cex = 1, order = 'alphabet',diag = FALSE, tl.col = 'black', tl.srt = 45)
+dev.off()
 
 
 
@@ -661,6 +667,11 @@ Chisq_results |>
   filter(association == "nurse") |> 
   distinct(species) |> 
   summarise(nsp = n()) #85
+
+#how many species X plot combos show nurse association?
+Chisq_results |> 
+  filter(association == "nurse") |> 
+  summarise(n = n())
 
 #How many sp significantly associated with the bare microsite?
 Chisq_results |> 
